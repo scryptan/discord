@@ -100,6 +100,7 @@ MonoBehaviour:
   spriteAtlas: {fileID: 4343727234628468602, guid: 08b5358c060324f44a8d9407ea5a9e8e, type: 2}
   itemType: 13
   points: 0.2
+  weight: 1
 --- !u!61 &2349687243626499481
 BoxCollider2D:
   m_ObjectHideFlags: 0

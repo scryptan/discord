@@ -47,7 +47,7 @@ public class HeapController : MonoBehaviour
 
         if (_value >= 100f)
         {
-            
+            GameController.Instance.GameWin();
         }
     }
 }

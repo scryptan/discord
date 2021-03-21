@@ -13,6 +13,8 @@ public class GameController : MonoBehaviour
     public GameObject gameIntro;
     public GameObject gameDialog;
     public GameObject gamePlaying;
+    public GameObject gameWin;
+    public GameObject gameLose;
 
     public static GameController Instance
     {
@@ -67,6 +69,8 @@ public class GameController : MonoBehaviour
         gamePlaying.SetActive(true);
         gameDialog.SetActive(false);
         gameIntro.SetActive(false);
+        gameWin.SetActive(false);
+        gameLose.SetActive(false);
         
         gamePlaying.GetComponent<GamePlaying>().Initialize();
     }
@@ -78,6 +82,8 @@ public class GameController : MonoBehaviour
         gameDialog.SetActive(true);
         gameIntro.SetActive(false);
         gamePlaying.SetActive(false);
+        gameWin.SetActive(false);
+        gameLose.SetActive(false);
     }
 
     public void GameIntro()
@@ -87,11 +93,30 @@ public class GameController : MonoBehaviour
         gameIntro.SetActive(true);
         gameDialog.SetActive(false);
         gamePlaying.SetActive(false);
+        gameWin.SetActive(false);
+        gameLose.SetActive(false);
     }
 
     public void GameWin()
     {
+        _gameState = GameState.Win;
+            
+        gameWin.SetActive(true);
+        gameIntro.SetActive(false);
+        gameDialog.SetActive(false);
+        gamePlaying.SetActive(false);
+        gameLose.SetActive(false);
+    }
+
+    public void GameLose()
+    {
+        _gameState = GameState.Lose;
         
+        gameLose.SetActive(true);
+        gameWin.SetActive(false);
+        gameIntro.SetActive(false);
+        gameDialog.SetActive(false);
+        gamePlaying.SetActive(false);
     }
 
     [Serializable]
@@ -100,5 +125,7 @@ public class GameController : MonoBehaviour
         Intro = 0,
         Dialog = 1,
         Game = 2,
+        Win = 3,
+        Lose = 4,
     }
 }

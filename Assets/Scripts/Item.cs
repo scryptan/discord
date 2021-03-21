@@ -14,6 +14,7 @@ public class Item : MonoBehaviour
     public SpriteAtlas spriteAtlas;
     public ItemType itemType;
     public float points = 0f;
+    public float weight = 0f;
 
     private void Awake()
     {

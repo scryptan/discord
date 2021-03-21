@@ -4,10 +4,12 @@ using UnityEngine;
 public class GamePlaying : MonoBehaviour
 {
     private float _stamina = 100f;
+    private float _workload = 0f;
     private uint _round = 0;
 
     private float _timer = 0f;
     private float _roundTimer = 0f;
+    private float _timerRecovery = 0f;
 
     private float _roundMaxTimer = 2f;
     private bool _girlSearchingAndThrow = false;
@@ -20,15 +22,19 @@ public class GamePlaying : MonoBehaviour
 
     [Header("Start Game Config")]
     public float startStamina = 100f;
-    public float startHeap = 0f;
     public Vector3 startGuyPosition = new Vector3(0, -4, 0);
     public uint startRound = 0;
-    public float timerNextRound = 60f;
+    public float timerNextRound = 30f;
     public float forceToPush = 3f;
     public float horizontalCoef = 1.5f;
+    public float maxWeightGame = 50f;
+    public float startWorkLoad = 0f;
+    public float maxTimerRecovery = 1f;
 
     [Header("Rounds Config")] 
     public float[] rounds;
+
+    public float caughtCoefItemScore = 2f;
 
     // Start is called before the first frame update
     void Awake()
@@ -42,6 +48,7 @@ public class GamePlaying : MonoBehaviour
         _timer = 0f;
         _roundTimer = 0f;
         _girlSearchingAndThrow = false;
+        _workload = startWorkLoad;
 
         if (rounds.Length > 0)
             _roundMaxTimer = rounds[0];
@@ -55,6 +62,7 @@ public class GamePlaying : MonoBehaviour
     private void Update()
     {
         _roundTimer += Time.deltaTime;
+        _timerRecovery += Time.deltaTime;
 
         if (!_girlSearchingAndThrow)
         {
@@ -66,6 +74,12 @@ public class GamePlaying : MonoBehaviour
                 girl.PlaySearch();
                 _girlSearchingAndThrow = true;
             }
+        }
+
+        if (_timerRecovery >= maxTimerRecovery)
+        {
+            _timerRecovery = 0f;
+            RecoveryStamina();
         }
 
         if (_roundTimer >= timerNextRound)
@@ -118,6 +132,27 @@ public class GamePlaying : MonoBehaviour
 
         _roundMaxTimer = rounds[++_round];
         Debug.Log($"Next round [${_round}]!");
+    }
+
+    public void AddWeight(float weight)
+    {
+        _workload += weight;
+        
+        if (_workload >= maxWeightGame)
+            GameController.Instance.GameLose();
+    }
+
+    public void SubtractWeight(float weight)
+    {
+        _workload -= weight;
+
+        if (_workload < 0)
+            _workload = 0f;
+    }
+
+    private void RecoveryStamina()
+    {
+        _stamina++;
     }
 
     public void AddHeap(float score)
