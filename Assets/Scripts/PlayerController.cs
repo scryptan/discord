@@ -192,6 +192,7 @@ public class PlayerController : MonoBehaviour
                     _playerState = PlayerState.Grabbed;
                 
                 gamePlaying.SubtractWeight(other.gameObject.GetComponent<Item>().weight);
+                gamePlaying.SubtractStamina(other.gameObject.GetComponent<Item>().weight * gamePlaying.weightGrabCoef);
             }
         }
         

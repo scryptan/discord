@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GamePlaying : MonoBehaviour
 {
@@ -19,6 +20,10 @@ public class GamePlaying : MonoBehaviour
     public Girl girl;
     public HeapController heap;
     public GameObject[] items;
+    public Image staminaBar;
+    public Text staminaText;
+    public Image weightBar;
+    public Text weightText;
 
     [Header("Start Game Config")]
     public float startStamina = 100f;
@@ -27,9 +32,10 @@ public class GamePlaying : MonoBehaviour
     public float timerNextRound = 30f;
     public float forceToPush = 3f;
     public float horizontalCoef = 1.5f;
-    public float maxWeightGame = 50f;
+    public float maxWeightGame = 100f;
     public float startWorkLoad = 0f;
     public float maxTimerRecovery = 1f;
+    public float weightGrabCoef = 2f;
 
     [Header("Rounds Config")] 
     public float[] rounds;
@@ -121,6 +127,8 @@ public class GamePlaying : MonoBehaviour
         var x = UnityEngine.Random.Range(-forceToPush, forceToPush);
         var y = UnityEngine.Random.Range(-forceToPush / horizontalCoef, forceToPush / horizontalCoef);
         item.GetComponent<Item>().AddForce(new Vector2(x, y));
+        
+        item.GetComponent<Item>().SetGamePlaying(this);
 
         _girlSearchingAndThrow = false;
     }
@@ -138,6 +146,9 @@ public class GamePlaying : MonoBehaviour
     {
         _workload += weight;
         
+        weightBar.fillAmount = _workload;
+        weightText.text = _workload.ToString();
+        
         if (_workload >= maxWeightGame)
             GameController.Instance.GameLose();
     }
@@ -145,14 +156,41 @@ public class GamePlaying : MonoBehaviour
     public void SubtractWeight(float weight)
     {
         _workload -= weight;
+        
+        weightBar.fillAmount = _workload;
+        weightText.text = _workload.ToString();
 
         if (_workload < 0)
+        {
             _workload = 0f;
+        }
+    }
+    
+    public void AddStamina(float stamina)
+    {
+        _stamina += stamina;
+        
+        staminaBar.fillAmount = _stamina;
+        staminaText.text = _stamina.ToString();
+
+        if (_stamina >= startStamina)
+            _stamina = startStamina;
+    }
+    
+    public void SubtractStamina(float stamina)
+    {
+        _stamina -= stamina;
+        
+        staminaBar.fillAmount = _stamina;
+        staminaText.text = _stamina.ToString();
+
+        if (_stamina < 0)
+            GameController.Instance.GameLose();
     }
 
     private void RecoveryStamina()
     {
-        _stamina++;
+        AddStamina(1f);
     }
 
     public void AddHeap(float score)

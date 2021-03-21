@@ -10,6 +10,7 @@ public class Item : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rigidbody2D;
     private BoxCollider2D _boxCollider2D;
+    private GamePlaying _gamePlaying;
     
     public SpriteAtlas spriteAtlas;
     public ItemType itemType;
@@ -22,6 +23,7 @@ public class Item : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _boxCollider2D = GetComponent<BoxCollider2D>();
         _spriteRenderer.sprite = spriteAtlas.GetSprite($"{itemType.ToString()}_01");
+        _gamePlaying = null;
     }
 
     public void AddForce(Vector2 forceVector)
@@ -50,6 +52,9 @@ public class Item : MonoBehaviour
         _rigidbody2D.velocity = Vector2.zero;
         _rigidbody2D.bodyType = RigidbodyType2D.Static;
         _boxCollider2D.isTrigger = true;
+        
+        if (_gamePlaying)
+            _gamePlaying.AddWeight(weight);
     }
 
     private void Caught(GameObject parent)
@@ -60,6 +65,9 @@ public class Item : MonoBehaviour
         transform.parent = parent.transform;
 
         parent.GetComponent<PlayerController>().Caught(gameObject);
+        
+        if (_gamePlaying)
+            _gamePlaying.SubtractStamina(weight);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -69,5 +77,10 @@ public class Item : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
             Caught(other.gameObject);
+    }
+
+    public void SetGamePlaying(GamePlaying gamePlaying)
+    {
+        _gamePlaying = gamePlaying;
     }
 }
