@@ -30,6 +30,15 @@ public class GameController : MonoBehaviour
         Initialize();
     }
 
+    // Update is called once per frame
+    private void Update()
+    {
+        var quit = Input.GetKey(KeyCode.Escape);
+        
+        if (quit)
+            Application.Quit();
+    }
+
     private void Initialize()
     {
         switch (startState)
@@ -81,12 +90,6 @@ public class GameController : MonoBehaviour
     }
 
     public void GameWin()
-    {
-        
-    }
-
-    // Update is called once per frame
-    private void Update()
     {
         
     }

@@ -15,7 +15,6 @@ public class Item : MonoBehaviour
     public ItemType itemType;
     public float points = 0f;
 
-    // Start is called before the first frame update
     private void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -32,6 +31,8 @@ public class Item : MonoBehaviour
     public void SetGrabbed(Transform parent)
     {
         transform.parent = parent;
+        Destroy(_rigidbody2D);
+        Destroy(_boxCollider2D);
     }
 
     private void Feature()
@@ -50,15 +51,22 @@ public class Item : MonoBehaviour
         _boxCollider2D.isTrigger = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Caught(GameObject parent)
     {
-        
+        Destroy(_rigidbody2D);
+        Destroy(_boxCollider2D);
+
+        transform.parent = parent.transform;
+
+        parent.GetComponent<PlayerController>().Caught(gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Floor"))
             Crash();
+
+        if (other.gameObject.CompareTag("Player"))
+            Caught(other.gameObject);
     }
 }

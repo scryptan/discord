@@ -43,7 +43,7 @@ public class HeapController : MonoBehaviour
 
         var _newValue = _1Percent * _value;
         
-        heapMain.transform.Translate(new Vector3(0f, _newValue, 0f));
+        heapMain.transform.position = new Vector3(0f, limitY.x + _newValue, 0f);
 
         if (_value >= 100f)
         {

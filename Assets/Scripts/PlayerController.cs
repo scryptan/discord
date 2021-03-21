@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -15,7 +16,7 @@ public class PlayerController : MonoBehaviour
     public GamePlaying gamePlaying;
     
     [Header("WalkSpeed")]
-    public float walkSpeed = 3f;
+    public float walkSpeed = 4f;
     
     [Header("Limits")]
     public Vector2 limitX = new Vector2(-3.15f, 3.35f);
@@ -39,12 +40,25 @@ public class PlayerController : MonoBehaviour
     {
         if (_directional != PlayerDirectional.Center)
         {
-            if (_playerState == PlayerState.Free)
-                _animator.Play("Guy_run");
-            else
-                _animator.Play("Guy_run");  
+            switch(_playerState)
+            {
+                case PlayerState.Free:
+                    _animator.Play("Guy_run");
+                    break;
+                
+                case PlayerState.Grabbed:
+                    _animator.Play("Guy_run_grabbed");
+                    break;
+                
+                case PlayerState.Head:
+                    _animator.Play("Guy_run_head");
+                    break;
+                
+                case PlayerState.GrabbedAndHead:
+                    _animator.Play("Guy_run_head_grabbed");
+                    break;
+            }
         }
-
         
         if (directional.magnitude > 0)
         {
@@ -81,7 +95,11 @@ public class PlayerController : MonoBehaviour
     public void PlayerIdle()
     {
         _directional = PlayerDirectional.Center;
-        _animator.Play("Guy_idle");
+        
+        if (_playerState == PlayerState.Head)
+            _animator.Play("Guy_idle_head");
+        else
+            _animator.Play("Guy_idle");
     }
 
     public void PlayerSpawn(Vector3 position)
@@ -102,15 +120,30 @@ public class PlayerController : MonoBehaviour
             Destroy(_grabbedItem);
             _grabbedItem = null;
         }
-
+        
         foreach (var item in _headItems)
         {
             score += item.GetComponent<Item>().points;
             Destroy(item);
         }
+        
+        _headItems.Clear();
 
         gamePlaying.AddHeap(score);
+
+        _playerState = PlayerState.Free;
+    }
+
+    public void Caught(GameObject item)
+    {
+        if (_playerState == PlayerState.Grabbed)
+            _playerState = PlayerState.GrabbedAndHead;
+        else
+            _playerState = PlayerState.Head;
         
+        
+        
+        _headItems.Add(item);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -122,6 +155,11 @@ public class PlayerController : MonoBehaviour
                 _playerState = PlayerState.Grabbed;
                 _grabbedItem = other.gameObject;
                 other.gameObject.GetComponent<Item>().SetGrabbed(transform);
+
+                if (_playerState == PlayerState.Head)
+                    _playerState = PlayerState.GrabbedAndHead;
+                else
+                    _playerState = PlayerState.Grabbed;
             }
         }
         
