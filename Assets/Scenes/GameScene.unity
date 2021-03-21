@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fdec02e875433e4e9d7a5abbc0d788e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHeap: 99
+  startHeap: 0
   limitY: {x: -8, y: -0.86}
   heapMain: {fileID: 591053114}
 --- !u!1 &1084973649
