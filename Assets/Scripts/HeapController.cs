@@ -30,6 +30,11 @@ public class HeapController : MonoBehaviour
         
     }
 
+    public void AddHeap(float addValue)
+    {
+        SetHeap(_value + addValue);
+    }
+
     public void SetHeap(float newValue)
     {
         _value = newValue;
@@ -39,5 +44,10 @@ public class HeapController : MonoBehaviour
         var _newValue = _1Percent * _value;
         
         heapMain.transform.Translate(new Vector3(0f, _newValue, 0f));
+
+        if (_value >= 100f)
+        {
+            
+        }
     }
 }

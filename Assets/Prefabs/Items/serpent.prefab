@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteAtlas: {fileID: 4343727234628468602, guid: 08b5358c060324f44a8d9407ea5a9e8e, type: 2}
   itemType: 12
+  points: 0.2
 --- !u!61 &8103101385882123772
 BoxCollider2D:
   m_ObjectHideFlags: 0

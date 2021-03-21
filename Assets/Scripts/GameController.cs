@@ -80,6 +80,11 @@ public class GameController : MonoBehaviour
         gamePlaying.SetActive(false);
     }
 
+    public void GameWin()
+    {
+        
+    }
+
     // Update is called once per frame
     private void Update()
     {

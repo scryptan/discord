@@ -10,7 +10,7 @@ public class GamePlaying : MonoBehaviour
     private float _roundTimer = 0f;
 
     private float _roundMaxTimer = 2f;
-    private bool _girlSearching = false;
+    private bool _girlSearchingAndThrow = false;
 
     [Header("Game Objects")]
     public PlayerController guy;
@@ -25,6 +25,7 @@ public class GamePlaying : MonoBehaviour
     public uint startRound = 0;
     public float timerNextRound = 60f;
     public float forceToPush = 3f;
+    public float horizontalCoef = 1.5f;
 
     [Header("Rounds Config")] 
     public float[] rounds;
@@ -40,7 +41,7 @@ public class GamePlaying : MonoBehaviour
         _round = startRound;
         _timer = 0f;
         _roundTimer = 0f;
-        _girlSearching = false;
+        _girlSearchingAndThrow = false;
 
         if (rounds.Length > 0)
             _roundMaxTimer = rounds[0];
@@ -53,20 +54,18 @@ public class GamePlaying : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        _timer += Time.deltaTime;
         _roundTimer += Time.deltaTime;
 
-        if (_timer >= _roundMaxTimer - 0.3f && !_girlSearching)
+        if (!_girlSearchingAndThrow)
         {
-            _girlSearching = true;
-            girl.PlaySearch();
-        }
-        
-        if (_timer >= _roundMaxTimer)
-        {
-            _timer = 0f;
-            _girlSearching = false;
-            SpawnItem();
+            _timer += Time.deltaTime;
+            
+            if (_timer >= _roundMaxTimer)
+            {
+                _timer = 0f;
+                girl.PlaySearch();
+                _girlSearchingAndThrow = true;
+            }
         }
 
         if (_roundTimer >= timerNextRound)
@@ -99,15 +98,17 @@ public class GamePlaying : MonoBehaviour
         }
     }
 
-    private void SpawnItem()
+    public void SpawnItem()
     {
         var itemId = UnityEngine.Random.Range(0, items.Length);
         var item = Instantiate<GameObject>(items[itemId], transform);
         item.transform.position = girl.transform.position;
         
         var x = UnityEngine.Random.Range(-forceToPush, forceToPush);
-        var y = UnityEngine.Random.Range(-forceToPush / 3, forceToPush / 3);
+        var y = UnityEngine.Random.Range(-forceToPush / horizontalCoef, forceToPush / horizontalCoef);
         item.GetComponent<Item>().AddForce(new Vector2(x, y));
+
+        _girlSearchingAndThrow = false;
     }
     
     private void NextRound()
@@ -116,6 +117,12 @@ public class GamePlaying : MonoBehaviour
             return;
 
         _roundMaxTimer = rounds[++_round];
+        Debug.Log($"Next round [${_round}]!");
+    }
+
+    public void AddHeap(float score)
+    {
+        heap.AddHeap(score);
     }
 
 }

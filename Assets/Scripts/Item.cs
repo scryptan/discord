@@ -13,6 +13,7 @@ public class Item : MonoBehaviour
     
     public SpriteAtlas spriteAtlas;
     public ItemType itemType;
+    public float points = 0f;
 
     // Start is called before the first frame update
     private void Awake()
@@ -28,6 +29,11 @@ public class Item : MonoBehaviour
         _rigidbody2D.AddForce(forceVector, ForceMode2D.Impulse);
     }
 
+    public void SetGrabbed(Transform parent)
+    {
+        transform.parent = parent;
+    }
+
     private void Feature()
     {
         
@@ -35,10 +41,12 @@ public class Item : MonoBehaviour
 
     private void Crash()
     {
-        _spriteRenderer.sprite = spriteAtlas.GetSprite($"{itemType.ToString()}_02");
+        if (itemType != ItemType.vase)
+            _spriteRenderer.sprite = spriteAtlas.GetSprite($"{itemType.ToString()}_02");
+        
         Feature();
         _rigidbody2D.velocity = Vector2.zero;
-        _rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
+        _rigidbody2D.bodyType = RigidbodyType2D.Static;
         _boxCollider2D.isTrigger = true;
     }
 
