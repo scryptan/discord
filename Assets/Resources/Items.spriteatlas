@@ -49,6 +49,7 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 78a9f620ace9d414e80f9fb4a905637c, type: 3}
+  - {fileID: 21300000, guid: c6b64f605c1d8cb4783aded3bdeb4f2c, type: 3}
   - {fileID: 21300000, guid: f878d5a0cff58b8479cc43a76027e8b7, type: 3}
   - {fileID: 21300000, guid: 60e72601b5f4055408a54d915abf36c2, type: 3}
   - {fileID: 21300000, guid: 021eb291589c00e4e8e25f51b56440fa, type: 3}
@@ -63,6 +64,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e64ebbb4a44e2cf4899506d99098300b, type: 3}
   - {fileID: 21300000, guid: 153d9a35098c4ab4080eb946bef1eefb, type: 3}
   - {fileID: 21300000, guid: ba3e5855117e89a4fa1b1f5ef8a03e70, type: 3}
+  - {fileID: 21300000, guid: 3fc2086591aa6394db72cfa564e24daa, type: 3}
   - {fileID: 21300000, guid: 3b4f40d5962543745928e1ddd95d9005, type: 3}
   - {fileID: 21300000, guid: 4c702d56c30f92d4f926456d7303377d, type: 3}
   - {fileID: 21300000, guid: 9e148dd675376d9419344f9c2fad574a, type: 3}
@@ -79,6 +81,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: f43b786f27deabf4ca028f559ac14edd, type: 3}
   m_PackedSpriteNamesToIndex:
   - guitar_01
+  - ball_01
   - carpet_01
   - bag_02
   - chair_02
@@ -93,6 +96,7 @@ SpriteAtlas:
   - vase_02
   - serpent_02
   - pillow_02
+  - carpet_03
   - shawarma_02
   - guitar_02
   - vase_01
