@@ -4,16 +4,22 @@ using UnityEngine;
 public class GamePlaying : MonoBehaviour
 {
     private float _stamina = 100f;
+    private uint _round = 1;
+
+    private float _timer = 0f;
+    private float _roundTimer = 0f;
 
     [Header("Game Objects")]
     public PlayerController guy;
-    public GameObject girl;
+    public Girl girl;
     public HeapController heap;
-    
+
     [Header("Start Game Config")]
     public float startStamina = 100f;
     public float startHeap = 0f;
     public Vector3 startGuyPosition = new Vector3(0, -4, 0);
+    public uint startRound = 1;
+    public float timerNextRound = 60f;
 
     // Start is called before the first frame update
     void Awake()
@@ -23,13 +29,21 @@ public class GamePlaying : MonoBehaviour
     public void Initialize()
     {
         _stamina = startStamina;
+        _round = startRound;
+        _timer = 0f;
+        _roundTimer = 0f;
+        
         guy.PlayerSpawn(startGuyPosition);
+        girl.Initialize();
         heap.Initialize();
     }
 
     // Update is called once per frame
     private void Update()
     {
+        _timer += Time.deltaTime;
+        _roundTimer += Time.deltaTime;
+        
         KeyboardUpdate();
     }
 
@@ -53,4 +67,7 @@ public class GamePlaying : MonoBehaviour
             guy.PlayerIdle();
         }
     }
+    
+    
+
 }

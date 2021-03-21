@@ -35,10 +35,8 @@ public class HeapController : MonoBehaviour
         _value = newValue;
         var _100Percent = Math.Abs(limitY.x) - Math.Abs(limitY.y);
         var _1Percent = _100Percent / 100;
-        Debug.Log(_1Percent);
 
         var _newValue = _1Percent * _value;
-        Debug.Log(_newValue);
         
         heapMain.transform.Translate(new Vector3(0f, _newValue, 0f));
     }

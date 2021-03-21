@@ -8,9 +8,9 @@ public class GameController : MonoBehaviour
     private GameState _gameState;
     #endregion
     
-    
     #region public region
     public GameState startState = GameState.Intro;
+    public GameObject gameIntro;
     public GameObject gameDialog;
     public GameObject gamePlaying;
 
@@ -24,6 +24,8 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         _instance = this;
+
+        Application.targetFrameRate = 60;
         
         Initialize();
     }
@@ -32,6 +34,10 @@ public class GameController : MonoBehaviour
     {
         switch (startState)
         {
+            case GameState.Intro:
+                GameIntro();
+                break;
+            
             case GameState.Dialog:
                 GameDialog();
                 break;
@@ -51,6 +57,7 @@ public class GameController : MonoBehaviour
         
         gamePlaying.SetActive(true);
         gameDialog.SetActive(false);
+        gameIntro.SetActive(false);
         
         gamePlaying.GetComponent<GamePlaying>().Initialize();
     }
@@ -60,6 +67,16 @@ public class GameController : MonoBehaviour
         _gameState = GameState.Dialog;
 
         gameDialog.SetActive(true);
+        gameIntro.SetActive(false);
+        gamePlaying.SetActive(false);
+    }
+
+    public void GameIntro()
+    {
+        _gameState = GameState.Intro;
+
+        gameIntro.SetActive(true);
+        gameDialog.SetActive(false);
         gamePlaying.SetActive(false);
     }
 
@@ -73,8 +90,7 @@ public class GameController : MonoBehaviour
     public enum GameState
     {
         Intro = 0,
-        Menu = 1,
-        Dialog = 2,
-        Game = 3,
+        Dialog = 1,
+        Game = 2,
     }
 }
