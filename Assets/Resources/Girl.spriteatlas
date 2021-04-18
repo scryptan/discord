@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Girl
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 85b7c1ff6973f2745a3f327da3effd10, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 679d2b518acbcab48b8428e8c9429d40, type: 3}
+  - {fileID: 21300000, guid: a148c3a10d9b1c941a77af8b40ae35d5, type: 3}
+  - {fileID: 21300000, guid: 7c1e84d1358e7a344b99c39fabf1441b, type: 3}
+  - {fileID: 21300000, guid: f36b4a52b5c85684aa076180a71e9307, type: 3}
+  - {fileID: 21300000, guid: 999b1f145d2ff1747b78088f65fbd0fc, type: 3}
+  - {fileID: 21300000, guid: 9b90d19704999c241bb52bd3316007bf, type: 3}
+  - {fileID: 21300000, guid: 582e6f28184bd5142aa6acec1c01a52c, type: 3}
+  - {fileID: 21300000, guid: a1e8934887b558f46863a9a43abd4889, type: 3}
+  - {fileID: 21300000, guid: 0e3ad609948f0f54489b8fa68fe2c2ef, type: 3}
+  - {fileID: 21300000, guid: e7ed80b93f447f64999e83a5f6b7fe04, type: 3}
+  - {fileID: 21300000, guid: f2a41a8a45b5d194190d7649a348f42f, type: 3}
+  - {fileID: 21300000, guid: 1262b37b83bb0e64fa1a7b10e18525b5, type: 3}
+  - {fileID: 21300000, guid: 7d0e498bf2156d642b6b2b0025b1259c, type: 3}
+  - {fileID: 21300000, guid: 14b34dfbbbb0b9344bd4f05e6e2e183c, type: 3}
+  - {fileID: 21300000, guid: 3be78d0ced82b9d419aa2bf9bab7f857, type: 3}
+  - {fileID: 21300000, guid: a8ca063c0c2108d4faeea4ec55031e3c, type: 3}
+  - {fileID: 21300000, guid: 5f633aac0904f184da01685dd0c823bd, type: 3}
+  - {fileID: 21300000, guid: 0554d6cc006ff7a408db1c49f270be5e, type: 3}
+  - {fileID: 21300000, guid: 8856dc2d1bfbadb42b5c36b1b267464c, type: 3}
+  - {fileID: 21300000, guid: 24f2d33d26b962546b995cf7d000a5a9, type: 3}
+  - {fileID: 21300000, guid: fcff373dfb8425a41ae8793fe1086b43, type: 3}
+  - {fileID: 21300000, guid: e66ed78e6619bea42a17e02551d90520, type: 3}
+  - {fileID: 21300000, guid: ea5e802f623fe814b9e3e76bed2373fb, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Girl_rage_10
+  - Girl_throw_1
+  - Girl_rage_6
+  - Girl_rage_8
+  - Girl_idle_3
+  - Girl_idle_1
+  - Girl_searching_3
+  - Girl_throw_3
+  - Girl_rage_7
+  - Girl_throw_up_3
+  - Girl_throw_2
+  - Girl_throw_up_1
+  - Girl_rage_4
+  - Girl_throw_up_2
+  - Girl_throw_up_4
+  - Girl_rage_1
+  - Girl_rage_2
+  - Girl_rage_5
+  - Girl_searching_1
+  - Girl_rage_9
+  - Girl_rage_3
+  - Girl_searching_2
+  - Girl_idle_2
+  m_Tag: Girl
+  m_IsVariant: 0
