@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.U2D;
 
@@ -9,20 +8,24 @@ public class GameDialog : MonoBehaviour
 {
     [Header("Canvas Game Object")]
     public GameObject canvasDialog = null;
-
     public GameObject commonDialog = null;
     public GameObject failedDialog = null;
+
+    public TMP_Text headerText = null;
+    public GameObject[] buttons;
 
     [Header("Dialogs")] 
     public string startGuyText = "";
     public DialogCommon[] dialogCommon;
     public SpriteAtlas girlDialog = null;
+    public uint dialogPage = 0;
+    public DialogState dialogState = DialogState.Common;
     
     
     // Start is called before the first frame update
     private void Start()
     {
-        
+        RenderDialog(dialogState, dialogPage);
     }
     
     private void OnEnable()
@@ -35,10 +38,50 @@ public class GameDialog : MonoBehaviour
         if (!(canvasDialog is null)) canvasDialog?.SetActive(false);
     }
 
+    private void RenderDialog(DialogState dlgState, uint page)
+    {
+        dialogState = dlgState;
+        dialogPage = page;
+
+        var dlg = dialogCommon[page];
+
+        switch (dlgState)
+        {
+            case DialogState.Common:
+                headerText.text = dlg.textGirl;
+
+                var i = 0;
+                foreach (var button in buttons)
+                {
+                    button.SetActive(true);
+                    button.GetComponent<ButtonDialog>().SetTextButton(dlg.textGuy[i++].text);
+                }
+                break;
+            
+            case DialogState.Failed:
+                break;
+            
+            default:
+                throw new ArgumentOutOfRangeException(nameof(dlgState), dlgState, null);
+        }
+        
+    }
+
+    public void PressedButtonDialog(TypeButton typeButton)
+    {
+        
+    }
+
     // Update is called once per frame
     private void Update()
     {
         
+    }
+
+    public enum DialogState
+    {
+        Common = 0,
+        Failed = 1,
     }
 
     [Serializable]
@@ -61,14 +104,6 @@ public class GameDialog : MonoBehaviour
         public string failText = "";
     }
 
-    public enum GirlEmotion
-    {
-        common,
-        questionable,
-        hey,
-        angry,
-        wrong,
-        cute,
-    }
+
     
 }

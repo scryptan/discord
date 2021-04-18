@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -7,9 +8,13 @@ public class ButtonDialog : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     private Image _imageRender = null;
     private bool _mouseHover = false;
 
+    public TypeButton typeButton = TypeButton.One;
+    
     public Sprite spriteCommon = null;
     public Sprite spriteHover = null;
     public Sprite spritePressed = null;
+
+    public TMP_Text buttonText;
 
     private void Awake()
     {
@@ -31,7 +36,12 @@ public class ButtonDialog : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     private void Process()
     {
         _imageRender.sprite = _mouseHover ? spriteHover : spriteCommon;
-        
+        GameController.Instance.gameDialog.GetComponent<GameDialog>().PressedButtonDialog(typeButton);
+    }
+
+    public void SetTextButton(string text)
+    {
+        buttonText.text = text;
     }
     
     public void OnPointerEnter(PointerEventData eventData)
