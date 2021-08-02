@@ -2,6 +2,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.U2D;
+using UnityEngine.UI;
 
 [ExecuteAlways]
 public class GameDialog : MonoBehaviour
@@ -10,9 +11,13 @@ public class GameDialog : MonoBehaviour
     public GameObject canvasDialog = null;
     public GameObject commonDialog = null;
     public GameObject failedDialog = null;
-
+    
     public TMP_Text headerText = null;
     public GameObject[] buttons;
+
+    [Header("Girl")] 
+    public GameObject girl = null;
+    public Sprite[] emotions;
 
     [Header("Dialogs")] 
     public string startGuyText = "";
@@ -30,12 +35,14 @@ public class GameDialog : MonoBehaviour
     
     private void OnEnable()
     {
-        if (!(canvasDialog is null)) canvasDialog?.SetActive(true);
+        if (canvasDialog != null)
+            canvasDialog.SetActive(true);
     }
 
     private void OnDisable()
     {
-        if (!(canvasDialog is null)) canvasDialog?.SetActive(false);
+        if (canvasDialog != null)
+            canvasDialog.SetActive(false);
     }
 
     private void RenderDialog(DialogState dlgState, uint page)
@@ -44,6 +51,9 @@ public class GameDialog : MonoBehaviour
         dialogPage = page;
 
         var dlg = dialogCommon[page];
+        var girlImage = girl.GetComponent<Image>();
+
+        girlImage.sprite = emotions[Convert.ToInt32(dlg.girlEmotion)];
 
         switch (dlgState)
         {
@@ -104,6 +114,4 @@ public class GameDialog : MonoBehaviour
         public string failText = "";
     }
 
-
-    
 }

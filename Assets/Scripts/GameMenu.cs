@@ -16,12 +16,14 @@ public class GameMenu : MonoBehaviour
 
     private void OnEnable()
     {
-        canvasMenu?.SetActive(true);
+        if (canvasMenu != null)
+            canvasMenu.SetActive(true);
     }
 
     private void OnDisable()
     {
-        canvasMenu?.SetActive(false);
+        if (canvasMenu != null)
+            canvasMenu.SetActive(false);
     }
 
     public void NewGame()
