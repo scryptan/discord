@@ -15,21 +15,29 @@ public class GameDialog : MonoBehaviour
     public TMP_Text headerText = null;
     public GameObject[] buttons;
 
+    public string defaultNextButtonText = "Next";
+
     [Header("Girl")] 
     public GameObject girl = null;
     public Sprite[] emotions;
 
     [Header("Dialogs")] 
     public string startGuyText = "";
+    public string totalFailedText = "";
+    public GirlEmotion totalFailedEmotion = GirlEmotion.angry;
+    
     public DialogCommon[] dialogCommon;
     public SpriteAtlas girlDialog = null;
     public uint dialogPage = 0;
-    public DialogState dialogState = DialogState.Common;
+    public DialogState dialogState = DialogState.StartPhrase;
+
+    private bool _dialogFailed = false;
     
     
     // Start is called before the first frame update
     private void Start()
     {
+        _dialogFailed = false;
         RenderDialog(dialogState, dialogPage);
     }
     
@@ -45,7 +53,7 @@ public class GameDialog : MonoBehaviour
             canvasDialog.SetActive(false);
     }
 
-    private void RenderDialog(DialogState dlgState, uint page)
+    private void RenderDialog(DialogState dlgState, uint page, TypeButton typeButton = TypeButton.One)
     {
         dialogState = dlgState;
         dialogPage = page;
@@ -53,14 +61,13 @@ public class GameDialog : MonoBehaviour
         var dlg = dialogCommon[page];
         var girlImage = girl.GetComponent<Image>();
 
-        girlImage.sprite = emotions[Convert.ToInt32(dlg.girlEmotion)];
-
+        var i = 0;
         switch (dlgState)
         {
             case DialogState.Common:
                 headerText.text = dlg.textGirl;
-
-                var i = 0;
+                girlImage.sprite = emotions[Convert.ToInt32(dlg.girlEmotion)];
+                
                 foreach (var button in buttons)
                 {
                     button.SetActive(true);
@@ -69,6 +76,47 @@ public class GameDialog : MonoBehaviour
                 break;
             
             case DialogState.Failed:
+                headerText.text = totalFailedText;
+                girlImage.sprite = emotions[Convert.ToInt32(totalFailedEmotion)];
+                
+                buttons[0].SetActive(true);
+                buttons[0].GetComponent<ButtonDialog>().SetTextButton(defaultNextButtonText);
+                
+                for (i = 1; i < buttons.Length; ++i)
+                {
+                    buttons[i].SetActive(false);
+                }
+                break;
+
+            case DialogState.StartPhrase:
+                headerText.text = startGuyText;
+                girlImage.sprite = emotions[Convert.ToInt32(GirlEmotion.hey)];
+                
+                buttons[0].SetActive(true);
+                buttons[0].GetComponent<ButtonDialog>().SetTextButton(defaultNextButtonText);
+                
+                for (i = 1; i < buttons.Length; ++i)
+                {
+                    buttons[i].SetActive(false);
+                }
+                break;
+            
+            case DialogState.GirlAnswer:
+                var textGuy = dlg.textGuy[Convert.ToInt32(typeButton) - 1];
+                girlImage.sprite = emotions[Convert.ToInt32(textGuy.girtAnswerEmotion)];
+                
+                // Если диалог провален, после ответа девушки будет totalFailedText
+                _dialogFailed = textGuy.badText;
+                
+                headerText.text = textGuy.girlAnswer;
+                
+                buttons[0].SetActive(true);
+                buttons[0].GetComponent<ButtonDialog>().SetTextButton(defaultNextButtonText);
+                
+                for (i = 1; i < buttons.Length; ++i)
+                {
+                    buttons[i].SetActive(false);
+                }
                 break;
             
             default:
@@ -79,7 +127,30 @@ public class GameDialog : MonoBehaviour
 
     public void PressedButtonDialog(TypeButton typeButton)
     {
-        
+        switch (dialogState)
+        {
+            case DialogState.StartPhrase:
+                RenderDialog(DialogState.Common, 0);
+                break;
+            
+            case DialogState.Common:
+                RenderDialog(DialogState.GirlAnswer, dialogPage, typeButton);
+                break;
+            
+            case DialogState.GirlAnswer:
+                if (_dialogFailed)
+                    RenderDialog(DialogState.Failed, dialogPage);
+                else
+                    RenderDialog(DialogState.Common, dialogPage + 1);
+                break;
+            
+            case DialogState.Failed:
+                GameController.Instance.GameStart();
+                break;
+            
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
     }
 
     // Update is called once per frame
@@ -90,8 +161,10 @@ public class GameDialog : MonoBehaviour
 
     public enum DialogState
     {
-        Common = 0,
-        Failed = 1,
+        StartPhrase = 0,
+        Common = 1,
+        GirlAnswer = 2,
+        Failed = 3,
     }
 
     [Serializable]
@@ -111,7 +184,9 @@ public class GameDialog : MonoBehaviour
         public string text = "";
         public bool badText = false;
 
-        public string failText = "";
+        [Multiline(2)]
+        public string girlAnswer = "";
+        public GirlEmotion girtAnswerEmotion;
     }
 
 }
