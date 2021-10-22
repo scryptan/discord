@@ -28,6 +28,7 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 1
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 29b4fee4f056e8b4fabefaeee7083ad8, type: 3}
@@ -45,5 +46,6 @@ SpriteAtlas:
   - new_game
   - exit
   - settings
+  m_RenderDataMap: {}
   m_Tag: MenuButtons
   m_IsVariant: 0

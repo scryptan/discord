@@ -1,34 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ButtonExit : MonoBehaviour,  IPointerEnterHandler, IPointerExitHandler
+public class ButtonExit : MonoBehaviour, IPointerClickHandler
 {
-    private bool _pointerEntered = false;
-    
-    // Start is called before the first frame update
-    private void Start()
+    public void OnPointerClick(PointerEventData eventData)
     {
-        _pointerEntered = false;
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
-
-    // Update is called once per frame
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0) && _pointerEntered)
-        {
-            Application.Quit();
-        }
-
-    }
-    
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        _pointerEntered = true;
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        _pointerEntered = false;
-    }
-
 }

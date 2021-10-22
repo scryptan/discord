@@ -28,6 +28,7 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 1
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 85b7c1ff6973f2745a3f327da3effd10, type: 3}
@@ -83,5 +84,6 @@ SpriteAtlas:
   - Girl_rage_3
   - Girl_searching_2
   - Girl_idle_2
+  m_RenderDataMap: {}
   m_Tag: Girl
   m_IsVariant: 0

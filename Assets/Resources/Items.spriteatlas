@@ -40,6 +40,7 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 1
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: b232eb5cde7a78f43b022095d0e897a4, type: 3}
@@ -111,5 +112,6 @@ SpriteAtlas:
   - energy_01
   - box_02
   - robot_01
+  m_RenderDataMap: {}
   m_Tag: Items
   m_IsVariant: 0

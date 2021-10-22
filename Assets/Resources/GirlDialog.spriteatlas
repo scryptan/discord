@@ -40,6 +40,7 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: d8aaa0e38ae142747be7aa1a0921a8e9, type: 3}
@@ -61,5 +62,6 @@ SpriteAtlas:
   - em_char_04
   - em_char_02
   - em_char_01
+  m_RenderDataMap: {}
   m_Tag: GirlDialog
   m_IsVariant: 0
