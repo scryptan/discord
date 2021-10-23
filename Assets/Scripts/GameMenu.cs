@@ -1,26 +1,29 @@
 ﻿using UnityEngine;
 
-[ExecuteAlways]
-public class GameMenu : MonoBehaviour
+namespace ThinIce
 {
-    public GameObject canvasMenu = null;
-
-    // Start is called before the first frame update
-
-    private void OnEnable()
+    [ExecuteAlways]
+    public class GameMenu : MonoBehaviour
     {
-        if (canvasMenu != null)
-            canvasMenu.SetActive(true);
-    }
+        public GameObject canvasMenu = null;
 
-    private void OnDisable()
-    {
-        if (canvasMenu != null)
-            canvasMenu.SetActive(false);
-    }
+        // Start is called before the first frame update
 
-    public void NewGame()
-    {
-        GameController.Instance.GameDialog();
+        private void OnEnable()
+        {
+            if (canvasMenu != null)
+                canvasMenu.SetActive(true);
+        }
+
+        private void OnDisable()
+        {
+            if (canvasMenu != null)
+                canvasMenu.SetActive(false);
+        }
+
+        public void NewGame()
+        {
+            GameController.Instance.GameDialog();
+        }
     }
 }

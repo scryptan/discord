@@ -3,56 +3,64 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ButtonDialog : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+namespace ThinIce
 {
-    private Image _imageRender = null;
-    private bool _mouseHover = false;
-
-    public TypeButton typeButton = TypeButton.One;
-    
-    public Sprite spriteCommon = null;
-    public Sprite spriteHover = null;
-    public Sprite spritePressed = null;
-
-    public TMP_Text buttonText;
-
-    private void Awake()
+    public class ButtonDialog : MonoBehaviour, IPointerClickHandler
     {
-        _imageRender = GetComponent<Image>();
-        _mouseHover = false;
-    }
+        private Image _imageRender = null;
 
-    private void Update()
-    {
-        if (!_mouseHover) return;
-        
-        if (Input.GetMouseButton(0))
-            _imageRender.sprite = spritePressed;
-            
-        else if (Input.GetMouseButtonUp(0))
-            Process();
-    }
-    
-    private void Process()
-    {
-        _imageRender.sprite = _mouseHover ? spriteHover : spriteCommon;
-        GameController.Instance.gameDialog.GetComponent<GameDialog>().PressedButtonDialog(typeButton);
-    }
+        public TypeButton typeButton = TypeButton.One;
 
-    public void SetTextButton(string text)
-    {
-        buttonText.text = text;
-    }
-    
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        _imageRender.sprite = spriteHover;
-        _mouseHover = true;
-    }
+        public Sprite spriteCommon = null;
+        public Sprite spriteGood = null;
+        public Sprite spriteBad = null;
 
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        _imageRender.sprite = spriteCommon;
-        _mouseHover = false;
+        public TMP_Text buttonText;
+
+        private TextGuy _currentTextGuy;
+        private GameDialog _cachedGameDialog;
+
+        private void OnEnable()
+        {
+            _imageRender = GetComponent<Image>();
+        }
+
+        public void SetTextGuy(TextGuy textGuy)
+        {
+            _cachedGameDialog ??= GameController.Instance.gameDialog.GetComponent<GameDialog>();
+            _currentTextGuy = textGuy;
+            SetTextButton(textGuy.text);
+            SetSprite();
+        }
+
+        public void SetTextButton(string text)
+        {
+            buttonText.text = text;
+            SetSprite();
+        }
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            _cachedGameDialog ??= GameController.Instance.gameDialog.GetComponent<GameDialog>();
+            if (_currentTextGuy != null && buttonText.text != _cachedGameDialog.defaultNextButtonText)
+                AnsweredTextGuys.Answer(_currentTextGuy);
+
+            _currentTextGuy = null;
+
+            _cachedGameDialog.PressedButtonDialog(typeButton);
+        }
+
+        private void SetSprite()
+        {
+            if (_imageRender != null)
+                _imageRender.sprite = spriteCommon;
+            if (GameController.Instance.seePreviousAnswers &&
+                _currentTextGuy != null &&
+                _currentTextGuy.text != _cachedGameDialog.defaultNextButtonText &&
+                AnsweredTextGuys.IsAnswered(_currentTextGuy))
+            {
+                _imageRender.sprite = _currentTextGuy.badText ? spriteBad : spriteGood;
+            }
+        }
     }
 }

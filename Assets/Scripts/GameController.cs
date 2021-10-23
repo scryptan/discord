@@ -1,164 +1,172 @@
 ﻿using System;
 using UnityEngine;
 
-public class GameController : MonoBehaviour
+namespace ThinIce
 {
-    #region private region
-
-    private static GameController _instance = null;
-    private GameState _gameState;
-
-    #endregion
-
-    #region public region
-
-    public GameState startState = GameState.Intro;
-    public GameObject gameIntro = null;
-    public GameObject gameMenu = null;
-    public GameObject gameDialog = null;
-    public GameObject gamePlaying = null;
-    public GameObject gameWin = null;
-    public GameObject gameLose = null;
-
-    public static GameController Instance => _instance;
-
-    #endregion
-
-    // Start is called before the first frame update
-    private void Start()
+    public class GameController : MonoBehaviour
     {
-        _instance = this;
+        #region private region
 
-        Application.targetFrameRate = 60;
+        private static GameController _instance = null;
+        private GameState _gameState;
 
-        Initialize();
-    }
+        #endregion
 
-    // Update is called once per frame
-    private void Update()
-    {
-        var quit = Input.GetKey(KeyCode.Escape);
+        #region public region
 
-        if (quit)
-            Application.Quit();
-    }
+        public GameState startState = GameState.Intro;
+        public GameObject gameIntro = null;
+        public GameObject gameMenu = null;
+        public GameObject gameDialog = null;
+        public GameObject gamePlaying = null;
+        public GameObject gameWin = null;
+        public GameObject gameLose = null;
 
-    private void Initialize()
-    {
-        switch (startState)
+        public bool seePreviousAnswers = false;
+
+        public static GameController Instance => _instance;
+
+        #endregion
+
+        // Start is called before the first frame update
+        private void Awake()
         {
-            case GameState.Intro:
-                GameIntro();
-                break;
-
-            case GameState.Menu:
-                GameMenu();
-                break;
-
-            case GameState.Dialog:
-                GameDialog();
-                break;
-
-            case GameState.Game:
-                GameStart();
-                break;
-
-            case GameState.Win:
-                break;
-            case GameState.Lose:
-                break;
-
-            default:
-                throw new Exception($"Undefined GameState on Initialize GameController [{startState}]");
+            _instance = this;
         }
-    }
 
-    #region Game States
+        private void Start()
+        {
+            Application.targetFrameRate = 60;
 
-    public void GameIntro()
-    {
-        _gameState = GameState.Intro;
+            Initialize();
+        }
 
-        gameIntro.SetActive(true);
-        gameMenu.SetActive(false);
-        gameDialog.SetActive(false);
-        gamePlaying.SetActive(false);
-        gameWin.SetActive(false);
-        gameLose.SetActive(false);
-    }
+        // Update is called once per frame
+        private void Update()
+        {
+            var quit = Input.GetKey(KeyCode.Escape);
 
-    public void GameMenu()
-    {
-        _gameState = GameState.Menu;
+            if (quit)
+                Application.Quit();
+        }
 
-        gameIntro.SetActive(false);
-        gameMenu.SetActive(true);
-        gameDialog.SetActive(false);
-        gamePlaying.SetActive(false);
-        gameWin.SetActive(false);
-        gameLose.SetActive(false);
-    }
+        private void Initialize()
+        {
+            switch (startState)
+            {
+                case GameState.Intro:
+                    GameIntro();
+                    break;
 
-    public void GameDialog()
-    {
-        _gameState = GameState.Dialog;
+                case GameState.Menu:
+                    GameMenu();
+                    break;
 
-        gameIntro.SetActive(false);
-        gameMenu.SetActive(false);
-        gameDialog.SetActive(true);
-        gamePlaying.SetActive(false);
-        gameWin.SetActive(false);
-        gameLose.SetActive(false);
-    }
+                case GameState.Dialog:
+                    GameDialog();
+                    break;
 
-    public void GameStart()
-    {
-        _gameState = GameState.Game;
+                case GameState.Game:
+                    GameStart();
+                    break;
 
-        gameIntro.SetActive(false);
-        gameMenu.SetActive(false);
-        gameDialog.SetActive(false);
-        gamePlaying.SetActive(true);
-        gameWin.SetActive(false);
-        gameLose.SetActive(false);
+                case GameState.Win:
+                    break;
+                case GameState.Lose:
+                    break;
 
-        gamePlaying.GetComponent<GamePlaying>().Initialize();
-    }
+                default:
+                    throw new Exception($"Undefined GameState on Initialize GameController [{startState}]");
+            }
+        }
 
-    public void GameWin()
-    {
-        _gameState = GameState.Win;
+        #region Game States
 
-        gameIntro.SetActive(false);
-        gameMenu.SetActive(false);
-        gameDialog.SetActive(false);
-        gamePlaying.SetActive(false);
-        gameWin.SetActive(true);
-        gameLose.SetActive(false);
-    }
+        public void GameIntro()
+        {
+            _gameState = GameState.Intro;
 
-    public void GameLose()
-    {
-        _gameState = GameState.Lose;
+            gameIntro.SetActive(true);
+            gameMenu.SetActive(false);
+            gameDialog.SetActive(false);
+            gamePlaying.SetActive(false);
+            gameWin.SetActive(false);
+            gameLose.SetActive(false);
+        }
 
-        gameIntro.SetActive(false);
-        gameMenu.SetActive(false);
-        gameDialog.SetActive(false);
-        gamePlaying.SetActive(false);
-        gameWin.SetActive(false);
-        gameLose.SetActive(true);
-    }
+        public void GameMenu()
+        {
+            _gameState = GameState.Menu;
 
-    #endregion
+            gameIntro.SetActive(false);
+            gameMenu.SetActive(true);
+            gameDialog.SetActive(false);
+            gamePlaying.SetActive(false);
+            gameWin.SetActive(false);
+            gameLose.SetActive(false);
+        }
 
-    [Serializable]
-    public enum GameState
-    {
-        Intro = 0,
-        Menu = 1,
-        Dialog = 2,
-        Game = 3,
-        Win = 4,
-        Lose = 5,
+        public void GameDialog()
+        {
+            _gameState = GameState.Dialog;
+
+            gameIntro.SetActive(false);
+            gameMenu.SetActive(false);
+            gameDialog.SetActive(true);
+            gamePlaying.SetActive(false);
+            gameWin.SetActive(false);
+            gameLose.SetActive(false);
+        }
+
+        public void GameStart()
+        {
+            _gameState = GameState.Game;
+
+            gameIntro.SetActive(false);
+            gameMenu.SetActive(false);
+            gameDialog.SetActive(false);
+            gamePlaying.SetActive(true);
+            gameWin.SetActive(false);
+            gameLose.SetActive(false);
+
+            gamePlaying.GetComponent<GamePlaying>().Initialize();
+        }
+
+        public void GameWin()
+        {
+            _gameState = GameState.Win;
+
+            gameIntro.SetActive(false);
+            gameMenu.SetActive(false);
+            gameDialog.SetActive(false);
+            gamePlaying.SetActive(false);
+            gameWin.SetActive(true);
+            gameLose.SetActive(false);
+        }
+
+        public void GameLose()
+        {
+            _gameState = GameState.Lose;
+
+            gameIntro.SetActive(false);
+            gameMenu.SetActive(false);
+            gameDialog.SetActive(false);
+            gamePlaying.SetActive(false);
+            gameWin.SetActive(false);
+            gameLose.SetActive(true);
+        }
+
+        #endregion
+
+        [Serializable]
+        public enum GameState
+        {
+            Intro = 0,
+            Menu = 1,
+            Dialog = 2,
+            Game = 3,
+            Win = 4,
+            Lose = 5,
+        }
     }
 }
