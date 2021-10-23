@@ -4,11 +4,14 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     #region private region
+
     private static GameController _instance = null;
     private GameState _gameState;
+
     #endregion
-    
+
     #region public region
+
     public GameState startState = GameState.Intro;
     public GameObject gameIntro = null;
     public GameObject gameMenu = null;
@@ -17,19 +20,17 @@ public class GameController : MonoBehaviour
     public GameObject gameWin = null;
     public GameObject gameLose = null;
 
-    public static GameController Instance
-    {
-        get => _instance;
-    }
+    public static GameController Instance => _instance;
+
     #endregion
-    
+
     // Start is called before the first frame update
     private void Start()
     {
         _instance = this;
 
         Application.targetFrameRate = 60;
-        
+
         Initialize();
     }
 
@@ -37,7 +38,7 @@ public class GameController : MonoBehaviour
     private void Update()
     {
         var quit = Input.GetKey(KeyCode.Escape);
-        
+
         if (quit)
             Application.Quit();
     }
@@ -49,15 +50,15 @@ public class GameController : MonoBehaviour
             case GameState.Intro:
                 GameIntro();
                 break;
-            
+
             case GameState.Menu:
                 GameMenu();
                 break;
-            
+
             case GameState.Dialog:
                 GameDialog();
                 break;
-            
+
             case GameState.Game:
                 GameStart();
                 break;
@@ -66,13 +67,14 @@ public class GameController : MonoBehaviour
                 break;
             case GameState.Lose:
                 break;
-            
+
             default:
                 throw new Exception($"Undefined GameState on Initialize GameController [{startState}]");
         }
     }
-    
+
     #region Game States
+
     public void GameIntro()
     {
         _gameState = GameState.Intro;
@@ -84,11 +86,11 @@ public class GameController : MonoBehaviour
         gameWin.SetActive(false);
         gameLose.SetActive(false);
     }
-    
+
     public void GameMenu()
     {
         _gameState = GameState.Menu;
-        
+
         gameIntro.SetActive(false);
         gameMenu.SetActive(true);
         gameDialog.SetActive(false);
@@ -96,7 +98,7 @@ public class GameController : MonoBehaviour
         gameWin.SetActive(false);
         gameLose.SetActive(false);
     }
-    
+
     public void GameDialog()
     {
         _gameState = GameState.Dialog;
@@ -112,21 +114,21 @@ public class GameController : MonoBehaviour
     public void GameStart()
     {
         _gameState = GameState.Game;
-        
+
         gameIntro.SetActive(false);
         gameMenu.SetActive(false);
         gameDialog.SetActive(false);
         gamePlaying.SetActive(true);
         gameWin.SetActive(false);
         gameLose.SetActive(false);
-        
+
         gamePlaying.GetComponent<GamePlaying>().Initialize();
     }
 
     public void GameWin()
     {
         _gameState = GameState.Win;
-            
+
         gameIntro.SetActive(false);
         gameMenu.SetActive(false);
         gameDialog.SetActive(false);
@@ -138,7 +140,7 @@ public class GameController : MonoBehaviour
     public void GameLose()
     {
         _gameState = GameState.Lose;
-        
+
         gameIntro.SetActive(false);
         gameMenu.SetActive(false);
         gameDialog.SetActive(false);
@@ -146,6 +148,7 @@ public class GameController : MonoBehaviour
         gameWin.SetActive(false);
         gameLose.SetActive(true);
     }
+
     #endregion
 
     [Serializable]

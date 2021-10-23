@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: 20920e91903be7e4385a29001bb67be0
+guid: 71fd8a5f9ab5b6a4b9b19c7e3a27ae31
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 6377209240307666098
-    second: em_char_03_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -46,11 +43,11 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 303, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 101, y: 66, z: 86, w: 57}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -104,28 +101,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: em_char_03_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 740
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bc80e22406608850800000000000000
-      internalID: 6377209240307666098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
