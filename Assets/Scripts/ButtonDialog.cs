@@ -54,7 +54,7 @@ namespace ThinIce
         {
             if (_imageRender != null)
                 _imageRender.sprite = spriteCommon;
-            if (GameController.Instance.seePreviousAnswers &&
+            if (GameController.Instance != null && GameController.Instance.seePreviousAnswers &&
                 _currentTextGuy != null &&
                 _currentTextGuy.text != _cachedGameDialog.defaultNextButtonText &&
                 AnsweredTextGuys.IsAnswered(_currentTextGuy))
