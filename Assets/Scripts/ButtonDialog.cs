@@ -9,8 +9,6 @@ namespace ThinIce
     {
         private Image _imageRender = null;
 
-        public TypeButton typeButton = TypeButton.One;
-
         public Sprite spriteCommon = null;
         public Sprite spriteGood = null;
         public Sprite spriteBad = null;
@@ -45,9 +43,10 @@ namespace ThinIce
             if (_currentTextGuy != null && buttonText.text != _cachedGameDialog.defaultNextButtonText)
                 AnsweredTextGuys.Answer(_currentTextGuy);
 
+            var tempTextGuy = _currentTextGuy;
             _currentTextGuy = null;
 
-            _cachedGameDialog.PressedButtonDialog(typeButton);
+            _cachedGameDialog.PressedButtonDialog(tempTextGuy);
         }
 
         private void SetSprite()

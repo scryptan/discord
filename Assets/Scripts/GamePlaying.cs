@@ -17,8 +17,7 @@ namespace ThinIce
         private float _roundMaxTimer = 2f;
         private bool _girlSearchingAndThrow = false;
 
-        [Header("Game Objects")]
-        public PlayerController guy;
+        [Header("Game Objects")] public PlayerController guy;
         public Girl girl;
         public HeapController heap;
         public GameObject[] items;
@@ -27,8 +26,7 @@ namespace ThinIce
         public Image weightBar;
         public Text weightText;
 
-        [Header("Start Game Config")]
-        public float startStamina = 100f;
+        [Header("Start Game Config")] public float startStamina = 100f;
         public Vector3 startGuyPosition = new Vector3(0, -4, 0);
         public uint startRound = 0;
         public float timerNextRound = 30f;
@@ -39,8 +37,7 @@ namespace ThinIce
         public float maxTimerRecovery = 1f;
         public float weightGrabCoef = 2f;
 
-        [Header("Rounds Config")] 
-        public float[] rounds;
+        [Header("Rounds Config")] public float[] rounds;
 
         public float caughtCoefItemScore = 2f;
 
@@ -51,6 +48,13 @@ namespace ThinIce
 
         public void Initialize()
         {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+
+
             _stamina = startStamina;
             _round = startRound;
             _timer = 0f;
@@ -60,7 +64,7 @@ namespace ThinIce
 
             if (rounds.Length > 0)
                 _roundMaxTimer = rounds[0];
-        
+
             guy.PlayerSpawn(startGuyPosition);
             girl.Initialize();
             heap.Initialize();
@@ -75,7 +79,7 @@ namespace ThinIce
             if (!_girlSearchingAndThrow)
             {
                 _timer += Time.deltaTime;
-            
+
                 if (_timer >= _roundMaxTimer)
                 {
                     _timer = 0f;
@@ -95,7 +99,7 @@ namespace ThinIce
                 _roundTimer = 0f;
                 NextRound();
             }
-        
+
             KeyboardUpdate();
         }
 
@@ -109,9 +113,9 @@ namespace ThinIce
             {
                 var xPosition = -Convert.ToInt16(moveLeft) + Convert.ToInt16(moveRight);
                 const float yPosition = 0f;
-            
+
                 var directional = new Vector3(xPosition, yPosition, 0f);
-            
+
                 guy.PlayerMove(directional);
             }
             else
@@ -125,16 +129,16 @@ namespace ThinIce
             var itemId = UnityEngine.Random.Range(0, items.Length);
             var item = Instantiate<GameObject>(items[itemId], transform);
             item.transform.position = girl.transform.position;
-        
+
             var x = UnityEngine.Random.Range(-forceToPush, forceToPush);
             var y = UnityEngine.Random.Range(-forceToPush / horizontalCoef, forceToPush / horizontalCoef);
             item.GetComponent<Item>().AddForce(new Vector2(x, y));
-        
+
             item.GetComponent<Item>().SetGamePlaying(this);
 
             _girlSearchingAndThrow = false;
         }
-    
+
         private void NextRound()
         {
             if (_round >= rounds.Length - 1)
@@ -147,10 +151,10 @@ namespace ThinIce
         public void AddWeight(float weight)
         {
             _workload += weight;
-        
+
             weightBar.fillAmount = _workload;
             weightText.text = _workload.ToString();
-        
+
             if (_workload >= maxWeightGame)
                 GameController.Instance.GameLose();
         }
@@ -158,7 +162,7 @@ namespace ThinIce
         public void SubtractWeight(float weight)
         {
             _workload -= weight;
-        
+
             weightBar.fillAmount = _workload;
             weightText.text = _workload.ToString();
 
@@ -167,22 +171,22 @@ namespace ThinIce
                 _workload = 0f;
             }
         }
-    
+
         public void AddStamina(float stamina)
         {
             _stamina += stamina;
-        
+
             staminaBar.fillAmount = _stamina;
             staminaText.text = _stamina.ToString();
 
             if (_stamina >= startStamina)
                 _stamina = startStamina;
         }
-    
+
         public void SubtractStamina(float stamina)
         {
             _stamina -= stamina;
-        
+
             staminaBar.fillAmount = _stamina;
             staminaText.text = _stamina.ToString();
 
@@ -199,6 +203,5 @@ namespace ThinIce
         {
             heap.AddHeap(score);
         }
-
     }
 }

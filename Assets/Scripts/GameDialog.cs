@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.U2D;
 using UnityEngine.UI;
+using Random = System.Random;
 
 namespace ThinIce
 {
@@ -27,12 +30,16 @@ namespace ThinIce
         public uint dialogPage = 0;
         public DialogState dialogState = DialogState.StartPhrase;
 
+        public Dictionary<uint, TextGuy> TextGuys => dialogCommon?.SelectMany(x => x.textGuy).ToDictionary(x => x.id);
+
         private bool _dialogFailed = false;
+        private Random _random;
 
 
         // Start is called before the first frame update
         private void Start()
         {
+            _random = new Random();
             _dialogFailed = false;
             RenderDialog(dialogState, dialogPage);
         }
@@ -49,7 +56,7 @@ namespace ThinIce
                 canvasDialog.SetActive(false);
         }
 
-        private void RenderDialog(DialogState dlgState, uint page, TypeButton typeButton = TypeButton.One)
+        private void RenderDialog(DialogState dlgState, uint page, TextGuy textGuy = null)
         {
             dialogState = dlgState;
             dialogPage = page;
@@ -64,10 +71,12 @@ namespace ThinIce
                     headerText.text = dlg.textGirl;
                     girlImage.sprite = emotions[Convert.ToInt32(dlg.girlEmotion)];
 
+                    var tempGuys = new List<TextGuy>(dlg.textGuy);
+                    tempGuys = tempGuys.OrderBy(x => _random.Next()).ToList();
                     foreach (var button in buttons)
                     {
                         button.SetActive(true);
-                        button.GetComponent<ButtonDialog>().SetTextGuy(dlg.textGuy[i++]);
+                        button.GetComponent<ButtonDialog>().SetTextGuy(tempGuys[i++]);
                     }
 
                     break;
@@ -101,7 +110,6 @@ namespace ThinIce
                     break;
 
                 case DialogState.GirlAnswer:
-                    var textGuy = dlg.textGuy[Convert.ToInt32(typeButton) - 1];
                     girlImage.sprite = emotions[Convert.ToInt32(textGuy.girtAnswerEmotion)];
 
                     // Если диалог провален, после ответа девушки будет totalFailedText
@@ -124,7 +132,7 @@ namespace ThinIce
             }
         }
 
-        public void PressedButtonDialog(TypeButton typeButton)
+        public void PressedButtonDialog(TextGuy textGuy)
         {
             switch (dialogState)
             {
@@ -133,7 +141,7 @@ namespace ThinIce
                     break;
 
                 case DialogState.Common:
-                    RenderDialog(DialogState.GirlAnswer, dialogPage, typeButton);
+                    RenderDialog(DialogState.GirlAnswer, dialogPage, textGuy);
                     break;
 
                 case DialogState.GirlAnswer:
