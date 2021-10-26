@@ -17,6 +17,8 @@ namespace ThinIce
         public GameState startState = GameState.Intro;
         public GameObject gameIntro = null;
         public GameObject gameMenu = null;
+        public GameObject startMenu = null;
+        public GameObject settings = null;
         public GameObject gameDialog = null;
         public GameObject gamePlaying = null;
         public GameObject gameWin = null;
@@ -58,7 +60,7 @@ namespace ThinIce
                     GameIntro();
                     break;
 
-                case GameState.Menu:
+                case GameState.MainMenu:
                     GameMenu();
                     break;
 
@@ -92,15 +94,32 @@ namespace ThinIce
             gamePlaying.SetActive(false);
             gameWin.SetActive(false);
             gameLose.SetActive(false);
+            settings.SetActive(false);
         }
 
         public void GameMenu()
         {
-            _gameState = GameState.Menu;
+            _gameState = GameState.MainMenu;
 
             gameIntro.SetActive(false);
             gameMenu.SetActive(true);
+            startMenu.SetActive(false);
             gameDialog.SetActive(false);
+            settings.SetActive(false);
+            gamePlaying.SetActive(false);
+            gameWin.SetActive(false);
+            gameLose.SetActive(false);
+        }
+
+        public void StartMenu()
+        {
+            _gameState = GameState.StartMenu;
+
+            gameIntro.SetActive(false);
+            gameMenu.SetActive(true);
+            startMenu.SetActive(true);
+            gameDialog.SetActive(false);
+            settings.SetActive(false);
             gamePlaying.SetActive(false);
             gameWin.SetActive(false);
             gameLose.SetActive(false);
@@ -113,6 +132,8 @@ namespace ThinIce
             gameIntro.SetActive(false);
             gameMenu.SetActive(false);
             gameDialog.SetActive(true);
+            startMenu.SetActive(false);
+            settings.SetActive(false);
             gamePlaying.SetActive(false);
             gameWin.SetActive(false);
             gameLose.SetActive(false);
@@ -126,6 +147,7 @@ namespace ThinIce
             gameMenu.SetActive(false);
             gameDialog.SetActive(false);
             gamePlaying.SetActive(true);
+            startMenu.SetActive(false);
             gameWin.SetActive(false);
             gameLose.SetActive(false);
 
@@ -141,6 +163,7 @@ namespace ThinIce
             gameDialog.SetActive(false);
             gamePlaying.SetActive(false);
             gameWin.SetActive(true);
+            startMenu.SetActive(false);
             gameLose.SetActive(false);
         }
 
@@ -153,6 +176,7 @@ namespace ThinIce
             gameDialog.SetActive(false);
             gamePlaying.SetActive(false);
             gameWin.SetActive(false);
+            startMenu.SetActive(false);
             gameLose.SetActive(true);
         }
 
@@ -162,11 +186,12 @@ namespace ThinIce
         public enum GameState
         {
             Intro = 0,
-            Menu = 1,
-            Dialog = 2,
-            Game = 3,
-            Win = 4,
-            Lose = 5,
+            MainMenu = 1,
+            StartMenu = 2,
+            Dialog = 3,
+            Game = 4,
+            Win = 5,
+            Lose = 6,
         }
     }
 }
