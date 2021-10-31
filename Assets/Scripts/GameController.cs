@@ -7,7 +7,7 @@ namespace ThinIce
     {
         #region private region
 
-        private static GameController _instance = null;
+        private static GameController _instance;
         private GameState _gameState;
 
         #endregion
@@ -15,19 +15,22 @@ namespace ThinIce
         #region public region
 
         public GameState startState = GameState.Intro;
-        public GameObject gameIntro = null;
-        public GameObject gameMenu = null;
-        public GameObject startMenu = null;
-        public GameObject settings = null;
-        public GameObject gameDialog = null;
-        public GameObject gamePlaying = null;
-        public GameObject gameWin = null;
-        public GameObject gameLose = null;
+        public GameObject gameIntro;
+        public GameObject gameMenu;
+        public GameObject startMenu;
+        public GameObject settings;
+        public GameObject gameDialogWindow;
+        public GameObject gamePlaying;
+        public GameObject gameWin;
+        public GameObject gameLose;
+        public GameObject tipDialog;
 
-        public bool seePreviousAnswers = false;
+        public bool seePreviousAnswers;
 
         public static GameController Instance => _instance;
 
+        public GameDialog gameDialog;
+        
         #endregion
 
         // Start is called before the first frame update
@@ -41,6 +44,7 @@ namespace ThinIce
             Application.targetFrameRate = 60;
 
             Initialize();
+            gameDialog = FindObjectOfType<GameDialog>();
         }
 
         // Update is called once per frame
@@ -72,6 +76,9 @@ namespace ThinIce
                     GameStart();
                     break;
 
+                case GameState.Tip:
+                    TipDialog();
+                    break;
                 case GameState.Win:
                     break;
                 case GameState.Lose:
@@ -88,68 +95,49 @@ namespace ThinIce
         {
             _gameState = GameState.Intro;
 
+            SetAllWindowsFalse();
             gameIntro.SetActive(true);
-            gameMenu.SetActive(false);
-            gameDialog.SetActive(false);
-            gamePlaying.SetActive(false);
-            gameWin.SetActive(false);
-            gameLose.SetActive(false);
-            settings.SetActive(false);
         }
 
         public void GameMenu()
         {
             _gameState = GameState.MainMenu;
 
-            gameIntro.SetActive(false);
+            SetAllWindowsFalse();
             gameMenu.SetActive(true);
-            startMenu.SetActive(false);
-            gameDialog.SetActive(false);
-            settings.SetActive(false);
-            gamePlaying.SetActive(false);
-            gameWin.SetActive(false);
-            gameLose.SetActive(false);
         }
 
         public void StartMenu()
         {
             _gameState = GameState.StartMenu;
 
-            gameIntro.SetActive(false);
+            SetAllWindowsFalse();
             gameMenu.SetActive(true);
             startMenu.SetActive(true);
-            gameDialog.SetActive(false);
-            settings.SetActive(false);
-            gamePlaying.SetActive(false);
-            gameWin.SetActive(false);
-            gameLose.SetActive(false);
         }
 
         public void GameDialog()
         {
             _gameState = GameState.Dialog;
 
-            gameIntro.SetActive(false);
-            gameMenu.SetActive(false);
-            gameDialog.SetActive(true);
-            startMenu.SetActive(false);
-            settings.SetActive(false);
-            gamePlaying.SetActive(false);
-            gameWin.SetActive(false);
-            gameLose.SetActive(false);
+            SetAllWindowsFalse();
+            gameDialogWindow.SetActive(true);
+        }
+
+        public void TipDialog()
+        {
+            _gameState = GameState.Tip;
+
+            SetAllWindowsFalse();
+            tipDialog.SetActive(true);
         }
 
         public void GameStart()
         {
             _gameState = GameState.Game;
 
-            gameIntro.SetActive(false);
-            gameMenu.SetActive(false);
-            gameDialog.SetActive(false);
+            SetAllWindowsFalse();
             gamePlaying.SetActive(true);
-            startMenu.SetActive(false);
-            gameWin.SetActive(false);
-            gameLose.SetActive(false);
 
             gamePlaying.GetComponent<GamePlaying>().Initialize();
         }
@@ -158,26 +146,28 @@ namespace ThinIce
         {
             _gameState = GameState.Win;
 
-            gameIntro.SetActive(false);
-            gameMenu.SetActive(false);
-            gameDialog.SetActive(false);
-            gamePlaying.SetActive(false);
+            SetAllWindowsFalse();
             gameWin.SetActive(true);
-            startMenu.SetActive(false);
-            gameLose.SetActive(false);
         }
 
         public void GameLose()
         {
             _gameState = GameState.Lose;
+            SetAllWindowsFalse();
+            gameLose.SetActive(true);
+        }
 
+        private void SetAllWindowsFalse()
+        {
             gameIntro.SetActive(false);
             gameMenu.SetActive(false);
-            gameDialog.SetActive(false);
+            gameDialogWindow.SetActive(false);
+            startMenu.SetActive(false);
+            settings.SetActive(false);
             gamePlaying.SetActive(false);
             gameWin.SetActive(false);
-            startMenu.SetActive(false);
-            gameLose.SetActive(true);
+            gameLose.SetActive(false);
+            tipDialog.SetActive(false);
         }
 
         #endregion
@@ -192,6 +182,7 @@ namespace ThinIce
             Game = 4,
             Win = 5,
             Lose = 6,
+            Tip = 7,
         }
     }
 }

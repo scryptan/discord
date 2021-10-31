@@ -1,10 +1,13 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace ThinIce
+
 {
+    [RequireComponent(typeof(Image))]
     public class ButtonDialog : MonoBehaviour, IPointerClickHandler
     {
         private Image _imageRender = null;
@@ -15,12 +18,14 @@ namespace ThinIce
 
         public TMP_Text buttonText;
 
+        public bool isAnswered;
+
         private TextGuy _currentTextGuy;
         private GameDialog _cachedGameDialog;
 
         private void OnEnable()
         {
-            _imageRender = GetComponent<Image>();
+            _imageRender = GetComponent<Image>() ?? throw new ArgumentException("Image component doesn't exist");
         }
 
         public void SetTextGuy(TextGuy textGuy)
@@ -58,8 +63,14 @@ namespace ThinIce
                 _currentTextGuy.text != _cachedGameDialog.defaultNextButtonText &&
                 AnsweredTextGuys.IsAnswered(_currentTextGuy))
             {
-                _imageRender.sprite = _currentTextGuy.badText ? spriteBad : spriteGood;
+                Answer();
             }
+        }
+
+        public void Answer()
+        {
+            _imageRender.sprite = _currentTextGuy.badText ? spriteBad : spriteGood;
+            isAnswered = true;
         }
     }
 }

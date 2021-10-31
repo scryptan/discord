@@ -215,6 +215,7 @@ GameObject:
   - component: {fileID: 47070109}
   - component: {fileID: 47070111}
   - component: {fileID: 47070110}
+  - component: {fileID: 47070112}
   m_Layer: 5
   m_Name: Hint
   m_TagString: Untagged
@@ -281,6 +282,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47070108}
   m_CullTransparentMesh: 1
+--- !u!114 &47070112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47070108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 47070110}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 158241840}
+        m_TargetAssemblyTypeName: ThinIce.TipButton, Assembly-CSharp
+        m_MethodName: OpenModal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &113715873
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,6 +542,8 @@ GameObject:
   - component: {fileID: 158241837}
   - component: {fileID: 158241839}
   - component: {fileID: 158241838}
+  - component: {fileID: 158241840}
+  - component: {fileID: 158241841}
   m_Layer: 5
   m_Name: PromtButton
   m_TagString: Untagged
@@ -550,6 +609,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158241836}
   m_CullTransparentMesh: 1
+--- !u!114 &158241840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158241836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e793fa9d3cd343fcbb323a4fa4b63127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &158241841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158241836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 158241838}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 158241840}
+        m_TargetAssemblyTypeName: ThinIce.TipButton, Assembly-CSharp
+        m_MethodName: ActivateRandomButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &159060957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -931,16 +1058,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253809269}
   m_CullTransparentMesh: 1
---- !u!1 &263234982 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8161102895125880532, guid: 4071d6fdd846b544a8461ce561711365, type: 3}
-  m_PrefabInstance: {fileID: 2041935638}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &263234983 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8161102895125880535, guid: 4071d6fdd846b544a8461ce561711365, type: 3}
   m_PrefabInstance: {fileID: 2041935638}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &263234985 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8161102895125880534, guid: 4071d6fdd846b544a8461ce561711365, type: 3}
+  m_PrefabInstance: {fileID: 2041935638}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9cf662621943468af1d99606b6223c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &300594238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,16 +1702,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &382971752 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8161102895125880532, guid: 4071d6fdd846b544a8461ce561711365, type: 3}
-  m_PrefabInstance: {fileID: 159060957}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &382971753 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8161102895125880535, guid: 4071d6fdd846b544a8461ce561711365, type: 3}
   m_PrefabInstance: {fileID: 159060957}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &382971755 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8161102895125880534, guid: 4071d6fdd846b544a8461ce561711365, type: 3}
+  m_PrefabInstance: {fileID: 159060957}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9cf662621943468af1d99606b6223c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &386712929
 GameObject:
   m_ObjectHideFlags: 0
@@ -3185,10 +3324,10 @@ MonoBehaviour:
   canvasDialog: {fileID: 585201935}
   headerText: {fileID: 1520175352}
   buttons:
-  - {fileID: 1514596952}
-  - {fileID: 382971752}
-  - {fileID: 1772864267}
-  - {fileID: 263234982}
+  - {fileID: 1514596955}
+  - {fileID: 382971755}
+  - {fileID: 1772864270}
+  - {fileID: 263234985}
   defaultNextButtonText: ...
   girl: {fileID: 1864411589}
   emotions:
@@ -6003,7 +6142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1273052514
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7055,11 +7194,13 @@ MonoBehaviour:
   gameMenu: {fileID: 1400755153}
   startMenu: {fileID: 1537709677}
   settings: {fileID: 1005950950}
-  gameDialog: {fileID: 637936364}
+  gameDialogWindow: {fileID: 585201935}
   gamePlaying: {fileID: 1577198345}
   gameWin: {fileID: 933774754}
   gameLose: {fileID: 2006002316}
+  tipDialog: {fileID: 1718185271}
   seePreviousAnswers: 0
+  gameDialog: {fileID: 637936364}
 --- !u!1001 &1500712962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7237,16 +7378,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511777127}
   m_CullTransparentMesh: 0
---- !u!1 &1514596952 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8161102895125880532, guid: 4071d6fdd846b544a8461ce561711365, type: 3}
-  m_PrefabInstance: {fileID: 1713362456}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1514596953 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8161102895125880535, guid: 4071d6fdd846b544a8461ce561711365, type: 3}
   m_PrefabInstance: {fileID: 1713362456}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1514596955 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8161102895125880534, guid: 4071d6fdd846b544a8461ce561711365, type: 3}
+  m_PrefabInstance: {fileID: 1713362456}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9cf662621943468af1d99606b6223c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1520175350
 GameObject:
   m_ObjectHideFlags: 0
@@ -8851,7 +8998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1718185272
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9218,16 +9365,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766115392}
   m_CullTransparentMesh: 1
---- !u!1 &1772864267 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8161102895125880532, guid: 4071d6fdd846b544a8461ce561711365, type: 3}
-  m_PrefabInstance: {fileID: 1539445852}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1772864268 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8161102895125880535, guid: 4071d6fdd846b544a8461ce561711365, type: 3}
   m_PrefabInstance: {fileID: 1539445852}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1772864270 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8161102895125880534, guid: 4071d6fdd846b544a8461ce561711365, type: 3}
+  m_PrefabInstance: {fileID: 1539445852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9cf662621943468af1d99606b6223c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1806063169
 GameObject:
   m_ObjectHideFlags: 0
@@ -9239,6 +9392,7 @@ GameObject:
   - component: {fileID: 1806063170}
   - component: {fileID: 1806063172}
   - component: {fileID: 1806063171}
+  - component: {fileID: 1806063173}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -9304,6 +9458,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806063169}
   m_CullTransparentMesh: 1
+--- !u!114 &1806063173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806063169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1806063171}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 158241840}
+        m_TargetAssemblyTypeName: ThinIce.TipButton, Assembly-CSharp
+        m_MethodName: CloseModal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1808165897
 GameObject:
   m_ObjectHideFlags: 0

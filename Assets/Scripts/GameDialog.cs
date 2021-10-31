@@ -15,7 +15,7 @@ namespace ThinIce
         [Header("Canvas Game Object")] public GameObject canvasDialog = null;
 
         public TMP_Text headerText = null;
-        public GameObject[] buttons;
+        public ButtonDialog[] buttons;
 
         public string defaultNextButtonText = "Next";
 
@@ -75,8 +75,8 @@ namespace ThinIce
                     tempGuys = tempGuys.OrderBy(x => _random.Next()).ToList();
                     foreach (var button in buttons)
                     {
-                        button.SetActive(true);
-                        button.GetComponent<ButtonDialog>().SetTextGuy(tempGuys[i++]);
+                        button.gameObject.SetActive(true);
+                        button.SetTextGuy(tempGuys[i++]);
                     }
 
                     break;
@@ -85,12 +85,12 @@ namespace ThinIce
                     headerText.text = totalFailedText;
                     girlImage.sprite = emotions[Convert.ToInt32(totalFailedEmotion)];
 
-                    buttons[0].SetActive(true);
-                    buttons[0].GetComponent<ButtonDialog>().SetTextButton(defaultNextButtonText);
+                    buttons[0].gameObject.SetActive(true);
+                    buttons[0].SetTextButton(defaultNextButtonText);
 
                     for (i = 1; i < buttons.Length; ++i)
                     {
-                        buttons[i].SetActive(false);
+                        buttons[i].gameObject.SetActive(false);
                     }
 
                     break;
@@ -99,12 +99,12 @@ namespace ThinIce
                     headerText.text = startGuyText;
                     girlImage.sprite = emotions[Convert.ToInt32(GirlEmotion.Hey)];
 
-                    buttons[0].SetActive(true);
-                    buttons[0].GetComponent<ButtonDialog>().SetTextButton(defaultNextButtonText);
+                    buttons[0].gameObject.SetActive(true);
+                    buttons[0].SetTextButton(defaultNextButtonText);
 
                     for (i = 1; i < buttons.Length; ++i)
                     {
-                        buttons[i].SetActive(false);
+                        buttons[i].gameObject.SetActive(false);
                     }
 
                     break;
@@ -117,12 +117,12 @@ namespace ThinIce
 
                     headerText.text = textGuy.girlAnswer;
 
-                    buttons[0].SetActive(true);
-                    buttons[0].GetComponent<ButtonDialog>().SetTextButton(defaultNextButtonText);
+                    buttons[0].gameObject.SetActive(true);
+                    buttons[0].SetTextButton(defaultNextButtonText);
 
                     for (i = 1; i < buttons.Length; ++i)
                     {
-                        buttons[i].SetActive(false);
+                        buttons[i].gameObject.SetActive(false);
                     }
 
                     break;
