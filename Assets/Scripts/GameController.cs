@@ -121,6 +121,7 @@ namespace ThinIce
             _gameState = GameState.Dialog;
 
             SetAllWindowsFalse();
+            gameDialog.RestartDialog();
             gameDialogWindow.SetActive(true);
         }
 

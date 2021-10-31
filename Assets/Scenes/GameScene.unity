@@ -6308,6 +6308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1305787977}
   - component: {fileID: 1305787978}
+  - component: {fileID: 1305787979}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -6381,8 +6382,37 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1305787979}
+        m_TargetAssemblyTypeName: ThinIce.Toggle, Assembly-CSharp
+        m_MethodName: SetEnabled
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &1305787979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305787976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4801c412f347848d7c87630fea3da0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
+  settingsType: 2
+  disabledPoint: {fileID: 0}
+  enabledPoint: {fileID: 0}
+  togglePoint: {fileID: 0}
 --- !u!1 &1307822883
 GameObject:
   m_ObjectHideFlags: 0
@@ -7291,6 +7321,10 @@ PrefabInstance:
     - target: {fileID: 3788907094165305592, guid: c3b8967e9ca8a0644998c9935287c9c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741195566805284881, guid: c3b8967e9ca8a0644998c9935287c9c0, type: 3}
+      propertyPath: settingsType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8074396593525026431, guid: c3b8967e9ca8a0644998c9935287c9c0, type: 3}
       propertyPath: m_Name
@@ -8998,7 +9032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1718185272
 RectTransform:
   m_ObjectHideFlags: 0

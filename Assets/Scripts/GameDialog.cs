@@ -40,8 +40,7 @@ namespace ThinIce
         private void Start()
         {
             _random = new Random();
-            _dialogFailed = false;
-            RenderDialog(dialogState, dialogPage);
+            RestartDialog();
         }
 
         private void OnEnable()
@@ -54,6 +53,14 @@ namespace ThinIce
         {
             if (canvasDialog != null)
                 canvasDialog.SetActive(false);
+        }
+
+        public void RestartDialog()
+        {
+            dialogState = DialogState.StartPhrase;
+            dialogPage = 0;
+            _dialogFailed = false;
+            RenderDialog(dialogState, dialogPage);
         }
 
         private void RenderDialog(DialogState dlgState, uint page, TextGuy textGuy = null)
