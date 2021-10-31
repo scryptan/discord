@@ -89,6 +89,12 @@ namespace ThinIce
             }
         }
 
+        public void StartGameWithAnswers()
+        {
+            seePreviousAnswers = true;
+            GameDialog();
+        }
+        
         #region Game States
 
         public void GameIntro()
@@ -109,6 +115,7 @@ namespace ThinIce
 
         public void StartMenu()
         {
+            seePreviousAnswers = false;
             _gameState = GameState.StartMenu;
 
             SetAllWindowsFalse();
