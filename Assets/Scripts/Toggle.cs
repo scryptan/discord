@@ -1,25 +1,17 @@
 ﻿using System;
-using DG.Tweening;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace ThinIce
 {
-    public class Toggle : MonoBehaviour, IPointerClickHandler
+    public class Toggle : MonoBehaviour
     {
         public bool isEnabled;
         public SettingsType settingsType;
-        public Transform disabledPoint, enabledPoint, togglePoint;
 
-        private void OnEnable()
-        {
-            PlayAnimation();
-        }
 
-        public void OnPointerClick(PointerEventData eventData)
+        public void SetEnabled(bool value)
         {
-            isEnabled = !isEnabled;
-            PlayAnimation(1);
+            isEnabled = value;
             switch (settingsType)
             {
                 case SettingsType.Music:
@@ -34,17 +26,6 @@ namespace ThinIce
                 default:
                     throw new ArgumentOutOfRangeException();
             }
-        }
-
-        private void PlayAnimation(int duration = 0)
-        {
-            if (togglePoint != null)
-                togglePoint.DOMove(isEnabled ? enabledPoint.position : disabledPoint.position, duration);
-        }
-
-        public void SetEnabled(bool value)
-        {
-            isEnabled = value;
         }
     }
 
