@@ -24,6 +24,7 @@ namespace ThinIce
         public GameObject gameWin;
         public GameObject gameLose;
         public GameObject tipDialog;
+        public GameObject reviewDialog;
 
         public bool seePreviousAnswers;
 
@@ -79,6 +80,9 @@ namespace ThinIce
                 case GameState.Tip:
                     TipDialog();
                     break;
+                case GameState.Review:
+                    ReviewState();
+                    break;
                 case GameState.Win:
                     break;
                 case GameState.Lose:
@@ -92,6 +96,12 @@ namespace ThinIce
         public void StartGameWithAnswers()
         {
             seePreviousAnswers = true;
+            RestartGame();
+        }
+        
+        public void RestartGame()
+        {
+            gameDialog.RestartDialog();
             GameDialog();
         }
         
@@ -103,6 +113,14 @@ namespace ThinIce
 
             SetAllWindowsFalse();
             gameIntro.SetActive(true);
+        }
+        
+        public void ReviewState()
+        {
+            _gameState = GameState.Review;
+
+            SetAllWindowsFalse();
+            reviewDialog.SetActive(true);
         }
 
         public void GameMenu()
@@ -128,7 +146,6 @@ namespace ThinIce
             _gameState = GameState.Dialog;
 
             SetAllWindowsFalse();
-            gameDialog.RestartDialog();
             gameDialogWindow.SetActive(true);
         }
 
@@ -176,6 +193,7 @@ namespace ThinIce
             gameWin.SetActive(false);
             gameLose.SetActive(false);
             tipDialog.SetActive(false);
+            reviewDialog.SetActive(false);
         }
 
         #endregion
@@ -191,6 +209,7 @@ namespace ThinIce
             Win = 5,
             Lose = 6,
             Tip = 7,
+            Review = 8
         }
     }
 }

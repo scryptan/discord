@@ -31,14 +31,14 @@ namespace ThinIce
         public void SetTextGuy(TextGuy textGuy)
         {
             _cachedGameDialog ??= GameController.Instance.gameDialog.GetComponent<GameDialog>();
-            _currentTextGuy = textGuy;
-            SetTextButton(textGuy.text);
+            SetTextButton(textGuy.text, textGuy);
             SetSprite();
         }
 
-        public void SetTextButton(string text)
+        public void SetTextButton(string text, TextGuy textGuy = null)
         {
-            buttonText.text = text;
+            _currentTextGuy = textGuy;
+            buttonText.text = text.Trim();
             SetSprite();
         }
 
@@ -58,7 +58,9 @@ namespace ThinIce
         {
             if (_imageRender != null)
                 _imageRender.sprite = spriteCommon;
-            if (GameController.Instance != null && GameController.Instance.seePreviousAnswers &&
+            
+            if (GameController.Instance != null && 
+                GameController.Instance.seePreviousAnswers &&
                 _currentTextGuy != null &&
                 _currentTextGuy.text != _cachedGameDialog.defaultNextButtonText &&
                 AnsweredTextGuys.IsAnswered(_currentTextGuy))

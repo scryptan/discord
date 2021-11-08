@@ -17,7 +17,7 @@ namespace ThinIce
         public TMP_Text headerText = null;
         public ButtonDialog[] buttons;
 
-        public string defaultNextButtonText = "Next";
+        public string defaultNextButtonText = "...";
 
         [Header("Girl")] public GameObject girl = null;
         public Sprite[] emotions;
@@ -103,11 +103,11 @@ namespace ThinIce
                     break;
 
                 case DialogState.StartPhrase:
-                    headerText.text = startGuyText;
+                    headerText.text = defaultNextButtonText;
                     girlImage.sprite = emotions[Convert.ToInt32(GirlEmotion.Hey)];
 
                     buttons[0].gameObject.SetActive(true);
-                    buttons[0].SetTextButton(defaultNextButtonText);
+                    buttons[0].SetTextButton(startGuyText);
 
                     for (i = 1; i < buttons.Length; ++i)
                     {

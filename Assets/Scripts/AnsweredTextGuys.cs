@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Newtonsoft.Json;
 using UnityEngine;
 
@@ -8,7 +9,8 @@ namespace ThinIce
 {
     public class AnsweredTextGuys
     {
-        private static readonly string Path = $"{Application.persistentDataPath}/answeredIds.json";
+        private static readonly string Key = "answeredIds";
+        private static readonly string Path = $"{Application.persistentDataPath}/{Key}.json";
         private static HashSet<uint> _answered;
 
         public static void Answer(TextGuy textGuy)
@@ -31,11 +33,26 @@ namespace ThinIce
 
         private static HashSet<uint> ReadSavedData()
         {
+            var text = GetSavedText();
+            _answered = new HashSet<uint>(JsonConvert.DeserializeObject<uint[]>(text ?? string.Empty) ?? Array.Empty<uint>());
+
+            return _answered;
+        }
+
+        private static void WriteAnsweredIds()
+        {
+            SaveText(JsonConvert.SerializeObject(_answered));
+        }
+
+        private static string GetSavedText()
+        {
+#if UNITY_EDITOR
+
             if (File.Exists(Path))
             {
                 try
                 {
-                    _answered = JsonConvert.DeserializeObject<HashSet<uint>>(File.ReadAllText(Path) ?? string.Empty);
+                    return File.ReadAllText(Path);
                 }
                 catch (Exception)
                 {
@@ -43,14 +60,19 @@ namespace ThinIce
                 }
             }
 
-            _answered ??= new HashSet<uint>();
-
-            return _answered;
+            return string.Empty;
+#else
+            return PlayerPrefs.GetString(Key);
+#endif
         }
 
-        private static void WriteAnsweredIds()
+        private static void SaveText(string text)
         {
-            File.WriteAllText(Path, JsonConvert.SerializeObject(_answered));
+#if UNITY_EDITOR
+            File.WriteAllText(Path, text);
+#else
+            PlayerPrefs.SetString(Key, text);
+#endif
         }
     }
 }
