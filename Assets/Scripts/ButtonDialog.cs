@@ -21,7 +21,7 @@ namespace ThinIce
         public bool isAnswered;
 
         private TextGuy _currentTextGuy;
-        private GameDialog _cachedGameDialog;
+        private GameDialogWithLanguages _cachedGameDialog;
 
         private void OnEnable()
         {
@@ -30,7 +30,7 @@ namespace ThinIce
 
         public void SetTextGuy(TextGuy textGuy)
         {
-            _cachedGameDialog ??= GameController.Instance.gameDialog.GetComponent<GameDialog>();
+            _cachedGameDialog ??= GameController.Instance.gameDialog;
             SetTextButton(textGuy.text, textGuy);
             SetSprite();
         }
@@ -44,7 +44,7 @@ namespace ThinIce
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            _cachedGameDialog ??= GameController.Instance.gameDialog.GetComponent<GameDialog>();
+            _cachedGameDialog ??= GameController.Instance.gameDialog;
             if (_currentTextGuy != null && buttonText.text != _cachedGameDialog.defaultNextButtonText)
                 AnsweredTextGuys.Answer(_currentTextGuy);
 

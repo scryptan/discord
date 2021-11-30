@@ -8,6 +8,10 @@ namespace ThinIce
         public ReviewType reviewType;
         [SerializeField]
         private TMP_InputField inputField;
+        [SerializeField]
+        private GameObject bugTitle;
+        [SerializeField]
+        private GameObject supplyTitle;
         private Telegram _telegramClient;
 
         private void OnEnable()
@@ -23,6 +27,13 @@ namespace ThinIce
         private string FormatMessage()
         {
             return $"Тип #{reviewType}\nСообщение:\n\n{inputField.text}";
+        }
+
+        public void SetType(bool isBug)
+        {
+            reviewType = isBug ? ReviewType.Bug : ReviewType.Supply;
+            bugTitle.SetActive(bugTitle);
+            supplyTitle.SetActive(!bugTitle);
         }
     }
 

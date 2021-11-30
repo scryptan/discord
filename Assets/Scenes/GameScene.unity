@@ -166,6 +166,140 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -6.2}
   m_SizeDelta: {x: 1097.1, y: 1852.5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &25521828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 25521829}
+  - component: {fileID: 25521831}
+  - component: {fileID: 25521830}
+  m_Layer: 5
+  m_Name: Ru
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &25521829
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25521828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1091231398}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -219, y: -254}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &25521830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25521828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: ru
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: c4d85bc4e697570489fa2e1c290e405b, type: 2}
+  m_sharedMaterial: {fileID: 2655698933091616237, guid: c4d85bc4e697570489fa2e1c290e405b, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279250005
+  m_fontColor: {r: 0.33333334, g: 0.17254902, b: 0.0627451, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 90
+  m_fontSizeBase: 90
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &25521831
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25521828}
+  m_CullTransparentMesh: 1
 --- !u!1 &39791599
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,13 +330,14 @@ RectTransform:
   - {fileID: 2038856784}
   - {fileID: 916923008}
   - {fileID: 241768329}
+  - {fileID: 1091231398}
   m_Father: {fileID: 4670778}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -20.599976, y: -125}
-  m_SizeDelta: {x: 41.2, y: -1290.2}
+  m_AnchoredPosition: {x: 0, y: -89}
+  m_SizeDelta: {x: 0.00001335144, y: -1290.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &47070108
 GameObject:
@@ -619,6 +754,7 @@ GameObject:
   - component: {fileID: 158241838}
   - component: {fileID: 158241840}
   - component: {fileID: 158241841}
+  - component: {fileID: 158241842}
   m_Layer: 5
   m_Name: PromtButton
   m_TagString: Untagged
@@ -752,6 +888,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &158241842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158241836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: promt_button
+  LocalizedTexts:
+  - Text: "\u041F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0430!"
+    Language: 0
+  - Text: 20
+    Language: 1
 --- !u!1001 &159060957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1312,6 +1466,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 241768329}
+  - component: {fileID: 241768330}
   m_Layer: 5
   m_Name: Vibration
   m_TagString: Untagged
@@ -1328,7 +1483,7 @@ RectTransform:
   m_GameObject: {fileID: 241768328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.95, y: 0.95, z: 1}
   m_Children:
   - {fileID: 1568421563}
   - {fileID: 887482478}
@@ -1340,6 +1495,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 100}
   m_SizeDelta: {x: 853.3333, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &241768330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241768328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: vibration
+  LocalizedTexts:
+  - Text: "\u0412\u0438\u0431\u0440\u0430\u0446\u0438\u044F"
+    Language: 0
+  - Text: 12
+    Language: 1
 --- !u!1 &244734846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,6 +1658,7 @@ GameObject:
   - component: {fileID: 253809270}
   - component: {fileID: 253809272}
   - component: {fileID: 253809271}
+  - component: {fileID: 253809273}
   m_Layer: 5
   m_Name: PlayArcade
   m_TagString: Untagged
@@ -1551,6 +1725,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253809269}
   m_CullTransparentMesh: 1
+--- !u!114 &253809273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253809269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: arcade
+  LocalizedTexts:
+  - Text: "\u0410\u0440\u043A\u0430\u0434\u0430"
+    Language: 0
+  - Text: 6
+    Language: 1
 --- !u!224 &263234983 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8161102895125880535, guid: 4071d6fdd846b544a8461ce561711365, type: 3}
@@ -1907,6 +2099,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322844234}
   m_CullTransparentMesh: 1
+--- !u!1 &336924998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 336924999}
+  - component: {fileID: 336925000}
+  m_Layer: 5
+  m_Name: Disabled
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &336924999
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336924998}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1797857017}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -87, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &336925000
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336924998}
+  m_CullTransparentMesh: 1
 --- !u!1 &355341052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1955,6 +2191,7 @@ GameObject:
   - component: {fileID: 372727421}
   - component: {fileID: 372727423}
   - component: {fileID: 372727422}
+  - component: {fileID: 372727424}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -2079,6 +2316,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372727420}
   m_CullTransparentMesh: 1
+--- !u!114 &372727424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372727420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: promt_title
+  LocalizedTexts:
+  - Text: "\u0414\u0438\u043F\u043B\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+      \u043C\u0430\u043D\u0435\u0432\u0440!"
+    Language: 0
+  - Text: 18
+    Language: 1
 --- !u!1 &376709265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,6 +2444,7 @@ GameObject:
   - component: {fileID: 386712930}
   - component: {fileID: 386712932}
   - component: {fileID: 386712931}
+  - component: {fileID: 386712933}
   m_Layer: 5
   m_Name: SupportSubtitle (1)
   m_TagString: Untagged
@@ -2312,6 +2569,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386712929}
   m_CullTransparentMesh: 1
+--- !u!114 &386712933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386712929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: settings_down_support
+  LocalizedTexts:
+  - Text: "(\u0410 \u043C\u044B \u0441\u043C\u043E\u0436\u0435\u043C \u0437\u0430\u043F\u043B\u0430\u0442\u0438\u0442\u044C
+      \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0441\u0442\u0443! :D)"
+    Language: 0
+  - Text: 15
+    Language: 1
 --- !u!1 &405150324
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,6 +2772,7 @@ GameObject:
   - component: {fileID: 435575682}
   - component: {fileID: 435575681}
   - component: {fileID: 435575684}
+  - component: {fileID: 435575685}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -2643,6 +2920,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reviewType: 0
   inputField: {fileID: 1577375520}
+  bugTitle: {fileID: 1633756026}
+  supplyTitle: {fileID: 2061376186}
+--- !u!114 &435575685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435575679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: review_send
+  LocalizedTexts:
+  - Text: "\u041E\u0422\u041F\u0420\u0410\u0412\u0418\u0422\u042C"
+    Language: 0
+  - Text: 25
+    Language: 1
 --- !u!1 &436252460
 GameObject:
   m_ObjectHideFlags: 0
@@ -3347,6 +3644,7 @@ GameObject:
   - component: {fileID: 473759053}
   - component: {fileID: 473759055}
   - component: {fileID: 473759054}
+  - component: {fileID: 473759056}
   m_Layer: 5
   m_Name: Subtitle
   m_TagString: Untagged
@@ -3474,6 +3772,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473759052}
   m_CullTransparentMesh: 1
+--- !u!114 &473759056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473759052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: promt_subtitle
+  LocalizedTexts:
+  - Text: "\u0425\u0438\u0442\u0440\u043E\u0441\u0442\u0438 \u043E\u0440\u0430\u0442\u043E\u0440\u0441\u043A\u043E\u0433\u043E
+      \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0430\n\u043F\u043E\u0437\u0432\u0430\u043B\u044F\u0435\u0442
+      \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0438\u0442\u044C\n\u043E\u0434\u0438\u043D
+      \u043D\u0435\u0443\u0434\u0430\u0447\u043D\u044B\u0439 \u0432\u0430\u0440\u0438\u0430\u043D\u0442
+      \u043E\u0442\u0432\u0435\u0442\u0430!\n:D"
+    Language: 0
+  - Text: 19
+    Language: 1
 --- !u!1 &506247292
 GameObject:
   m_ObjectHideFlags: 0
@@ -4109,7 +4429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 0}
+  m_AnchoredPosition: {x: 252.99998, y: 0}
   m_SizeDelta: {x: 600, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &598333410
@@ -4218,6 +4538,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 637936365}
+  - component: {fileID: 637936368}
+  - component: {fileID: 637936367}
   - component: {fileID: 637936366}
   m_Layer: 0
   m_Name: GameDialog
@@ -4249,7 +4571,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 637936364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54884c52a686e2f4fa6d184eba9006b5, type: 3}
+  m_Script: {fileID: 11500000, guid: f97a9d1ac9614b1ba79769dada9981bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &637936367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637936364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314bdfaae9a84b6d828d3b04cefab543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   canvasDialog: {fileID: 585201935}
@@ -4268,452 +4602,792 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 98f66ca77e9aac741b13da7aa3a70ec3, type: 3}
   - {fileID: 21300000, guid: 18c68407aab75ca48b0c69edf1c222a2, type: 3}
   - {fileID: 21300000, guid: 24c3963406894334287b0c01bfbc0b6c, type: 3}
-  startGuyText: "\u041E\u0445... \u0414\u043E\u0440\u043E\u0433\u0430\u044F, \u044F
-    \u0432\u0435\u0440\u043D\u0443\u043B\u0441\u044F!"
-  totalFailedText: "\u0412\u042B\u041C\u0415\u0422\u0410\u0419\u0421\u042F \u0418
-    \u0412\u0415\u0429\u0418\u0427\u041A\u0418 \u0421\u0412\u041E\u0418 \u0417\u0410\u0411\u0415\u0420\u0418!!!"
+  startGuyText:
+  - Text: "\u041E\u0445... \u0414\u043E\u0440\u043E\u0433\u0430\u044F, \u044F \u0432\u0435\u0440\u043D\u0443\u043B\u0441\u044F!"
+    Language: 0
+  - Text: test 100
+    Language: 1
+  totalFailedText:
+  - Text: "\u0412\u042B\u041C\u0415\u0422\u0410\u0419\u0421\u042F \u0418 \u0412\u0415\u0429\u0418\u0427\u041A\u0418
+      \u0421\u0412\u041E\u0418 \u0417\u0410\u0411\u0415\u0420\u0418!!!"
+    Language: 0
+  - Text: test 101
+    Language: 1
   totalFailedEmotion: 3
-  dialogCommon:
-  - textGirl: "\u0413\u0434\u0435 \u0442\u044B \u0431\u044B\u043B? \u042F \u0432\u0435\u0441\u044C
-      \u0434\u0435\u043D\u044C \u0442\u0435\u0431\u044F \u0436\u0434\u0430\u043B\u0430!"
-    girlEmotion: 2
-    textGuy:
-    - id: 0
-      text: "\u041A\u043E\u0433\u043E-\u0442\u043E \u0438\u0437\u0431\u0438\u0432\u0430\u043B\u0438
-        \u0432\u043E \u0434\u0432\u043E\u0440\u0435. \r\n\r\n\u041F\u0440\u0438\u0448\u043B\u043E\u0441\u044C
-        \u0441\u043F\u0440\u044F\u0442\u0430\u0442\u044C\u0441\u044F, \u0432\u0435\u0434\u044C
-        \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u043C \u043C\u043E\u0433
-        \u0431\u044B\u0442\u044C \u044F!"
-      badText: 0
-      girlAnswer: "\u0412\u043E\u0442 \u0438 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E!
-        \u041C\u043D\u0435 \u043D\u0435 \u043D\u0443\u0436\u0435\u043D \u043F\u043E\u043F\u043E\u0440\u0447\u0435\u043D\u044B\u0439
-        \u043C\u0443\u0436."
-      girtAnswerEmotion: 1
-    - id: 1
-      text: "\u042F \u0441\u0432\u043E\u0431\u043E\u0434\u043D\u044B\u0439 \u043C\u0443\u0436\u0447\u0438\u043D\u0430.
-        \u0418 \u0435\u0441\u043B\u0438 \u044F \u0445\u043E\u0447\u0443 \u0434\u043E
-        \u0442\u043E\u0448\u043D\u043E\u0442\u044B \u043A\u0430\u0442\u0430\u0442\u044C\u0441\u044F
-        \u043D\u0430 \u044D\u0441\u043A\u0430\u043B\u0430\u0442\u043E\u0440\u0430\u0445
-        \u0432 \u0442\u043E\u0440\u0433\u043E\u0432\u043E\u043C \u0446\u0435\u043D\u0442\u0440\u0435
-        \u2014 \u0442\u0435\u0431\u0435 \u043C\u0435\u043D\u044F \u043D\u0435 \u043E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C."
-      badText: 0
-      girlAnswer: "\u0418\u043C\u0435\u043D\u043D\u043E \u0442\u0432\u043E\u044F
-        \u0446\u0435\u043B\u0435\u0443\u0441\u0442\u0440\u0435\u043C\u043B\u0451\u043D\u043D\u043E\u0441\u0442\u044C
-        \u0438 \u043F\u043E\u043A\u043E\u0440\u0438\u043B\u0430 \u043C\u0435\u043D\u044F
-        \u043F\u0440\u0438 \u0437\u043D\u0430\u043A\u043E\u043C\u0441\u0442\u0432\u0435!"
-      girtAnswerEmotion: 0
-    - id: 2
-      text: "\u0414\u0435\u0442\u043A\u0430, \u0433\u0434\u0435 \u044F \u0442\u043E\u043B\u044C\u043A\u043E
-        \u043D\u0435 \u0431\u044B\u043B... \u042D\u0442\u043E\u0442 \u0447\u0451\u0440\u0442\u043E\u0432
-        \u0433\u043E\u0440\u043E\u0434 \u043C\u0430\u043D\u0438\u0442 \u0441\u0432\u043E\u0438\u043C\u0438
-        \u043F\u0440\u0435\u043B\u0435\u0441\u0442\u044F\u043C\u0438, \u0437\u0430\u0441\u0430\u0441\u044B\u0432\u0430\u044F
-        \u0432 \u043A\u0440\u0443\u0433\u043E\u0432\u043E\u0440\u043E\u0442 \u043F\u043E\u0445\u043E\u0442\u0438,
-        \u0433\u0440\u044F\u0437\u0438 \u0438 \u043D\u0430\u0440\u043A\u043E\u0442\u0438\u043A\u043E\u0432."
-      badText: 0
-      girlAnswer: "\u042D\u0442\u043E \u0442\u0430\u043A \u043D\u0443\u0430\u0440\u043D\u043E
-        \u0437\u0432\u0443\u0447\u0438\u0442... \r\n\r\n\u041F\u0438\u0448\u0435\u0448\u044C
-        \u043D\u043E\u0432\u044B\u0439 \u0440\u0430\u0441\u0441\u043A\u0430\u0437?
-        \u0416\u0434\u0443 \u0441 \u043D\u0435\u0442\u0435\u0440\u043F\u0435\u043D\u0438\u0435\u043C,
-        \u043A\u043E\u0433\u0434\u0430 \u043F\u043E\u043A\u0430\u0436\u0435\u0448\u044C
-        \u0447\u0435\u0440\u043D\u043E\u0432\u0438\u043A."
-      girtAnswerEmotion: 4
-    - id: 3
-      text: "\u0422\u0435\u0431\u044F \u043D\u0435 \u0441\u043C\u0443\u0449\u0430\u0435\u0442,
-        \u0447\u0442\u043E \u044F \u0447\u0435\u0440\u0435\u0437 \u043E\u043A\u043D\u043E
-        \u0437\u0430\u0431\u0440\u0430\u043B\u0441\u044F? \u041C\u0438\u043B\u0430\u044F,
-        \u0442\u044B \u043E\u043F\u044F\u0442\u044C \u0441\u0435\u0431\u044F \u043F\u043B\u043E\u0445\u043E
-        \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u0435\u0448\u044C..."
-      badText: 1
-      girlAnswer: "\u041C\u043D\u0435 \u0438 \u043F\u0440\u0430\u0432\u0434\u0430
-        \u0434\u0443\u0440\u043D\u043E... \r\n\r\n\u041E\u0442 \u0431\u0440\u0435\u0434\u0430,
-        \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0442\u044B \u043D\u0435\u0441\u0451\u0448\u044C!"
-      girtAnswerEmotion: 3
-  - textGirl: "\u041F\u043E\u0433\u043E\u0434\u0438-\u043A\u0430, \u0442\u044B \u043D\u0435
-      \u043F\u0440\u0438\u043D\u0451\u0441 \u0445\u043B\u0435\u0431 \u0438 \u043C\u043E\u043B\u043E\u043A\u043E?"
-    girlEmotion: 1
-    textGuy:
-    - id: 4
-      text: "\u041F\u043E\u043A\u0430 \u044F \u0441\u0430\u043C\u043E\u043E\u0442\u0432\u0435\u0440\u0436\u0435\u043D\u043D\u043E
-        \u0434\u043E\u0438\u043B \u043A\u043E\u0440\u043E\u0432\u0443, \u044D\u0442\u0430
-        \u0441\u0442\u0435\u0440\u0432\u0430 \u0441\u044A\u0435\u043B\u0430 \u0431\u0443\u0445\u0430\u043D\u043A\u0443...
-        \u0412 \u043E\u0431\u0449\u0435\u043C, \u043B\u0443\u0447\u0448\u0435 \u0442\u0435\u0431\u0435
-        \u043D\u0435 \u0437\u043D\u0430\u0442\u044C, \u0447\u0442\u043E \u044F \u0441
-        \u043D\u0435\u0439 \u0441\u0434\u0435\u043B\u0430\u043B.\r\n"
-      badText: 0
-      girlAnswer: "\u041D\u0430\u0434\u0435\u044E\u0441\u044C, \u0435\u0439 \u0432\u043E\u0437\u0434\u0430\u0441\u0442\u0441\u044F
-        \u0432 \u0433\u043E\u0432\u044F\u0436\u044C\u0435\u043C \u0430\u0434\u0443!"
-      girtAnswerEmotion: 0
-    - id: 5
-      text: "\u041C\u043D\u0435 \u043A\u0430\u0436\u0435\u0442\u0441\u044F, \u043C\u044B
-        \u043F\u0435\u0440\u0435\u043E\u0446\u0435\u043D\u0438\u0432\u0430\u0435\u043C
-        \u0435\u0434\u0443. \u041D\u0443\u0436\u043D\u043E \u0431\u043E\u043B\u044C\u0448\u0435
-        \u0434\u0443\u043C\u0430\u0442\u044C \u043E \u0432\u044B\u0441\u043E\u043A\u043E\u043C,
-        \u043F\u0440\u0435\u043A\u0440\u0430\u0441\u043D\u043E\u043C. \u042D\u0442\u043E
-        \u0438 \u0435\u0441\u0442\u044C \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0430\u044F
-        \u043F\u0438\u0449\u0430. \u0414\u043B\u044F \u0443\u043C\u0430 \u0438 \u0434\u0443\u0448\u0438.\r\n"
-      badText: 0
-      girlAnswer: "\u0422\u043E \u0435\u0441\u0442\u044C \u0442\u044B \u0434\u0443\u043C\u0430\u043B
-        \u043E\u0431\u043E \u043C\u043D\u0435? \u0428\u0430\u043B\u0443\u043D\u0438\u0448\u043A\u0430!
-        \r\n\r\n\u0425\u043E\u0440\u043E\u0448\u043E, \u044F \u043F\u0440\u043E\u0449\u0430\u044E
-        \u0442\u0435\u0431\u044F."
-      girtAnswerEmotion: 0
-    - id: 6
-      text: "\u0412\u043E\u0442, \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0438.
-        \u0423 \u043C\u0435\u043D\u044F \u0443\u0436\u0435 \u0440\u0451\u0431\u0440\u0430
-        \u0442\u043E\u0440\u0447\u0430\u0442 \u2014 \u0442\u0430\u043A\u043E\u0439
-        \u044F \u0433\u043E\u043B\u043E\u0434\u043D\u044B\u0439. \u041A\u043E\u043D\u0435\u0447\u043D\u043E,
-        \u044F \u0432\u0441\u0451 \u0441\u044A\u0435\u043B, \u043F\u043E\u043A\u0430
-        \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u043B\u0441\u044F."
-      badText: 1
-      girlAnswer: "\u042D\u0442\u043E \u043D\u0430\u043C\u0451\u043A, \u0447\u0442\u043E
-        \u044F \u0442\u0435\u0431\u044F \u043D\u0435 \u043A\u043E\u0440\u043C\u043B\u044E?!\r\n"
-      girtAnswerEmotion: 3
-    - id: 7
-      text: "\u042D\u043C-\u043C... \u0410 \u0440\u0430\u0437\u0432\u0435 \u043C\u044B
-        \u0434\u043E\u043B\u0436\u043D\u044B \u0431\u044B\u043B\u0438 \u0447\u0442\u043E-\u0442\u043E
-        \u043A\u0443\u043F\u0438\u0442\u044C? \u0421\u0435\u0433\u043E\u0434\u043D\u044F
-        \u0436\u0435 \u043F\u0435\u0440\u0432\u043E\u0435 \u0447\u0438\u0441\u043B\u043E
-        \u2014 \u043F\u043E\u043D\u0438\u043C\u0430\u0435\u0448\u044C, \u043E \u0447\u0451\u043C
-        \u044F?"
-      badText: 0
-      girlAnswer: "\u042F \u0438 \u043F\u0440\u0430\u0432\u0434\u0430 \u0437\u0430\u0431\u044B\u043B\u0430.
-        \u0412\u043E\u0442 \u0440\u0430\u0441\u0442\u044F\u043F\u0430! \r\n\r\n\u0417\u0430\u043A\u0430\u0436\u0435\u043C
-        \u043F\u043E\u0437\u0436\u0435."
-      girtAnswerEmotion: 5
-  - textGirl: "\u041E\u0445, \u043B\u0430\u0434\u043D\u043E. \u041F\u0440\u043E\u0445\u043E\u0434\u0438,
-      \u044F \u0441\u0434\u0435\u043B\u0430\u043B\u0430 \u0431\u0438\u0444\u0448\u0442\u0435\u043A\u0441\u044B.
-      \u0412\u0438\u0434\u0438\u043C\u043E, \u043F\u0440\u0438\u0434\u0451\u0442\u0441\u044F
-      \u0435\u0441\u0442\u044C \u0442\u043E\u043B\u044C\u043A\u043E \u0438\u0445."
-    girlEmotion: 4
-    textGuy:
-    - id: 8
-      text: "\"\u0412\u044B\u0433\u043B\u044F\u0434\u0438\u0442 \u0430\u043F\u043F\u0435\u0442\u0438\u0442\u043D\u043E.
-        \n\n\u041F\u0440\u044F\u043C\u043E \u043A\u0430\u043A \u0442\u044B, \u0434\u0435\u0442\u043A\u0430.\"\r\n"
-      badText: 1
-      girlAnswer: "\u041B\u044E\u0434\u043E\u0435\u0434\u0441\u0442\u0432\u043E \u2014
-        \u044D\u0442\u043E \u043D\u0435 \u0448\u0443\u0442\u043A\u0438!\r\n"
-      girtAnswerEmotion: 2
-    - id: 9
-      text: "\u0425\u043E\u0440\u043E\u0448\u043E, \u043D\u043E \u0434\u0430\u0432\u0430\u0439
-        \u043F\u043E\u0442\u043E\u043C \u043F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u043C
-        \u043D\u0430\u0441\u0447\u0451\u0442 \u0442\u0432\u043E\u0435\u0433\u043E
-        \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F...\r\n"
-      badText: 1
-      girlAnswer: "\"\u0427\u0442\u043E \u044D\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442?
-        \n\n\u0422\u044B \u043C\u0435\u043D\u044F \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E
-        \u0431\u0435\u0441\u0438\u0448\u044C, \u0432\u043E\u0442 \u044F \u0432\u0441\u044F
-        \u0438 \u043D\u0430 \u043D\u0435\u0440\u0432\u0430\u0445!\"\r\n"
-      girtAnswerEmotion: 3
-    - id: 10
-      text: "\u041C\u0438\u043B\u0430\u044F, \u043D\u043E \u044F \u0436\u0435 \u0432\u0435\u0433\u0430\u043D.
-        \u041E\u0431\u0449\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u044B\u0439
-        \u0444\u0430\u043A\u0442: \u0432\u0441\u0435, \u043A\u0442\u043E \u0435\u0434\u044F\u0442
-        \u043C\u044F\u0441\u043E \u2014 \u0443\u0431\u0438\u0439\u0446\u044B. \u0422\u044B
-        \u043C\u0435\u043D\u044F \u0440\u0430\u0441\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0435\u0448\u044C...\r\n"
-      badText: 0
-      girlAnswer: "\"\u041A\u0430\u043A-\u0442\u043E \u044F \u043D\u0435 \u043F\u043E\u0434\u0443\u043C\u0430\u043B\u0430...
-        \n\n\u041B\u0430\u0434\u043D\u043E, \u0432\u044B\u0431\u0440\u043E\u0441\u0438
-        \u0432\u0441\u0451. \u0422\u043E\u043B\u044C\u043A\u043E \u043D\u0435 \u0432
-        \u043C\u0443\u0441\u043E\u0440\u043A\u0443, \u0430 \u0432 \u043E\u043A\u043D\u043E.\"\r\n"
-      girtAnswerEmotion: 5
-    - id: 11
-      text: "\"\u041E-\u043E-\u043E, \u043D\u043E\u0432\u044B\u0439 \u0440\u0435\u0446\u0435\u043F\u0442?
-        \n\n\u0422\u0430\u043A\u043E\u0439 \u0441\u043E\u0447\u043D\u044B\u0439 \u0438
-        \u0430\u0440\u043E\u043C\u0430\u0442\u043D\u044B\u0439 \u2014 \u043F\u0440\u043E\u0441\u0442\u043E
-        \u043C\u044F\u0441\u043D\u043E\u0439 \u043F\u0440\u0430\u0437\u0434\u043D\u0438\u043A.\"\r\n"
-      badText: 0
-      girlAnswer: "\u0413\u043B\u0443\u043F\u044B\u0448\u043A\u0430, \u043A\u0430\u0436\u0434\u044B\u0439
-        \u0440\u0430\u0437 \u0442\u0430\u043A \u0433\u043E\u0432\u043E\u0440\u0438\u0448\u044C!
-        \u042F \u043D\u0435 \u043C\u0435\u043D\u044F\u043B\u0430 \u0440\u0435\u0446\u0435\u043F\u0442
-        \u0437\u0430 \u0432\u0441\u0435 6 \u043B\u0435\u0442 \u043D\u0430\u0448\u0438\u0445
-        \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u0439!\r\n"
-      girtAnswerEmotion: 0
-  - textGirl: "\u0410 \u044D\u0442\u043E \u0447\u0442\u043E \u0437\u0430 \u043A\u0440\u0430\u0441\u043D\u044B\u0435
-      \u043F\u044F\u0442\u043D\u0430 \u043D\u0430 \u0440\u0443\u0431\u0430\u0448\u043A\u0435?\r\n"
-    girlEmotion: 2
-    textGuy:
-    - id: 12
-      text: "\u041C\u043E\u0436\u0435\u0442 \u043C\u0443\u0436\u0447\u0438\u043D\u0430
-        \u043A\u0443\u043F\u0438\u0442\u044C \u0441\u0435\u0431\u0435 \u043F\u043E\u043C\u0430\u0434\u0443?\r\n"
-      badText: 0
-      girlAnswer: "\u0425\u0432\u0430\u0442\u0438\u0442 \u0432\u044B\u0442\u0438\u0440\u0430\u0442\u044C
-        \u0433\u0443\u0431\u044B \u043E\u0431 \u043E\u0434\u0435\u0436\u0434\u0443,
-        \u044F \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u043F\u0440\u043E\u0441\u0438\u043B\u0430!\r\n"
-      girtAnswerEmotion: 2
-    - id: 13
-      text: "\"\u041F\u043E\u043F\u0440\u043E\u0441\u0438\u043B \u043C\u0430\u043B\u044F\u0440\u0430
-        \u0443 \u043F\u043E\u0434\u044A\u0435\u0437\u0434\u0430 \u0431\u0440\u044B\u0437\u043D\u0443\u0442\u044C
-        \u043A\u0440\u0430\u0441\u043A\u043E\u0439. \n\n\u041F\u0440\u0430\u0432\u0434\u0430
-        \u043A\u043B\u0430\u0441\u0441\u043D\u043E \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C?\"\r\n"
-      badText: 0
-      girlAnswer: "\u0412 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439
-        \u0440\u0430\u0437 \u0441\u043F\u0440\u043E\u0441\u0438 \u2014 \u0434\u0430\u043C
-        \u0442\u0435\u043B\u0435\u0444\u043E\u043D \u043F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u043E\u043D\u0430\u043B\u0430.\r\n"
-      girtAnswerEmotion: 1
-    - id: 14
-      text: "\u041F\u0430\u0434\u0435\u043D\u0438\u044F \u0438\u0437 \u043E\u043A\u043D\u0430
-        \u0431\u0435\u0441\u0441\u043B\u0435\u0434\u043D\u043E \u043D\u0435 \u043F\u0440\u043E\u0445\u043E\u0434\u044F\u0442...\r\n"
-      badText: 1
-      girlAnswer: "\u042D\u0442\u043E \u0447\u0442\u043E \u0435\u0449\u0451 \u0437\u0430
-        \u0433\u0440\u044F\u0437\u043D\u044B\u0435 \u043D\u0430\u043C\u0451\u043A\u0438?!\r\n"
-      girtAnswerEmotion: 3
-    - id: 15
-      text: "\u042D\u0442\u043E \u043E\u0431\u043C\u0430\u043D \u0437\u0440\u0435\u043D\u0438\u044F,
-        \u0432\u044B\u0437\u0432\u0430\u043D\u043D\u044B\u0439 \u0432\u0441\u043F\u044B\u0448\u043A\u0430\u043C\u0438
-        \u043D\u0430 \u0421\u043E\u043B\u043D\u0446\u0435 \u0438 \u0440\u0435\u0442\u0440\u043E\u0433\u0440\u0430\u0434\u043D\u044B\u043C
-        \u042E\u043F\u0438\u0442\u0435\u0440\u043E\u043C.\r\n"
-      badText: 1
-      girlAnswer: "\"\u0422\u044B \u043C\u0435\u043D\u044F \u0437\u0430 \u0434\u0443\u0440\u0443
-        \u0434\u0435\u0440\u0436\u0438\u0448\u044C? \n\n\u0414\u0443\u043C\u0430\u0435\u0448\u044C
-        \u043D\u0435 \u0437\u043D\u0430\u044E, \u0447\u0442\u043E \u0432 \u0440\u0435\u0442\u0440\u043E\u0433\u0440\u0430\u0434\u0435
-        \u0441\u0435\u0439\u0447\u0430\u0441 \u0412\u0435\u043D\u0435\u0440\u0430?!\"\r\n"
-      girtAnswerEmotion: 3
-  - textGirl: "\u0420\u0430\u0437\u0434\u0435\u0432\u0430\u0439\u0441\u044F."
-    girlEmotion: 0
-    textGuy:
-    - id: 16
-      text: "\u042D\u043C-\u043C, \u0437\u0430\u0447\u0435\u043C?\r\n"
-      badText: 1
-      girlAnswer: "\u0422\u044B \u0447\u0442\u043E, \u0441\u0442\u0435\u0441\u043D\u044F\u0435\u0448\u044C\u0441\u044F
-        \u0441\u0432\u043E\u0435\u0439 \u0436\u0435\u043D\u044B?!\r\n"
-      girtAnswerEmotion: 2
-    - id: 17
-      text: "\u041C\u0438\u043B\u0430\u044F, \u0443 \u043C\u0435\u043D\u044F \u0431\u043E\u043B\u0438\u0442
-        \u0433\u043E\u043B\u043E\u0432\u0430... \u0414\u0430 \u0438 \u0432\u043E\u043E\u0431\u0449\u0435
-        \u2014 \u0441\u0435\u043A\u0441 \u043F\u0435\u0440\u0435\u043E\u0446\u0435\u043D\u0451\u043D.
-        \u041E\u043D \u043D\u0435 \u043D\u0443\u0436\u0435\u043D \u0434\u043B\u044F
-        \u0441\u043B\u0438\u044F\u043D\u0438\u044F \u043D\u0430\u0448\u0438\u0445
-        \u0434\u0443\u0448.\r\n"
-      badText: 0
-      girlAnswer: "\u0412\u043E\u043E\u0431\u0449\u0435-\u0442\u043E, \u044F \u043F\u0440\u043E\u0441\u0442\u043E
-        \u0445\u043E\u0442\u0435\u043B\u0430 \u043F\u043E\u043E\u0431\u0435\u0434\u0430\u0442\u044C
-        \u0433\u043E\u043B\u044B\u0448\u043E\u043C. \u0427\u0442\u043E \u0437\u0430
-        \u043F\u0435\u0440\u0435\u043E\u0441\u043C\u044B\u0441\u043B\u0435\u043D\u0438\u0435
-        \u043F\u043E\u043B\u043E\u0432\u043E\u0439 \u0436\u0438\u0437\u043D\u0438?\r\n"
-      girtAnswerEmotion: 4
-    - id: 18
-      text: "\u0414\u0430\u0432\u0430\u0439 \u043F\u0440\u043E\u0441\u0442\u043E
-        \u043D\u0430\u0441\u044B\u043F\u0435\u043C \u043F\u043E\u0440\u043E\u0448\u043E\u043A
-        \u0432 \u0432\u0430\u043D\u043D\u0443\u044E \u2014 \u0438 \u044F \u043F\u0440\u044B\u0433\u043D\u0443
-        \u0442\u0443\u0434\u0430 \u0432 \u043E\u0434\u0435\u0436\u0434\u0435.\r\n"
-      badText: 0
-      girlAnswer: "\u0410\u0433\u0430, \u044F\u0441\u043D\u043E... \n\n\u0427\u0442\u043E
-        \u0443 \u0442\u0435\u0431\u044F \u043F\u043E\u0434 \u043D\u0435\u0439 \u2014
-        \u0437\u0430\u0441\u043E\u0441\u044B?\"\r\n"
-      girtAnswerEmotion: 2
-    - id: 19
-      text: "\u0422\u044B \u043F\u0435\u0440\u0432\u0430\u044F.\r\n"
-      badText: 1
-      girlAnswer: "\u0423\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u043C\u043D\u0435
-        \u0431\u0443\u0434\u0435\u0448\u044C?!\r\n"
-      girtAnswerEmotion: 2
-  - textGirl: "\u0422\u044B \u043C\u043D\u0435 \u0438\u0437\u043C\u0435\u043D\u044F\u0435\u0448\u044C?"
-    girlEmotion: 4
-    textGuy:
-    - id: 20
-      text: "\u0418\u0437\u043C\u0435\u043D\u0430 \u2014 \u044D\u0442\u043E \u043E\u0431\u043C\u0435\u043D
-        \u0431\u043E\u043B\u044C\u0448\u043E\u0433\u043E \u0441\u0447\u0430\u0441\u0442\u044C\u044F
-        \u043D\u0430 \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u043E\u0435 \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435.
-        \r\n\r\n\u042F \u043D\u0435 \u043D\u0430\u0441\u0442\u043E\u043B\u044C\u043A\u043E
-        \u0433\u043B\u0443\u043F."
-      badText: 0
-      girlAnswer: "\u041D\u0435 \u043D\u0430\u0434\u043E \u0443\u043C\u043D\u0438\u0447\u0430\u0442\u044C
-        \u043F\u0440\u0438 \u0436\u0435\u043D\u0435."
-      girtAnswerEmotion: 0
-    - id: 21
-      text: "\u0418\u0437\u043C\u0435\u043D\u0430 \u2014 \u044D\u0442\u043E \u0441\u0442\u0440\u0430\u0448\u043D\u044B\u0439
-        \u0433\u0440\u0435\u0445, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u044F
-        \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u0431\u044B \u0441\u0435\u0431\u0435
-        \u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u043B.\r"
-      badText: 1
-      girlAnswer: "\u041A\u0430\u043A\u043E\u0439 \u0433\u0440\u0435\u0445? \r\n\r\n\u041E\u0442\u043A\u0443\u0434\u0430
-        \u0442\u044B \u044D\u0442\u043E \u0441\u043B\u043E\u0432\u043E \u0432\u043E\u043E\u0431\u0449\u0435
-        \u0432\u0437\u044F\u043B, \u0442\u044B \u0432\u0435\u0434\u044C \u043D\u0435\u0432\u0435\u0440\u0443\u044E\u0449\u0438\u0439!"
-      girtAnswerEmotion: 2
-    - id: 22
-      text: "\u0418\u0437\u043C\u0435\u043D\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0430\u0435\u0442
-        \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u043B\u044E\u0431\u043E\u0432\u044C,
-        \u043D\u043E \u0438 \u0432\u0441\u0435\u0445 \u0441\u043E\u043F\u0440\u0438\u0447\u0430\u0441\u0442\u043D\u044B\u0445.
-        \u042F \u043D\u0430 \u0442\u0430\u043A\u043E\u0435 \u043D\u0435 \u0441\u043F\u043E\u0441\u043E\u0431\u0435\u043D."
-      badText: 1
-      girlAnswer: "\u0421\u043B\u0435\u0434\u044B \u043F\u043E\u043C\u0430\u0434\u044B
-        \u043D\u0430 \u0440\u0443\u0431\u0430\u0448\u043A\u0435 \u0433\u043E\u0432\u043E\u0440\u044F\u0442
-        \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u0435!"
-      girtAnswerEmotion: 2
-    - id: 23
-      text: "\u042F \u043D\u0435 \u0442\u0430\u043A\u043E\u0439 \u0447\u0435\u043B\u043E\u0432\u0435\u043A,
-        \u0442\u044B \u0432\u0435\u0434\u044C \u043C\u0435\u043D\u044F \u0437\u043D\u0430\u0435\u0448\u044C.
-        \r\n\r\n\u0418\u0437\u043C\u0435\u043D\u0430 \u2014 \u044D\u0442\u043E \u043C\u0435\u0440\u0437\u043A\u043E
-        \u0438 \u0430\u043C\u043E\u0440\u0430\u043B\u044C\u043D\u043E."
-      badText: 0
-      girlAnswer: "\u041A\u0430\u043A \u0438 \u0442\u0432\u043E\u0451 \u043A\u043E\u0432\u044B\u0440\u044F\u043D\u0438\u0435
-        \u0432 \u043D\u043E\u0441\u0443. \r\n\r\n\u041E\u043A, \u043E\u0442\u043C\u0430\u0437\u0430\u043B\u0441\u044F."
-      girtAnswerEmotion: 0
-  - textGirl: "\u0427\u0442\u043E \u044D\u0442\u043E? \u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435?
-      \u041A\u0442\u043E \u0442\u0435\u0431\u0435 \u043F\u0438\u0448\u0435\u0442
-      \u2014 \u041E\u041D\u0410?!"
-    girlEmotion: 2
-    textGuy:
-    - id: 24
-      text: "\u042D\u0442\u043E \u041E\u041D. \u042F \u0431\u0438. \r\n\r\n\u0414\u0430\u0432\u0430\u0439
-        \u0436\u0438\u0442\u044C \u0432\u0442\u0440\u043E\u0451\u043C."
-      badText: 1
-      girlAnswer: "\u0422\u044B \u0436\u0435 \u0437\u043D\u0430\u0435\u0448\u044C,
-        \u0447\u0442\u043E \u0443 \u043D\u0430\u0441 \u043D\u0435\u0442 \u0442\u0440\u0435\u0442\u044C\u0435\u0433\u043E
-        \u0441\u043F\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u043C\u0435\u0441\u0442\u0430!"
-      girtAnswerEmotion: 2
-    - id: 25
-      text: "\u042D\u0442\u043E \u0447\u0435\u043B\u043E\u0432\u0435\u043A... \u043A\u043E\u0442\u043E\u0440\u044B\u0439
-        \u0445\u043E\u0447\u0435\u0442 \u043F\u043E\u043C\u043E\u0447\u044C. \u0422\u0435\u0431\u0435
-        \u044D\u0442\u043E \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E...
-        \r\n\r\n\u0422\u043E\u043B\u044C\u043A\u043E \u043D\u0435 \u0437\u043B\u0438\u0441\u044C."
-      badText: 0
-      girlAnswer: "\u042F \u043D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u044E..."
-      girtAnswerEmotion: 1
-    - id: 26
-      text: "\u042F \u043F\u0435\u0440\u0435\u0441\u043F\u0430\u043B \u0441 \u043D\u0435\u0439
-        \u0440\u0430\u0434\u0438 \u043D\u0430\u0441! \r\n\r\n\u0422\u044B \u0436\u0435
-        \u043F\u0440\u043E\u0441\u0438\u043B\u0430 \u0447\u0430\u0449\u0435 \u0442\u0435\u0431\u044F
-        \u0443\u0434\u0438\u0432\u043B\u044F\u0442\u044C."
-      badText: 1
-      girlAnswer: "\u041F\u041E\u0414\u0410\u0420\u041A\u0410\u041C\u0418! \r\n\r\n\u0423\u0434\u0438\u0432\u043B\u044F\u0442\u044C
-        \u043F\u043E\u0434\u0430\u0440\u043A\u0430\u043C\u0438, \u0438\u0434\u0438\u043E\u0442!"
-      girtAnswerEmotion: 2
-    - id: 27
-      text: "\u042D\u0442\u043E \u043F\u0438\u0448\u0435\u0448\u044C \u0442\u044B
-        \u0438\u0437 \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043E. \r\n\r\n\u041F\u0440\u043E\u0441\u0438\u0448\u044C
-        \u043E\u0442\u0432\u0435\u0437\u0442\u0438 \u0441\u0435\u0431\u044F \u0432
-        \u043F\u0441\u0438\u0445\u0431\u043E\u043B\u044C\u043D\u0438\u0446\u0443."
-      badText: 1
-      girlAnswer: "\u042F-\u0438\u0437-\u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043E
-        \u043D\u0435 \u0441\u0442\u0430\u043B\u0430 \u0431\u044B \u043F\u0438\u0441\u0430\u0442\u044C
-        \u0442\u0430\u043A\u0443\u044E \u0432\u0430\u0436\u043D\u0443\u044E \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E
-        \u043F\u043E \u043D\u0435\u0437\u0430\u0449\u0438\u0449\u0451\u043D\u043D\u043E\u043C\u0443
-        \u043A\u0430\u043D\u0430\u043B\u0443 \u0441\u0432\u044F\u0437\u0438!"
-      girtAnswerEmotion: 0
-  - textGirl: "\u0422\u044B \u043D\u0430\u043C\u0435\u043A\u0430\u0435\u0448\u044C,
-      \u0447\u0442\u043E \u044F \u043D\u0435\u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u0430\u044F?!"
-    girlEmotion: 3
-    textGuy:
-    - id: 28
-      text: "\u0425\u0432\u0430\u0442\u0438\u0442, \u044F \u0443\u0436\u0435 \u0437\u0430\u0434\u043E\u043B\u0431\u0430\u043B\u0441\u044F
-        \u043F\u043E\u0434\u044B\u0433\u0440\u044B\u0432\u0430\u0442\u044C \u044D\u0442\u043E\u043C\u0443
-        \u0431\u0435\u0437\u0443\u043C\u0438\u044E! \u041A\u0430\u0436\u0434\u044B\u0439
-        \u043C\u0435\u0441\u044F\u0446 \u043E\u0434\u043D\u043E \u0438 \u0442\u043E
-        \u0436\u0435. \u041F\u043E\u0435\u0445\u0430\u043B\u0438, \u0441\u043E\u0431\u0438\u0440\u0430\u0439\u0441\u044F."
-      badText: 1
-      girlAnswer: "\u0410\u0445 \u0432\u043E\u0442 \u043A\u0430\u043A... \u041C\u043E\u0439
-        \u0434\u043E\u043C \u2014 \u043C\u043E\u0438 \u043F\u0440\u0430\u0432\u0438\u043B\u0430!"
-      girtAnswerEmotion: 1
-    - id: 29
-      text: "\u041D\u0435 \u043D\u0430\u043C\u0435\u043A\u0430\u044E, \u0430 \u0433\u043E\u0432\u043E\u0440\u044E
-        \u043F\u0440\u044F\u043C\u044B\u043C \u0442\u0435\u043A\u0441\u0442\u043E\u043C.
-        \u041C\u043D\u0435 \u043D\u0430\u0434\u043E\u0435\u043B \u044D\u0442\u043E\u0442
-        \u0441\u044E\u0440.\r\n\r\n\u0413\u043B\u043E\u0442\u0430\u0439 \u0442\u0430\u0431\u043B\u0435\u0442\u043A\u0438,
-        \u0441\u043E\u0431\u0438\u0440\u0430\u0439 \u0432\u0435\u0449\u0438 \u2014
-        \u0438 \u043F\u043E\u0435\u0445\u0430\u043B\u0438."
-      badText: 1
-      girlAnswer: "\u0427\u0442\u043E \u0436... \r\n\r\n\u042F \u0442\u0443\u0442
-        \u0443\u0436\u0435 \u043A\u043E\u0435-\u0447\u0442\u043E \u0441\u043E\u0431\u0440\u0430\u043B\u0430."
-      girtAnswerEmotion: 1
-    - id: 30
-      text: "\u0414\u0430 \u043D\u0435\u0442, \u0447\u0442\u043E \u0442\u044B! \u041F\u0440\u043E\u0441\u0442\u043E
-        \u043B\u044E\u0431\u0438\u0448\u044C \u0432\u044B\u043A\u0438\u0434\u044B\u0432\u0430\u0442\u044C
-        \u043B\u044E\u0434\u0435\u0439 \u0438 \u0432\u0435\u0449\u0438 \u0438\u0437
-        \u043E\u043A\u043D\u0430. \r\n\r\n\u0425\u043E\u0431\u0431\u0438 \u0443 \u0442\u0435\u0431\u044F
-        \u0442\u0430\u043A\u043E\u0435."
-      badText: 1
-      girlAnswer: "\u0427\u0442\u043E \u0442\u044B... \r\n\r\n\u041A\u0430\u043A
-        \u0442\u044B \u043F\u043E\u0441\u043C\u0435\u043B \u0442\u0430\u043A\u043E\u0435
-        \u0441\u043A\u0430\u0437\u0430\u0442\u044C?!"
-      girtAnswerEmotion: 5
-    - id: 31
-      text: "\u041F\u0440\u043E\u0441\u0442\u043E... \u0443 \u0442\u0435\u0431\u044F
-        \u043F\u0440\u0438\u0441\u0442\u0443\u043F. \u041E\u043D \u0431\u044B\u0432\u0430\u0435\u0442
-        \u043A\u0430\u0436\u0434\u044B\u0439 \u043C\u0435\u0441\u044F\u0446. \u042F
-        \u0434\u043E\u043B\u0436\u0435\u043D \u043E\u0442\u0432\u0435\u0437\u0442\u0438
-        \u0442\u0435\u0431\u044F \u043A \u0432\u0440\u0430\u0447\u0443. \u041A\u0430\u043A
-        \u0436\u0435 \u044F \u0443\u0441\u0442\u0430\u043B..."
-      badText: 0
-      girlAnswer: "\u0427\u0442\u043E?.."
-      girtAnswerEmotion: 4
-  - textGirl: "\u0422\u044B... \u0422\u044B \u0441\u0435\u0440\u044C\u0451\u0437\u043D\u043E?
-      \u041C\u043D\u0435 \u043D\u0443\u0436\u043D\u043E \u043B\u0435\u0447\u044C
-      \u0432 \u0431\u043E\u043B\u044C\u043D\u0438\u0446\u0443?"
-    girlEmotion: 4
-    textGuy:
-    - id: 32
-      text: "\u0420\u043E\u0434\u043D\u0430\u044F, \u0443\u0436\u0435 5 \u043B\u0435\u0442
-        \u0432 \u043D\u0430\u0447\u0430\u043B\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E
-        \u043C\u0435\u0441\u044F\u0446\u0430 \u0442\u044B \u0433\u043E\u0442\u043E\u0432\u0438\u0448\u044C
-        \u043C\u043D\u0435 \u0440\u043E\u0441\u0442\u0431\u0438\u0444. \u041A\u0430\u043A
-        \u0432 \u0442\u043E\u0442 \u0434\u0435\u043D\u044C, \u043A\u043E\u0433\u0434\u0430
-        \u0442\u044B \u0441\u043B\u0443\u0447\u0430\u0439\u043D\u043E \u0432\u044B\u0442\u043E\u043B\u043A\u043D\u0443\u043B\u0430
-        \u0441\u0435\u0441\u0442\u0440\u0443 \u0438\u0437 \u043E\u043A\u043D\u0430...
-        \u042F \u043B\u044E\u0431\u043B\u044E \u0442\u0435\u0431\u044F, \u043C\u044B
-        \u0441\u043F\u0440\u0430\u0432\u0438\u043C\u0441\u044F \u0441 \u044D\u0442\u0438\u043C
-        \u0432\u043C\u0435\u0441\u0442\u0435."
-      badText: 1
-      girlAnswer: "\u0422\u044B \u0447\u0442\u043E, \u0437\u0430\u0431\u044B\u043B,
-        \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u043B\u0435\u0442 \u043C\u044B
-        \u0436\u0435\u043D\u0430\u0442\u044B?! \r\n\r\n\u0423\u0440\u043E\u0434!"
-      girtAnswerEmotion: 3
-    - id: 33
-      text: "\u041B\u044E\u0431\u0438\u043C\u0430\u044F, \u0443\u0436\u0435 6 \u043B\u0435\u0442
-        \u0432 \u043D\u0430\u0447\u0430\u043B\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E
-        \u043C\u0435\u0441\u044F\u0446\u0430 \u0442\u044B \u0433\u043E\u0442\u043E\u0432\u0438\u0448\u044C
-        \u043C\u043D\u0435 \u0440\u043E\u0441\u0442\u0431\u0438\u0444. \u041A\u0430\u043A
-        \u0432 \u0442\u043E\u0442 \u0434\u0435\u043D\u044C, \u043A\u043E\u0433\u0434\u0430
-        \u0442\u044B \u0441\u043B\u0443\u0447\u0430\u0439\u043D\u043E \u0432\u044B\u0442\u043E\u043B\u043A\u043D\u0443\u043B\u0430
-        \u0441\u0435\u0441\u0442\u0440\u0443 \u0438\u0437 \u043E\u043A\u043D\u0430...
-        \u042F \u043B\u044E\u0431\u043B\u044E \u0442\u0435\u0431\u044F, \u043C\u044B
-        \u0441\u043F\u0440\u0430\u0432\u0438\u043C\u0441\u044F \u0441 \u044D\u0442\u0438\u043C
-        \u0432\u043C\u0435\u0441\u0442\u0435."
-      badText: 0
-      girlAnswer: "\u041E\u0445, \u043C\u0438\u043B\u044B\u0439... \r\n\r\n\u042F
-        \u043D\u0430\u0447\u0438\u043D\u0430\u044E \u0432\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u0442\u044C...
-        \u041F\u0440\u043E\u0441\u0442\u0438, \u0447\u0442\u043E \u0442\u0435\u0431\u0435
-        \u043F\u0440\u0438\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u043A\u0430\u0436\u0434\u044B\u0439
-        \u0440\u0430\u0437 \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0442\u044C
-        \u0447\u0435\u0440\u0435\u0437 \u044D\u0442\u043E... \r\n\r\n\u042F \u0433\u043E\u0442\u043E\u0432\u0430,
-        \u043F\u043E\u0439\u0434\u0451\u043C."
-      girtAnswerEmotion: 5
-    - id: 34
-      text: "\u0421\u043E\u043B\u043D\u044B\u0448\u043A\u043E, \u0443\u0436\u0435
-        5 \u043B\u0435\u0442 \u0432 \u043A\u043E\u043D\u0446\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E
-        \u043C\u0435\u0441\u044F\u0446\u0430 \u0442\u044B \u0433\u043E\u0442\u043E\u0432\u0438\u0448\u044C
-        \u043C\u043D\u0435 \u0440\u043E\u0441\u0442\u0431\u0438\u0444. \u041A\u0430\u043A
-        \u0432 \u0442\u043E\u0442 \u0434\u0435\u043D\u044C, \u043A\u043E\u0433\u0434\u0430
-        \u0442\u044B \u0441\u043B\u0443\u0447\u0430\u0439\u043D\u043E \u0432\u044B\u0442\u043E\u043B\u043A\u043D\u0443\u043B\u0430
-        \u0441\u0435\u0441\u0442\u0440\u0443 \u0438\u0437 \u043E\u043A\u043D\u0430...
-        \u042F \u043B\u044E\u0431\u043B\u044E \u0442\u0435\u0431\u044F, \u043C\u044B
-        \u0441\u043F\u0440\u0430\u0432\u0438\u043C\u0441\u044F \u0441 \u044D\u0442\u0438\u043C
-        \u0432\u043C\u0435\u0441\u0442\u0435."
-      badText: 1
-      girlAnswer: "\u0422\u044B \u043A\u0442\u043E \u0442\u0430\u043A\u043E\u0439?!
-        \r\n\r\n\u0422\u044B \u043D\u0435 \u043C\u043E\u0439 \u043C\u0443\u0436 \u2014
-        \u0442\u044B \u043D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u0437\u043D\u0430\u0435\u0448\u044C
-        \u043E\u0431\u043E \u043C\u043D\u0435!"
-      girtAnswerEmotion: 3
-    - id: 35
-      text: "\u0417\u0430\u0439\u043A\u0430, \u0443\u0436\u0435 6 \u043B\u0435\u0442
-        \u0432 \u043A\u043E\u043D\u0446\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E
-        \u043C\u0435\u0441\u044F\u0446\u0430 \u0442\u044B \u0433\u043E\u0442\u043E\u0432\u0438\u0448\u044C
-        \u043C\u043D\u0435 \u0440\u043E\u0441\u0442\u0431\u0438\u0444. \u041A\u0430\u043A
-        \u0432 \u0442\u043E\u0442 \u0434\u0435\u043D\u044C, \u043A\u043E\u0433\u0434\u0430
-        \u0442\u044B \u0441\u043B\u0443\u0447\u0430\u0439\u043D\u043E \u0432\u044B\u0442\u043E\u043B\u043A\u043D\u0443\u043B\u0430
-        \u0441\u0435\u0441\u0442\u0440\u0443 \u0438\u0437 \u043E\u043A\u043D\u0430...
-        \u042F \u043B\u044E\u0431\u043B\u044E \u0442\u0435\u0431\u044F, \u043C\u044B
-        \u0441\u043F\u0440\u0430\u0432\u0438\u043C\u0441\u044F \u0441 \u044D\u0442\u0438\u043C
-        \u0432\u043C\u0435\u0441\u0442\u0435."
-      badText: 1
-      girlAnswer: "\u042F \u0433\u043E\u0442\u043E\u0432\u043B\u044E \u0440\u043E\u0441\u0442\u0431\u0438\u0444
-        \u0441\u0442\u0440\u043E\u0433\u043E \u043F\u0435\u0440\u0432\u043E\u0433\u043E
-        \u0447\u0438\u0441\u043B\u0430! \r\n\r\n\u041A\u0430\u043A \u0442\u044B \u043C\u043E\u0433
-        \u0437\u0430\u0431\u044B\u0442\u044C?!"
-      girtAnswerEmotion: 3
+  localizedDialogCommons:
+  - Language: 0
+    DialogCommons:
+    - textGirl: "\u0413\u0434\u0435 \u0442\u044B \u0431\u044B\u043B? \u042F \u0432\u0435\u0441\u044C
+        \u0434\u0435\u043D\u044C \u0442\u0435\u0431\u044F \u0436\u0434\u0430\u043B\u0430!"
+      girlEmotion: 0
+      textGuy:
+      - id: 0
+        text: "\u041A\u043E\u0433\u043E-\u0442\u043E \u0438\u0437\u0431\u0438\u0432\u0430\u043B\u0438
+          \u0432\u043E \u0434\u0432\u043E\u0440\u0435. \n\n\u041F\u0440\u0438\u0448\u043B\u043E\u0441\u044C
+          \u0441\u043F\u0440\u044F\u0442\u0430\u0442\u044C\u0441\u044F, \u0432\u0435\u0434\u044C
+          \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u043C \u043C\u043E\u0433
+          \u0431\u044B\u0442\u044C \u044F!"
+        badText: 0
+        girlAnswer: "\u0412\u043E\u0442 \u0438 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E!
+          \u041C\u043D\u0435 \u043D\u0435 \u043D\u0443\u0436\u0435\u043D \u043F\u043E\u043F\u043E\u0440\u0447\u0435\u043D\u044B\u0439
+          \u043C\u0443\u0436."
+        girtAnswerEmotion: 1
+      - id: 1
+        text: "\u042F \u0441\u0432\u043E\u0431\u043E\u0434\u043D\u044B\u0439 \u043C\u0443\u0436\u0447\u0438\u043D\u0430.
+          \u0418 \u0435\u0441\u043B\u0438 \u044F \u0445\u043E\u0447\u0443 \u0434\u043E
+          \u0442\u043E\u0448\u043D\u043E\u0442\u044B \u043A\u0430\u0442\u0430\u0442\u044C\u0441\u044F
+          \u043D\u0430 \u044D\u0441\u043A\u0430\u043B\u0430\u0442\u043E\u0440\u0430\u0445
+          \u0432 \u0442\u043E\u0440\u0433\u043E\u0432\u043E\u043C \u0446\u0435\u043D\u0442\u0440\u0435
+          \u2014 \u0442\u0435\u0431\u0435 \u043C\u0435\u043D\u044F \u043D\u0435 \u043E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C."
+        badText: 0
+        girlAnswer: "\u0418\u043C\u0435\u043D\u043D\u043E \u0442\u0432\u043E\u044F
+          \u0446\u0435\u043B\u0435\u0443\u0441\u0442\u0440\u0435\u043C\u043B\u0451\u043D\u043D\u043E\u0441\u0442\u044C
+          \u0438 \u043F\u043E\u043A\u043E\u0440\u0438\u043B\u0430 \u043C\u0435\u043D\u044F
+          \u043F\u0440\u0438 \u0437\u043D\u0430\u043A\u043E\u043C\u0441\u0442\u0432\u0435!"
+        girtAnswerEmotion: 0
+      - id: 2
+        text: "\u0414\u0435\u0442\u043A\u0430, \u0433\u0434\u0435 \u044F \u0442\u043E\u043B\u044C\u043A\u043E
+          \u043D\u0435 \u0431\u044B\u043B... \u042D\u0442\u043E\u0442 \u0447\u0451\u0440\u0442\u043E\u0432
+          \u0433\u043E\u0440\u043E\u0434 \u043C\u0430\u043D\u0438\u0442 \u0441\u0432\u043E\u0438\u043C\u0438
+          \u043F\u0440\u0435\u043B\u0435\u0441\u0442\u044F\u043C\u0438, \u0437\u0430\u0441\u0430\u0441\u044B\u0432\u0430\u044F
+          \u0432 \u043A\u0440\u0443\u0433\u043E\u0432\u043E\u0440\u043E\u0442 \u043F\u043E\u0445\u043E\u0442\u0438,
+          \u0433\u0440\u044F\u0437\u0438 \u0438 \u043D\u0430\u0440\u043A\u043E\u0442\u0438\u043A\u043E\u0432."
+        badText: 0
+        girlAnswer: "\u042D\u0442\u043E \u0442\u0430\u043A \u043D\u0443\u0430\u0440\u043D\u043E
+          \u0437\u0432\u0443\u0447\u0438\u0442... \n\n\u041F\u0438\u0448\u0435\u0448\u044C
+          \u043D\u043E\u0432\u044B\u0439 \u0440\u0430\u0441\u0441\u043A\u0430\u0437?
+          \u0416\u0434\u0443 \u0441 \u043D\u0435\u0442\u0435\u0440\u043F\u0435\u043D\u0438\u0435\u043C,
+          \u043A\u043E\u0433\u0434\u0430 \u043F\u043E\u043A\u0430\u0436\u0435\u0448\u044C
+          \u0447\u0435\u0440\u043D\u043E\u0432\u0438\u043A."
+        girtAnswerEmotion: 4
+      - id: 3
+        text: "\u0422\u0435\u0431\u044F \u043D\u0435 \u0441\u043C\u0443\u0449\u0430\u0435\u0442,
+          \u0447\u0442\u043E \u044F \u0447\u0435\u0440\u0435\u0437 \u043E\u043A\u043D\u043E
+          \u0437\u0430\u0431\u0440\u0430\u043B\u0441\u044F? \u041C\u0438\u043B\u0430\u044F,
+          \u0442\u044B \u043E\u043F\u044F\u0442\u044C \u0441\u0435\u0431\u044F \u043F\u043B\u043E\u0445\u043E
+          \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u0435\u0448\u044C..."
+        badText: 1
+        girlAnswer: "\u041C\u043D\u0435 \u0438 \u043F\u0440\u0430\u0432\u0434\u0430
+          \u0434\u0443\u0440\u043D\u043E... \n\n\u041E\u0442 \u0431\u0440\u0435\u0434\u0430,
+          \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0442\u044B \u043D\u0435\u0441\u0451\u0448\u044C!"
+        girtAnswerEmotion: 3
+    - textGirl: "\u041F\u043E\u0433\u043E\u0434\u0438-\u043A\u0430, \u0442\u044B
+        \u043D\u0435 \u043F\u0440\u0438\u043D\u0451\u0441 \u0445\u043B\u0435\u0431
+        \u0438 \u043C\u043E\u043B\u043E\u043A\u043E?"
+      girlEmotion: 0
+      textGuy:
+      - id: 4
+        text: "\u041F\u043E\u043A\u0430 \u044F \u0441\u0430\u043C\u043E\u043E\u0442\u0432\u0435\u0440\u0436\u0435\u043D\u043D\u043E
+          \u0434\u043E\u0438\u043B \u043A\u043E\u0440\u043E\u0432\u0443, \u044D\u0442\u0430
+          \u0441\u0442\u0435\u0440\u0432\u0430 \u0441\u044A\u0435\u043B\u0430 \u0431\u0443\u0445\u0430\u043D\u043A\u0443...
+          \u0412 \u043E\u0431\u0449\u0435\u043C, \u043B\u0443\u0447\u0448\u0435 \u0442\u0435\u0431\u0435
+          \u043D\u0435 \u0437\u043D\u0430\u0442\u044C, \u0447\u0442\u043E \u044F
+          \u0441 \u043D\u0435\u0439 \u0441\u0434\u0435\u043B\u0430\u043B."
+        badText: 0
+        girlAnswer: "\u041D\u0430\u0434\u0435\u044E\u0441\u044C, \u0435\u0439 \u0432\u043E\u0437\u0434\u0430\u0441\u0442\u0441\u044F
+          \u0432 \u0433\u043E\u0432\u044F\u0436\u044C\u0435\u043C \u0430\u0434\u0443!"
+        girtAnswerEmotion: 0
+      - id: 5
+        text: "\u041C\u043D\u0435 \u043A\u0430\u0436\u0435\u0442\u0441\u044F, \u043C\u044B
+          \u043F\u0435\u0440\u0435\u043E\u0446\u0435\u043D\u0438\u0432\u0430\u0435\u043C
+          \u0435\u0434\u0443. \u041D\u0443\u0436\u043D\u043E \u0431\u043E\u043B\u044C\u0448\u0435
+          \u0434\u0443\u043C\u0430\u0442\u044C \u043E \u0432\u044B\u0441\u043E\u043A\u043E\u043C,
+          \u043F\u0440\u0435\u043A\u0440\u0430\u0441\u043D\u043E\u043C. \u042D\u0442\u043E
+          \u0438 \u0435\u0441\u0442\u044C \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0430\u044F
+          \u043F\u0438\u0449\u0430. \u0414\u043B\u044F \u0443\u043C\u0430 \u0438
+          \u0434\u0443\u0448\u0438."
+        badText: 0
+        girlAnswer: "\u0422\u043E \u0435\u0441\u0442\u044C \u0442\u044B \u0434\u0443\u043C\u0430\u043B
+          \u043E\u0431\u043E \u043C\u043D\u0435? \u0428\u0430\u043B\u0443\u043D\u0438\u0448\u043A\u0430!
+          \n\n\u0425\u043E\u0440\u043E\u0448\u043E, \u044F \u043F\u0440\u043E\u0449\u0430\u044E
+          \u0442\u0435\u0431\u044F."
+        girtAnswerEmotion: 0
+      - id: 6
+        text: "\u0412\u043E\u0442, \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0438.
+          \u0423 \u043C\u0435\u043D\u044F \u0443\u0436\u0435 \u0440\u0451\u0431\u0440\u0430
+          \u0442\u043E\u0440\u0447\u0430\u0442 \u2014 \u0442\u0430\u043A\u043E\u0439
+          \u044F \u0433\u043E\u043B\u043E\u0434\u043D\u044B\u0439. \u041A\u043E\u043D\u0435\u0447\u043D\u043E,
+          \u044F \u0432\u0441\u0451 \u0441\u044A\u0435\u043B, \u043F\u043E\u043A\u0430
+          \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u043B\u0441\u044F."
+        badText: 1
+        girlAnswer: "\u042D\u0442\u043E \u043D\u0430\u043C\u0451\u043A, \u0447\u0442\u043E
+          \u044F \u0442\u0435\u0431\u044F \u043D\u0435 \u043A\u043E\u0440\u043C\u043B\u044E?!"
+        girtAnswerEmotion: 3
+      - id: 7
+        text: "\u042D\u043C-\u043C... \u0410 \u0440\u0430\u0437\u0432\u0435 \u043C\u044B
+          \u0434\u043E\u043B\u0436\u043D\u044B \u0431\u044B\u043B\u0438 \u0447\u0442\u043E-\u0442\u043E
+          \u043A\u0443\u043F\u0438\u0442\u044C? \u0421\u0435\u0433\u043E\u0434\u043D\u044F
+          \u0436\u0435 \u043F\u0435\u0440\u0432\u043E\u0435 \u0447\u0438\u0441\u043B\u043E
+          \u2014 \u043F\u043E\u043D\u0438\u043C\u0430\u0435\u0448\u044C, \u043E \u0447\u0451\u043C
+          \u044F?"
+        badText: 0
+        girlAnswer: "\u042F \u0438 \u043F\u0440\u0430\u0432\u0434\u0430 \u0437\u0430\u0431\u044B\u043B\u0430.
+          \u0412\u043E\u0442 \u0440\u0430\u0441\u0442\u044F\u043F\u0430! \n\n\u0417\u0430\u043A\u0430\u0436\u0435\u043C
+          \u043F\u043E\u0437\u0436\u0435."
+        girtAnswerEmotion: 5
+    - textGirl: "\u041E\u0445, \u043B\u0430\u0434\u043D\u043E. \u041F\u0440\u043E\u0445\u043E\u0434\u0438,
+        \u044F \u0441\u0434\u0435\u043B\u0430\u043B\u0430 \u0431\u0438\u0444\u0448\u0442\u0435\u043A\u0441\u044B.
+        \u0412\u0438\u0434\u0438\u043C\u043E, \u043F\u0440\u0438\u0434\u0451\u0442\u0441\u044F
+        \u0435\u0441\u0442\u044C \u0442\u043E\u043B\u044C\u043A\u043E \u0438\u0445."
+      girlEmotion: 0
+      textGuy:
+      - id: 8
+        text: "\u0412\u044B\u0433\u043B\u044F\u0434\u0438\u0442 \u0430\u043F\u043F\u0435\u0442\u0438\u0442\u043D\u043E.
+          \n\n\u041F\u0440\u044F\u043C\u043E \u043A\u0430\u043A \u0442\u044B, \u0434\u0435\u0442\u043A\u0430."
+        badText: 1
+        girlAnswer: "\u041B\u044E\u0434\u043E\u0435\u0434\u0441\u0442\u0432\u043E
+          \u2014 \u044D\u0442\u043E \u043D\u0435 \u0448\u0443\u0442\u043A\u0438!"
+        girtAnswerEmotion: 2
+      - id: 9
+        text: "\u0425\u043E\u0440\u043E\u0448\u043E, \u043D\u043E \u0434\u0430\u0432\u0430\u0439
+          \u043F\u043E\u0442\u043E\u043C \u043F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u043C
+          \u043D\u0430\u0441\u0447\u0451\u0442 \u0442\u0432\u043E\u0435\u0433\u043E
+          \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F..."
+        badText: 1
+        girlAnswer: "\u0427\u0442\u043E \u044D\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442?
+          \n\n\u0422\u044B \u043C\u0435\u043D\u044F \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E
+          \u0431\u0435\u0441\u0438\u0448\u044C, \u0432\u043E\u0442 \u044F \u0432\u0441\u044F
+          \u0438 \u043D\u0430 \u043D\u0435\u0440\u0432\u0430\u0445!"
+        girtAnswerEmotion: 3
+      - id: 10
+        text: "\u041C\u0438\u043B\u0430\u044F, \u043D\u043E \u044F \u0436\u0435 \u0432\u0435\u0433\u0430\u043D.
+          \u041E\u0431\u0449\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u044B\u0439
+          \u0444\u0430\u043A\u0442: \u0432\u0441\u0435, \u043A\u0442\u043E \u0435\u0434\u044F\u0442
+          \u043C\u044F\u0441\u043E \u2014 \u0443\u0431\u0438\u0439\u0446\u044B. \u0422\u044B
+          \u043C\u0435\u043D\u044F \u0440\u0430\u0441\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0435\u0448\u044C..."
+        badText: 0
+        girlAnswer: "\u041A\u0430\u043A-\u0442\u043E \u044F \u043D\u0435 \u043F\u043E\u0434\u0443\u043C\u0430\u043B\u0430...
+          \n\n\u041B\u0430\u0434\u043D\u043E, \u0432\u044B\u0431\u0440\u043E\u0441\u0438
+          \u0432\u0441\u0451. \u0422\u043E\u043B\u044C\u043A\u043E \u043D\u0435 \u0432
+          \u043C\u0443\u0441\u043E\u0440\u043A\u0443, \u0430 \u0432 \u043E\u043A\u043D\u043E."
+        girtAnswerEmotion: 5
+      - id: 11
+        text: "\u041E-\u043E-\u043E, \u043D\u043E\u0432\u044B\u0439 \u0440\u0435\u0446\u0435\u043F\u0442?
+          \n\n\u0422\u0430\u043A\u043E\u0439 \u0441\u043E\u0447\u043D\u044B\u0439
+          \u0438 \u0430\u0440\u043E\u043C\u0430\u0442\u043D\u044B\u0439 \u2014 \u043F\u0440\u043E\u0441\u0442\u043E
+          \u043C\u044F\u0441\u043D\u043E\u0439 \u043F\u0440\u0430\u0437\u0434\u043D\u0438\u043A."
+        badText: 0
+        girlAnswer: "\u0413\u043B\u0443\u043F\u044B\u0448\u043A\u0430, \u043A\u0430\u0436\u0434\u044B\u0439
+          \u0440\u0430\u0437 \u0442\u0430\u043A \u0433\u043E\u0432\u043E\u0440\u0438\u0448\u044C!
+          \u042F \u043D\u0435 \u043C\u0435\u043D\u044F\u043B\u0430 \u0440\u0435\u0446\u0435\u043F\u0442
+          \u0437\u0430 \u0432\u0441\u0435 6 \u043B\u0435\u0442 \u043D\u0430\u0448\u0438\u0445
+          \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u0439!"
+        girtAnswerEmotion: 0
+    - textGirl: "\u0410 \u044D\u0442\u043E \u0447\u0442\u043E \u0437\u0430 \u043A\u0440\u0430\u0441\u043D\u044B\u0435
+        \u043F\u044F\u0442\u043D\u0430 \u043D\u0430 \u0440\u0443\u0431\u0430\u0448\u043A\u0435?"
+      girlEmotion: 0
+      textGuy:
+      - id: 12
+        text: "\u041C\u043E\u0436\u0435\u0442 \u043C\u0443\u0436\u0447\u0438\u043D\u0430
+          \u043A\u0443\u043F\u0438\u0442\u044C \u0441\u0435\u0431\u0435 \u043F\u043E\u043C\u0430\u0434\u0443?"
+        badText: 0
+        girlAnswer: "\u0425\u0432\u0430\u0442\u0438\u0442 \u0432\u044B\u0442\u0438\u0440\u0430\u0442\u044C
+          \u0433\u0443\u0431\u044B \u043E\u0431 \u043E\u0434\u0435\u0436\u0434\u0443,
+          \u044F \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u043F\u0440\u043E\u0441\u0438\u043B\u0430!"
+        girtAnswerEmotion: 2
+      - id: 13
+        text: "\u041F\u043E\u043F\u0440\u043E\u0441\u0438\u043B \u043C\u0430\u043B\u044F\u0440\u0430
+          \u0443 \u043F\u043E\u0434\u044A\u0435\u0437\u0434\u0430 \u0431\u0440\u044B\u0437\u043D\u0443\u0442\u044C
+          \u043A\u0440\u0430\u0441\u043A\u043E\u0439. \n\n\u041F\u0440\u0430\u0432\u0434\u0430
+          \u043A\u043B\u0430\u0441\u0441\u043D\u043E \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C?"
+        badText: 0
+        girlAnswer: "\u0412 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439
+          \u0440\u0430\u0437 \u0441\u043F\u0440\u043E\u0441\u0438 \u2014 \u0434\u0430\u043C
+          \u0442\u0435\u043B\u0435\u0444\u043E\u043D \u043F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u043E\u043D\u0430\u043B\u0430."
+        girtAnswerEmotion: 1
+      - id: 14
+        text: "\u041F\u0430\u0434\u0435\u043D\u0438\u044F \u0438\u0437 \u043E\u043A\u043D\u0430
+          \u0431\u0435\u0441\u0441\u043B\u0435\u0434\u043D\u043E \u043D\u0435 \u043F\u0440\u043E\u0445\u043E\u0434\u044F\u0442..."
+        badText: 1
+        girlAnswer: "\u042D\u0442\u043E \u0447\u0442\u043E \u0435\u0449\u0451 \u0437\u0430
+          \u0433\u0440\u044F\u0437\u043D\u044B\u0435 \u043D\u0430\u043C\u0451\u043A\u0438?!"
+        girtAnswerEmotion: 3
+      - id: 15
+        text: "\u042D\u0442\u043E \u043E\u0431\u043C\u0430\u043D \u0437\u0440\u0435\u043D\u0438\u044F,
+          \u0432\u044B\u0437\u0432\u0430\u043D\u043D\u044B\u0439 \u0432\u0441\u043F\u044B\u0448\u043A\u0430\u043C\u0438
+          \u043D\u0430 \u0421\u043E\u043B\u043D\u0446\u0435 \u0438 \u0440\u0435\u0442\u0440\u043E\u0433\u0440\u0430\u0434\u043D\u044B\u043C
+          \u042E\u043F\u0438\u0442\u0435\u0440\u043E\u043C."
+        badText: 1
+        girlAnswer: "\u0422\u044B \u043C\u0435\u043D\u044F \u0437\u0430 \u0434\u0443\u0440\u0443
+          \u0434\u0435\u0440\u0436\u0438\u0448\u044C? \n\n\u0414\u0443\u043C\u0430\u0435\u0448\u044C
+          \u043D\u0435 \u0437\u043D\u0430\u044E, \u0447\u0442\u043E \u0432 \u0440\u0435\u0442\u0440\u043E\u0433\u0440\u0430\u0434\u0435
+          \u0441\u0435\u0439\u0447\u0430\u0441 \u0412\u0435\u043D\u0435\u0440\u0430?!"
+        girtAnswerEmotion: 3
+    - textGirl: "\u0420\u0430\u0437\u0434\u0435\u0432\u0430\u0439\u0441\u044F."
+      girlEmotion: 0
+      textGuy:
+      - id: 16
+        text: "\u042D\u043C-\u043C, \u0437\u0430\u0447\u0435\u043C?"
+        badText: 1
+        girlAnswer: "\u0422\u044B \u0447\u0442\u043E, \u0441\u0442\u0435\u0441\u043D\u044F\u0435\u0448\u044C\u0441\u044F
+          \u0441\u0432\u043E\u0435\u0439 \u0436\u0435\u043D\u044B?!"
+        girtAnswerEmotion: 2
+      - id: 17
+        text: "\u041C\u0438\u043B\u0430\u044F, \u0443 \u043C\u0435\u043D\u044F \u0431\u043E\u043B\u0438\u0442
+          \u0433\u043E\u043B\u043E\u0432\u0430... \u0414\u0430 \u0438 \u0432\u043E\u043E\u0431\u0449\u0435
+          \u2014 \u0441\u0435\u043A\u0441 \u043F\u0435\u0440\u0435\u043E\u0446\u0435\u043D\u0451\u043D.
+          \u041E\u043D \u043D\u0435 \u043D\u0443\u0436\u0435\u043D \u0434\u043B\u044F
+          \u0441\u043B\u0438\u044F\u043D\u0438\u044F \u043D\u0430\u0448\u0438\u0445
+          \u0434\u0443\u0448."
+        badText: 0
+        girlAnswer: "\u0412\u043E\u043E\u0431\u0449\u0435-\u0442\u043E, \u044F \u043F\u0440\u043E\u0441\u0442\u043E
+          \u0445\u043E\u0442\u0435\u043B\u0430 \u043F\u043E\u043E\u0431\u0435\u0434\u0430\u0442\u044C
+          \u0433\u043E\u043B\u044B\u0448\u043E\u043C. \u0427\u0442\u043E \u0437\u0430
+          \u043F\u0435\u0440\u0435\u043E\u0441\u043C\u044B\u0441\u043B\u0435\u043D\u0438\u0435
+          \u043F\u043E\u043B\u043E\u0432\u043E\u0439 \u0436\u0438\u0437\u043D\u0438?"
+        girtAnswerEmotion: 4
+      - id: 18
+        text: "\u0414\u0430\u0432\u0430\u0439 \u043F\u0440\u043E\u0441\u0442\u043E
+          \u043D\u0430\u0441\u044B\u043F\u0435\u043C \u043F\u043E\u0440\u043E\u0448\u043E\u043A
+          \u0432 \u0432\u0430\u043D\u043D\u0443\u044E \u2014 \u0438 \u044F \u043F\u0440\u044B\u0433\u043D\u0443
+          \u0442\u0443\u0434\u0430 \u0432 \u043E\u0434\u0435\u0436\u0434\u0435."
+        badText: 0
+        girlAnswer: "\u0410\u0433\u0430, \u044F\u0441\u043D\u043E... \n\n\u0427\u0442\u043E
+          \u0443 \u0442\u0435\u0431\u044F \u043F\u043E\u0434 \u043D\u0435\u0439 \u2014
+          \u0437\u0430\u0441\u043E\u0441\u044B?"
+        girtAnswerEmotion: 2
+      - id: 19
+        text: "\u0422\u044B \u043F\u0435\u0440\u0432\u0430\u044F."
+        badText: 1
+        girlAnswer: "\u0423\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u043C\u043D\u0435
+          \u0431\u0443\u0434\u0435\u0448\u044C?!"
+        girtAnswerEmotion: 2
+    - textGirl: "\u0422\u044B \u043C\u043D\u0435 \u0438\u0437\u043C\u0435\u043D\u044F\u0435\u0448\u044C?"
+      girlEmotion: 0
+      textGuy:
+      - id: 20
+        text: "\u0418\u0437\u043C\u0435\u043D\u0430 \u2014 \u044D\u0442\u043E \u043E\u0431\u043C\u0435\u043D
+          \u0431\u043E\u043B\u044C\u0448\u043E\u0433\u043E \u0441\u0447\u0430\u0441\u0442\u044C\u044F
+          \u043D\u0430 \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u043E\u0435 \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435.
+          \n\n\u042F \u043D\u0435 \u043D\u0430\u0441\u0442\u043E\u043B\u044C\u043A\u043E
+          \u0433\u043B\u0443\u043F."
+        badText: 0
+        girlAnswer: "\u041D\u0435 \u043D\u0430\u0434\u043E \u0443\u043C\u043D\u0438\u0447\u0430\u0442\u044C
+          \u043F\u0440\u0438 \u0436\u0435\u043D\u0435."
+        girtAnswerEmotion: 0
+      - id: 21
+        text: "\u0418\u0437\u043C\u0435\u043D\u0430 \u2014 \u044D\u0442\u043E \u0441\u0442\u0440\u0430\u0448\u043D\u044B\u0439
+          \u0433\u0440\u0435\u0445, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u044F
+          \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u0431\u044B \u0441\u0435\u0431\u0435
+          \u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u043B."
+        badText: 1
+        girlAnswer: "\u041A\u0430\u043A\u043E\u0439 \u0433\u0440\u0435\u0445? \n\n\u041E\u0442\u043A\u0443\u0434\u0430
+          \u0442\u044B \u044D\u0442\u043E \u0441\u043B\u043E\u0432\u043E \u0432\u043E\u043E\u0431\u0449\u0435
+          \u0432\u0437\u044F\u043B, \u0442\u044B \u0432\u0435\u0434\u044C \u043D\u0435\u0432\u0435\u0440\u0443\u044E\u0449\u0438\u0439!"
+        girtAnswerEmotion: 2
+      - id: 22
+        text: "\u0418\u0437\u043C\u0435\u043D\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0430\u0435\u0442
+          \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u043B\u044E\u0431\u043E\u0432\u044C,
+          \u043D\u043E \u0438 \u0432\u0441\u0435\u0445 \u0441\u043E\u043F\u0440\u0438\u0447\u0430\u0441\u0442\u043D\u044B\u0445.
+          \u042F \u043D\u0430 \u0442\u0430\u043A\u043E\u0435 \u043D\u0435 \u0441\u043F\u043E\u0441\u043E\u0431\u0435\u043D."
+        badText: 1
+        girlAnswer: "\u0421\u043B\u0435\u0434\u044B \u043F\u043E\u043C\u0430\u0434\u044B
+          \u043D\u0430 \u0440\u0443\u0431\u0430\u0448\u043A\u0435 \u0433\u043E\u0432\u043E\u0440\u044F\u0442
+          \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u0435!"
+        girtAnswerEmotion: 2
+      - id: 23
+        text: "\u042F \u043D\u0435 \u0442\u0430\u043A\u043E\u0439 \u0447\u0435\u043B\u043E\u0432\u0435\u043A,
+          \u0442\u044B \u0432\u0435\u0434\u044C \u043C\u0435\u043D\u044F \u0437\u043D\u0430\u0435\u0448\u044C.
+          \n\n\u0418\u0437\u043C\u0435\u043D\u0430 \u2014 \u044D\u0442\u043E \u043C\u0435\u0440\u0437\u043A\u043E
+          \u0438 \u0430\u043C\u043E\u0440\u0430\u043B\u044C\u043D\u043E. "
+        badText: 0
+        girlAnswer: "\u041A\u0430\u043A \u0438 \u0442\u0432\u043E\u0451 \u043A\u043E\u0432\u044B\u0440\u044F\u043D\u0438\u0435
+          \u0432 \u043D\u043E\u0441\u0443. \n\n\u041E\u043A, \u043E\u0442\u043C\u0430\u0437\u0430\u043B\u0441\u044F."
+        girtAnswerEmotion: 0
+    - textGirl: "\u0427\u0442\u043E \u044D\u0442\u043E? \u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435?
+        \u041A\u0442\u043E \u0442\u0435\u0431\u0435 \u043F\u0438\u0448\u0435\u0442
+        \u2014 \u041E\u041D\u0410?!"
+      girlEmotion: 0
+      textGuy:
+      - id: 24
+        text: "\u042D\u0442\u043E \u041E\u041D. \u042F \u0431\u0438. \n\n\u0414\u0430\u0432\u0430\u0439
+          \u0436\u0438\u0442\u044C \u0432\u0442\u0440\u043E\u0451\u043C."
+        badText: 1
+        girlAnswer: "\u0422\u044B \u0436\u0435 \u0437\u043D\u0430\u0435\u0448\u044C,
+          \u0447\u0442\u043E \u0443 \u043D\u0430\u0441 \u043D\u0435\u0442 \u0442\u0440\u0435\u0442\u044C\u0435\u0433\u043E
+          \u0441\u043F\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u043C\u0435\u0441\u0442\u0430!"
+        girtAnswerEmotion: 2
+      - id: 25
+        text: "\u042D\u0442\u043E \u0447\u0435\u043B\u043E\u0432\u0435\u043A... \u043A\u043E\u0442\u043E\u0440\u044B\u0439
+          \u0445\u043E\u0447\u0435\u0442 \u043F\u043E\u043C\u043E\u0447\u044C. \u0422\u0435\u0431\u0435
+          \u044D\u0442\u043E \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E...
+          \n\n\u0422\u043E\u043B\u044C\u043A\u043E \u043D\u0435 \u0437\u043B\u0438\u0441\u044C."
+        badText: 0
+        girlAnswer: "\u042F \u043D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u044E..."
+        girtAnswerEmotion: 1
+      - id: 26
+        text: "\u042F \u043F\u0435\u0440\u0435\u0441\u043F\u0430\u043B \u0441 \u043D\u0435\u0439
+          \u0440\u0430\u0434\u0438 \u043D\u0430\u0441! \n\n\u0422\u044B \u0436\u0435
+          \u043F\u0440\u043E\u0441\u0438\u043B\u0430 \u0447\u0430\u0449\u0435 \u0442\u0435\u0431\u044F
+          \u0443\u0434\u0438\u0432\u043B\u044F\u0442\u044C."
+        badText: 1
+        girlAnswer: "\u041F\u041E\u0414\u0410\u0420\u041A\u0410\u041C\u0418! \n\n\u0423\u0434\u0438\u0432\u043B\u044F\u0442\u044C
+          \u043F\u043E\u0434\u0430\u0440\u043A\u0430\u043C\u0438, \u0438\u0434\u0438\u043E\u0442!"
+        girtAnswerEmotion: 2
+      - id: 27
+        text: "\u042D\u0442\u043E \u043F\u0438\u0448\u0435\u0448\u044C \u0442\u044B
+          \u0438\u0437 \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043E. \n\n\u041F\u0440\u043E\u0441\u0438\u0448\u044C
+          \u043E\u0442\u0432\u0435\u0437\u0442\u0438 \u0441\u0435\u0431\u044F \u0432
+          \u043F\u0441\u0438\u0445\u0431\u043E\u043B\u044C\u043D\u0438\u0446\u0443."
+        badText: 1
+        girlAnswer: "\u042F-\u0438\u0437-\u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043E
+          \u043D\u0435 \u0441\u0442\u0430\u043B\u0430 \u0431\u044B \u043F\u0438\u0441\u0430\u0442\u044C
+          \u0442\u0430\u043A\u0443\u044E \u0432\u0430\u0436\u043D\u0443\u044E \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E
+          \u043F\u043E \u043D\u0435\u0437\u0430\u0449\u0438\u0449\u0451\u043D\u043D\u043E\u043C\u0443
+          \u043A\u0430\u043D\u0430\u043B\u0443 \u0441\u0432\u044F\u0437\u0438!"
+        girtAnswerEmotion: 0
+    - textGirl: "\u0422\u044B \u043D\u0430\u043C\u0435\u043A\u0430\u0435\u0448\u044C,
+        \u0447\u0442\u043E \u044F \u043D\u0435\u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u0430\u044F?!"
+      girlEmotion: 0
+      textGuy:
+      - id: 28
+        text: "\u0425\u0432\u0430\u0442\u0438\u0442, \u044F \u0443\u0436\u0435 \u0437\u0430\u0434\u043E\u043B\u0431\u0430\u043B\u0441\u044F
+          \u043F\u043E\u0434\u044B\u0433\u0440\u044B\u0432\u0430\u0442\u044C \u044D\u0442\u043E\u043C\u0443
+          \u0431\u0435\u0437\u0443\u043C\u0438\u044E! \u041A\u0430\u0436\u0434\u044B\u0439
+          \u043C\u0435\u0441\u044F\u0446 \u043E\u0434\u043D\u043E \u0438 \u0442\u043E
+          \u0436\u0435. \u041F\u043E\u0435\u0445\u0430\u043B\u0438, \u0441\u043E\u0431\u0438\u0440\u0430\u0439\u0441\u044F."
+        badText: 1
+        girlAnswer: "\u0410\u0445 \u0432\u043E\u0442 \u043A\u0430\u043A... \u041C\u043E\u0439
+          \u0434\u043E\u043C \u2014 \u043C\u043E\u0438 \u043F\u0440\u0430\u0432\u0438\u043B\u0430!"
+        girtAnswerEmotion: 1
+      - id: 29
+        text: "\u041D\u0435 \u043D\u0430\u043C\u0435\u043A\u0430\u044E, \u0430 \u0433\u043E\u0432\u043E\u0440\u044E
+          \u043F\u0440\u044F\u043C\u044B\u043C \u0442\u0435\u043A\u0441\u0442\u043E\u043C.
+          \u041C\u043D\u0435 \u043D\u0430\u0434\u043E\u0435\u043B \u044D\u0442\u043E\u0442
+          \u0441\u044E\u0440.\n\n\u0413\u043B\u043E\u0442\u0430\u0439 \u0442\u0430\u0431\u043B\u0435\u0442\u043A\u0438,
+          \u0441\u043E\u0431\u0438\u0440\u0430\u0439 \u0432\u0435\u0449\u0438 \u2014
+          \u0438 \u043F\u043E\u0435\u0445\u0430\u043B\u0438."
+        badText: 1
+        girlAnswer: "\u0427\u0442\u043E \u0436... \n\n\u042F \u0442\u0443\u0442 \u0443\u0436\u0435
+          \u043A\u043E\u0435-\u0447\u0442\u043E \u0441\u043E\u0431\u0440\u0430\u043B\u0430."
+        girtAnswerEmotion: 1
+      - id: 30
+        text: "\u0414\u0430 \u043D\u0435\u0442, \u0447\u0442\u043E \u0442\u044B!
+          \u041F\u0440\u043E\u0441\u0442\u043E \u043B\u044E\u0431\u0438\u0448\u044C
+          \u0432\u044B\u043A\u0438\u0434\u044B\u0432\u0430\u0442\u044C \u043B\u044E\u0434\u0435\u0439
+          \u0438 \u0432\u0435\u0449\u0438 \u0438\u0437 \u043E\u043A\u043D\u0430.
+          \n\n\u0425\u043E\u0431\u0431\u0438 \u0443 \u0442\u0435\u0431\u044F \u0442\u0430\u043A\u043E\u0435."
+        badText: 1
+        girlAnswer: "\u0427\u0442\u043E \u0442\u044B... \n\n\u041A\u0430\u043A \u0442\u044B
+          \u043F\u043E\u0441\u043C\u0435\u043B \u0442\u0430\u043A\u043E\u0435 \u0441\u043A\u0430\u0437\u0430\u0442\u044C?!"
+        girtAnswerEmotion: 5
+      - id: 31
+        text: "\u041F\u0440\u043E\u0441\u0442\u043E... \u0443 \u0442\u0435\u0431\u044F
+          \u043F\u0440\u0438\u0441\u0442\u0443\u043F. \u041E\u043D \u0431\u044B\u0432\u0430\u0435\u0442
+          \u043A\u0430\u0436\u0434\u044B\u0439 \u043C\u0435\u0441\u044F\u0446. \u042F
+          \u0434\u043E\u043B\u0436\u0435\u043D \u043E\u0442\u0432\u0435\u0437\u0442\u0438
+          \u0442\u0435\u0431\u044F \u043A \u0432\u0440\u0430\u0447\u0443. \u041A\u0430\u043A
+          \u0436\u0435 \u044F \u0443\u0441\u0442\u0430\u043B..."
+        badText: 0
+        girlAnswer: "\u0427\u0442\u043E?.."
+        girtAnswerEmotion: 4
+    - textGirl: "\u0422\u044B... \u0422\u044B \u0441\u0435\u0440\u044C\u0451\u0437\u043D\u043E?
+        \u041C\u043D\u0435 \u043D\u0443\u0436\u043D\u043E \u043B\u0435\u0447\u044C
+        \u0432 \u0431\u043E\u043B\u044C\u043D\u0438\u0446\u0443?"
+      girlEmotion: 0
+      textGuy:
+      - id: 32
+        text: "\u0420\u043E\u0434\u043D\u0430\u044F, \u0443\u0436\u0435 5 \u043B\u0435\u0442
+          \u0432 \u043D\u0430\u0447\u0430\u043B\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E
+          \u043C\u0435\u0441\u044F\u0446\u0430 \u0442\u044B \u0433\u043E\u0442\u043E\u0432\u0438\u0448\u044C
+          \u043C\u043D\u0435 \u0440\u043E\u0441\u0442\u0431\u0438\u0444. \u041A\u0430\u043A
+          \u0432 \u0442\u043E\u0442 \u0434\u0435\u043D\u044C, \u043A\u043E\u0433\u0434\u0430
+          \u0442\u044B \u0441\u043B\u0443\u0447\u0430\u0439\u043D\u043E \u0432\u044B\u0442\u043E\u043B\u043A\u043D\u0443\u043B\u0430
+          \u0441\u0435\u0441\u0442\u0440\u0443 \u0438\u0437 \u043E\u043A\u043D\u0430...
+          \u042F \u043B\u044E\u0431\u043B\u044E \u0442\u0435\u0431\u044F, \u043C\u044B
+          \u0441\u043F\u0440\u0430\u0432\u0438\u043C\u0441\u044F \u0441 \u044D\u0442\u0438\u043C
+          \u0432\u043C\u0435\u0441\u0442\u0435."
+        badText: 1
+        girlAnswer: "\u0422\u044B \u0447\u0442\u043E, \u0437\u0430\u0431\u044B\u043B,
+          \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u043B\u0435\u0442 \u043C\u044B
+          \u0436\u0435\u043D\u0430\u0442\u044B?! \n\n\u0423\u0440\u043E\u0434!"
+        girtAnswerEmotion: 3
+      - id: 33
+        text: "\u041B\u044E\u0431\u0438\u043C\u0430\u044F, \u0443\u0436\u0435 6 \u043B\u0435\u0442
+          \u0432 \u043D\u0430\u0447\u0430\u043B\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E
+          \u043C\u0435\u0441\u044F\u0446\u0430 \u0442\u044B \u0433\u043E\u0442\u043E\u0432\u0438\u0448\u044C
+          \u043C\u043D\u0435 \u0440\u043E\u0441\u0442\u0431\u0438\u0444. \u041A\u0430\u043A
+          \u0432 \u0442\u043E\u0442 \u0434\u0435\u043D\u044C, \u043A\u043E\u0433\u0434\u0430
+          \u0442\u044B \u0441\u043B\u0443\u0447\u0430\u0439\u043D\u043E \u0432\u044B\u0442\u043E\u043B\u043A\u043D\u0443\u043B\u0430
+          \u0441\u0435\u0441\u0442\u0440\u0443 \u0438\u0437 \u043E\u043A\u043D\u0430...
+          \u042F \u043B\u044E\u0431\u043B\u044E \u0442\u0435\u0431\u044F, \u043C\u044B
+          \u0441\u043F\u0440\u0430\u0432\u0438\u043C\u0441\u044F \u0441 \u044D\u0442\u0438\u043C
+          \u0432\u043C\u0435\u0441\u0442\u0435."
+        badText: 0
+        girlAnswer: "\u041E\u0445, \u043C\u0438\u043B\u044B\u0439... \n\n\u042F \u043D\u0430\u0447\u0438\u043D\u0430\u044E
+          \u0432\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u0442\u044C... \u041F\u0440\u043E\u0441\u0442\u0438,
+          \u0447\u0442\u043E \u0442\u0435\u0431\u0435 \u043F\u0440\u0438\u0445\u043E\u0434\u0438\u0442\u0441\u044F
+          \u043A\u0430\u0436\u0434\u044B\u0439 \u0440\u0430\u0437 \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0442\u044C
+          \u0447\u0435\u0440\u0435\u0437 \u044D\u0442\u043E... \n\n\u042F \u0433\u043E\u0442\u043E\u0432\u0430,
+          \u043F\u043E\u0439\u0434\u0451\u043C."
+        girtAnswerEmotion: 5
+      - id: 34
+        text: "\u0421\u043E\u043B\u043D\u044B\u0448\u043A\u043E, \u0443\u0436\u0435
+          5 \u043B\u0435\u0442 \u0432 \u043A\u043E\u043D\u0446\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E
+          \u043C\u0435\u0441\u044F\u0446\u0430 \u0442\u044B \u0433\u043E\u0442\u043E\u0432\u0438\u0448\u044C
+          \u043C\u043D\u0435 \u0440\u043E\u0441\u0442\u0431\u0438\u0444. \u041A\u0430\u043A
+          \u0432 \u0442\u043E\u0442 \u0434\u0435\u043D\u044C, \u043A\u043E\u0433\u0434\u0430
+          \u0442\u044B \u0441\u043B\u0443\u0447\u0430\u0439\u043D\u043E \u0432\u044B\u0442\u043E\u043B\u043A\u043D\u0443\u043B\u0430
+          \u0441\u0435\u0441\u0442\u0440\u0443 \u0438\u0437 \u043E\u043A\u043D\u0430...
+          \u042F \u043B\u044E\u0431\u043B\u044E \u0442\u0435\u0431\u044F, \u043C\u044B
+          \u0441\u043F\u0440\u0430\u0432\u0438\u043C\u0441\u044F \u0441 \u044D\u0442\u0438\u043C
+          \u0432\u043C\u0435\u0441\u0442\u0435."
+        badText: 1
+        girlAnswer: "\u0422\u044B \u043A\u0442\u043E \u0442\u0430\u043A\u043E\u0439?!
+          \n\n\u0422\u044B \u043D\u0435 \u043C\u043E\u0439 \u043C\u0443\u0436 \u2014
+          \u0442\u044B \u043D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u0437\u043D\u0430\u0435\u0448\u044C
+          \u043E\u0431\u043E \u043C\u043D\u0435!"
+        girtAnswerEmotion: 3
+      - id: 35
+        text: "\u0417\u0430\u0439\u043A\u0430, \u0443\u0436\u0435 6 \u043B\u0435\u0442
+          \u0432 \u043A\u043E\u043D\u0446\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E
+          \u043C\u0435\u0441\u044F\u0446\u0430 \u0442\u044B \u0433\u043E\u0442\u043E\u0432\u0438\u0448\u044C
+          \u043C\u043D\u0435 \u0440\u043E\u0441\u0442\u0431\u0438\u0444. \u041A\u0430\u043A
+          \u0432 \u0442\u043E\u0442 \u0434\u0435\u043D\u044C, \u043A\u043E\u0433\u0434\u0430
+          \u0442\u044B \u0441\u043B\u0443\u0447\u0430\u0439\u043D\u043E \u0432\u044B\u0442\u043E\u043B\u043A\u043D\u0443\u043B\u0430
+          \u0441\u0435\u0441\u0442\u0440\u0443 \u0438\u0437 \u043E\u043A\u043D\u0430...
+          \u042F \u043B\u044E\u0431\u043B\u044E \u0442\u0435\u0431\u044F, \u043C\u044B
+          \u0441\u043F\u0440\u0430\u0432\u0438\u043C\u0441\u044F \u0441 \u044D\u0442\u0438\u043C
+          \u0432\u043C\u0435\u0441\u0442\u0435."
+        badText: 1
+        girlAnswer: "\u042F \u0433\u043E\u0442\u043E\u0432\u043B\u044E \u0440\u043E\u0441\u0442\u0431\u0438\u0444
+          \u0441\u0442\u0440\u043E\u0433\u043E \u043F\u0435\u0440\u0432\u043E\u0433\u043E
+          \u0447\u0438\u0441\u043B\u0430! \n\n\u041A\u0430\u043A \u0442\u044B \u043C\u043E\u0433
+          \u0437\u0430\u0431\u044B\u0442\u044C?!"
+        girtAnswerEmotion: 3
+  - Language: 1
+    DialogCommons:
+    - textGirl: test 1
+      girlEmotion: 0
+      textGuy:
+      - id: 0
+        text: test 2
+        badText: 0
+        girlAnswer: test 3
+        girtAnswerEmotion: 1
+      - id: 1
+        text: test 4
+        badText: 0
+        girlAnswer: test 5
+        girtAnswerEmotion: 0
+      - id: 2
+        text: test 6
+        badText: 0
+        girlAnswer: test 7
+        girtAnswerEmotion: 4
+      - id: 3
+        text: test 8
+        badText: 1
+        girlAnswer: test 9
+        girtAnswerEmotion: 3
+    - textGirl: test 10
+      girlEmotion: 0
+      textGuy:
+      - id: 4
+        text: test 11
+        badText: 0
+        girlAnswer: test 12
+        girtAnswerEmotion: 0
+      - id: 5
+        text: test 13
+        badText: 0
+        girlAnswer: test 14
+        girtAnswerEmotion: 0
+      - id: 6
+        text: test 15
+        badText: 1
+        girlAnswer: test 16
+        girtAnswerEmotion: 3
+      - id: 7
+        text: test 17
+        badText: 0
+        girlAnswer: test 18
+        girtAnswerEmotion: 5
+    - textGirl: test 20
+      girlEmotion: 0
+      textGuy:
+      - id: 8
+        text: test 21
+        badText: 1
+        girlAnswer: test 22
+        girtAnswerEmotion: 2
+      - id: 9
+        text: test 23
+        badText: 1
+        girlAnswer: test 24
+        girtAnswerEmotion: 3
+      - id: 10
+        text: test 25
+        badText: 0
+        girlAnswer: test 26
+        girtAnswerEmotion: 5
+      - id: 11
+        text: test 27
+        badText: 0
+        girlAnswer: test 28
+        girtAnswerEmotion: 0
+    - textGirl: test 30
+      girlEmotion: 0
+      textGuy:
+      - id: 12
+        text: test 31
+        badText: 0
+        girlAnswer: test 32
+        girtAnswerEmotion: 2
+      - id: 13
+        text: test 33
+        badText: 0
+        girlAnswer: test 34
+        girtAnswerEmotion: 1
+      - id: 14
+        text: test 35
+        badText: 1
+        girlAnswer: test 36
+        girtAnswerEmotion: 3
+      - id: 15
+        text: test 37
+        badText: 1
+        girlAnswer: test 38
+        girtAnswerEmotion: 3
+    - textGirl: test 40
+      girlEmotion: 0
+      textGuy:
+      - id: 16
+        text: test 41
+        badText: 1
+        girlAnswer: test 42
+        girtAnswerEmotion: 2
+      - id: 17
+        text: test 43
+        badText: 0
+        girlAnswer: test 44
+        girtAnswerEmotion: 4
+      - id: 18
+        text: test 45
+        badText: 0
+        girlAnswer: test 46
+        girtAnswerEmotion: 2
+      - id: 19
+        text: test 47
+        badText: 1
+        girlAnswer: test 48
+        girtAnswerEmotion: 2
+    - textGirl: test 50
+      girlEmotion: 0
+      textGuy:
+      - id: 20
+        text: test 51
+        badText: 0
+        girlAnswer: test 52
+        girtAnswerEmotion: 0
+      - id: 21
+        text: test 53
+        badText: 1
+        girlAnswer: test 54
+        girtAnswerEmotion: 2
+      - id: 22
+        text: test 55
+        badText: 1
+        girlAnswer: test 56
+        girtAnswerEmotion: 2
+      - id: 23
+        text: test 57
+        badText: 0
+        girlAnswer: test 58
+        girtAnswerEmotion: 0
+    - textGirl: test 60
+      girlEmotion: 0
+      textGuy:
+      - id: 24
+        text: test 61
+        badText: 1
+        girlAnswer: test 62
+        girtAnswerEmotion: 2
+      - id: 25
+        text: test 63
+        badText: 0
+        girlAnswer: test 64
+        girtAnswerEmotion: 1
+      - id: 26
+        text: test 65
+        badText: 1
+        girlAnswer: test 66
+        girtAnswerEmotion: 2
+      - id: 27
+        text: test 67
+        badText: 1
+        girlAnswer: test 68
+        girtAnswerEmotion: 0
+    - textGirl: test 70
+      girlEmotion: 0
+      textGuy:
+      - id: 28
+        text: test 71
+        badText: 1
+        girlAnswer: test 72
+        girtAnswerEmotion: 1
+      - id: 29
+        text: test 73
+        badText: 1
+        girlAnswer: test 74
+        girtAnswerEmotion: 1
+      - id: 30
+        text: test 75
+        badText: 1
+        girlAnswer: test 76
+        girtAnswerEmotion: 5
+      - id: 31
+        text: test 77
+        badText: 0
+        girlAnswer: test 78
+        girtAnswerEmotion: 4
+    - textGirl: test 80
+      girlEmotion: 0
+      textGuy:
+      - id: 32
+        text: test 81
+        badText: 1
+        girlAnswer: test 82
+        girtAnswerEmotion: 3
+      - id: 33
+        text: test 83
+        badText: 0
+        girlAnswer: test 84
+        girtAnswerEmotion: 5
+      - id: 34
+        text: test 85
+        badText: 1
+        girlAnswer: test 86
+        girtAnswerEmotion: 3
+      - id: 35
+        text: test 87
+        badText: 1
+        girlAnswer: test 88
+        girtAnswerEmotion: 3
   dialogPage: 0
   dialogState: 0
+--- !u!114 &637936368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637936364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6e7b94375a4af68516911e0165653d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainDialogEmotions: 020000000100000004000000020000000000000004000000020000000300000004000000
+  DialogState:
+  - Id: 0
+    IsBadText: 0
+    Emotion: 1
+  - Id: 1
+    IsBadText: 0
+    Emotion: 0
+  - Id: 2
+    IsBadText: 0
+    Emotion: 4
+  - Id: 3
+    IsBadText: 1
+    Emotion: 3
+  - Id: 4
+    IsBadText: 0
+    Emotion: 0
+  - Id: 5
+    IsBadText: 0
+    Emotion: 0
+  - Id: 6
+    IsBadText: 1
+    Emotion: 3
+  - Id: 7
+    IsBadText: 0
+    Emotion: 5
+  - Id: 8
+    IsBadText: 1
+    Emotion: 2
+  - Id: 9
+    IsBadText: 1
+    Emotion: 3
+  - Id: 10
+    IsBadText: 0
+    Emotion: 5
+  - Id: 11
+    IsBadText: 0
+    Emotion: 0
+  - Id: 12
+    IsBadText: 0
+    Emotion: 2
+  - Id: 13
+    IsBadText: 0
+    Emotion: 1
+  - Id: 14
+    IsBadText: 1
+    Emotion: 3
+  - Id: 15
+    IsBadText: 1
+    Emotion: 3
+  - Id: 16
+    IsBadText: 1
+    Emotion: 2
+  - Id: 17
+    IsBadText: 0
+    Emotion: 4
+  - Id: 18
+    IsBadText: 0
+    Emotion: 2
+  - Id: 19
+    IsBadText: 1
+    Emotion: 2
+  - Id: 20
+    IsBadText: 0
+    Emotion: 0
+  - Id: 21
+    IsBadText: 1
+    Emotion: 2
+  - Id: 22
+    IsBadText: 1
+    Emotion: 2
+  - Id: 23
+    IsBadText: 0
+    Emotion: 0
+  - Id: 24
+    IsBadText: 1
+    Emotion: 2
+  - Id: 25
+    IsBadText: 0
+    Emotion: 1
+  - Id: 26
+    IsBadText: 1
+    Emotion: 2
+  - Id: 27
+    IsBadText: 1
+    Emotion: 0
+  - Id: 28
+    IsBadText: 1
+    Emotion: 1
+  - Id: 29
+    IsBadText: 1
+    Emotion: 1
+  - Id: 30
+    IsBadText: 1
+    Emotion: 5
+  - Id: 31
+    IsBadText: 0
+    Emotion: 4
+  - Id: 32
+    IsBadText: 1
+    Emotion: 3
+  - Id: 33
+    IsBadText: 0
+    Emotion: 5
+  - Id: 34
+    IsBadText: 1
+    Emotion: 3
+  - Id: 35
+    IsBadText: 1
+    Emotion: 3
 --- !u!1 &649663157
 GameObject:
   m_ObjectHideFlags: 0
@@ -4823,7 +5497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 0}
+  m_AnchoredPosition: {x: 252.99998, y: 26}
   m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &676626631
@@ -5056,6 +5730,140 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699830571}
+  m_CullTransparentMesh: 1
+--- !u!1 &722232555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 722232556}
+  - component: {fileID: 722232558}
+  - component: {fileID: 722232557}
+  m_Layer: 5
+  m_Name: En
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &722232556
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722232555}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1091231398}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 219, y: -254}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &722232557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722232555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: en
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: c4d85bc4e697570489fa2e1c290e405b, type: 2}
+  m_sharedMaterial: {fileID: 2655698933091616237, guid: c4d85bc4e697570489fa2e1c290e405b, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279250005
+  m_fontColor: {r: 0.33333334, g: 0.17254902, b: 0.0627451, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 90
+  m_fontSizeBase: 90
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &722232558
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722232555}
   m_CullTransparentMesh: 1
 --- !u!1 &725775990
 GameObject:
@@ -5742,6 +6550,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 781561519}
   m_CullTransparentMesh: 0
+--- !u!1 &810278353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 810278354}
+  - component: {fileID: 810278356}
+  - component: {fileID: 810278355}
+  m_Layer: 5
+  m_Name: Bubble
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &810278354
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810278353}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1797857017}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -83.1, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &810278355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810278353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ad147458807aa3f4fa9c54f624991272, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &810278356
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810278353}
+  m_CullTransparentMesh: 1
 --- !u!1 &847800515
 GameObject:
   m_ObjectHideFlags: 0
@@ -5832,6 +6715,7 @@ GameObject:
   - component: {fileID: 858972172}
   - component: {fileID: 858972174}
   - component: {fileID: 858972173}
+  - component: {fileID: 858972175}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -5956,6 +6840,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858972171}
   m_CullTransparentMesh: 1
+--- !u!114 &858972175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858972171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: settings_title
+  LocalizedTexts:
+  - Text: "\u041D\u0410\u0421\u0422\u0420\u041E\u0419\u041A\u0418"
+    Language: 0
+  - Text: 16
+    Language: 1
 --- !u!1 &867447780
 GameObject:
   m_ObjectHideFlags: 0
@@ -5967,6 +6869,7 @@ GameObject:
   - component: {fileID: 867447781}
   - component: {fileID: 867447783}
   - component: {fileID: 867447782}
+  - component: {fileID: 867447784}
   m_Layer: 5
   m_Name: Thanks
   m_TagString: Untagged
@@ -6091,6 +6994,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867447780}
   m_CullTransparentMesh: 1
+--- !u!114 &867447784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867447780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: game_win_thanks
+  LocalizedTexts:
+  - Text: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E,\n<size=55%>\u0447\u0442\u043E
+      \u0438\u0433\u0440\u0430\u043B\u0438 \u0432 \u043D\u0430\u0448\u0443 \u0438\u0433\u0440\u0443.</size>"
+    Language: 0
+  - Text: 31
+    Language: 1
 --- !u!1001 &887482477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6160,11 +7082,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658877319674814259, guid: c3b8967e9ca8a0644998c9935287c9c0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -125
+      value: -33
       objectReference: {fileID: 0}
     - target: {fileID: 6658877319674814259, guid: c3b8967e9ca8a0644998c9935287c9c0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -12
+      value: 33.999985
       objectReference: {fileID: 0}
     - target: {fileID: 6658877319674814259, guid: c3b8967e9ca8a0644998c9935287c9c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6431,6 +7353,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 916923008}
+  - component: {fileID: 916923009}
   m_Layer: 5
   m_Name: Sound
   m_TagString: Untagged
@@ -6447,7 +7370,7 @@ RectTransform:
   m_GameObject: {fileID: 916923007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.95, y: 0.95, z: 1}
   m_Children:
   - {fileID: 676626630}
   - {fileID: 1500712963}
@@ -6459,6 +7382,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 853.3333, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &916923009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916923007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: sound
+  LocalizedTexts:
+  - Text: "\u0417\u0432\u0443\u043A"
+    Language: 0
+  - Text: 11
+    Language: 1
 --- !u!1 &917688746
 GameObject:
   m_ObjectHideFlags: 0
@@ -6471,6 +7412,7 @@ GameObject:
   - component: {fileID: 917688749}
   - component: {fileID: 917688748}
   - component: {fileID: 917688750}
+  - component: {fileID: 917688751}
   m_Layer: 5
   m_Name: PlayWithAds
   m_TagString: Untagged
@@ -6593,6 +7535,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &917688751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917688746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: play_with_ads
+  LocalizedTexts:
+  - Text: "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
+    Language: 0
+  - Text: 5
+    Language: 1
 --- !u!1 &929009485
 GameObject:
   m_ObjectHideFlags: 0
@@ -6605,6 +7565,7 @@ GameObject:
   - component: {fileID: 929009489}
   - component: {fileID: 929009488}
   - component: {fileID: 929009487}
+  - component: {fileID: 929009490}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -6726,6 +7687,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929009485}
   m_CullTransparentMesh: 1
+--- !u!114 &929009490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929009485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: back
+  LocalizedTexts:
+  - Text: "\u041D\u0410\u0417\u0410\u0414"
+    Language: 0
+  - Text: 8
+    Language: 1
 --- !u!1 &939941376
 GameObject:
   m_ObjectHideFlags: 0
@@ -6812,6 +7791,7 @@ GameObject:
   - component: {fileID: 941872488}
   - component: {fileID: 941872490}
   - component: {fileID: 941872489}
+  - component: {fileID: 941872491}
   m_Layer: 5
   m_Name: SubTitle
   m_TagString: Untagged
@@ -6938,6 +7918,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941872487}
   m_CullTransparentMesh: 1
+--- !u!114 &941872491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941872487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: game_win_up_subtitle
+  LocalizedTexts:
+  - Text: "\u0412\u0430\u0441 \u043D\u0435 \u0441\u043B\u043E\u043C\u0438\u0442\u044C
+      \u0438\u0441\u0442\u0435\u0440\u0438\u043A\u0430\u043C\u0438!\n\u0412\u0430\u0441
+      \u043D\u0435 \u043E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C \u0432\u044B\u0441\u043E\u0442\u043E\u0439!\n\u0412\u0430\u0441
+      \u043D\u0435 \u0441\u043E\u043A\u0440\u0443\u0448\u0438\u0442\u044C \u0432\u0435\u0449\u0430\u043C\u0438!"
+    Language: 0
+  - Text: 29
+    Language: 1
 --- !u!1 &947830804
 GameObject:
   m_ObjectHideFlags: 0
@@ -6949,6 +7950,7 @@ GameObject:
   - component: {fileID: 947830805}
   - component: {fileID: 947830807}
   - component: {fileID: 947830806}
+  - component: {fileID: 947830808}
   m_Layer: 5
   m_Name: Thanks
   m_TagString: Untagged
@@ -7072,6 +8074,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947830804}
   m_CullTransparentMesh: 1
+--- !u!114 &947830808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947830804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: review_thanks
+  LocalizedTexts:
+  - Text: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E!"
+    Language: 0
+  - Text: 24
+    Language: 1
 --- !u!1 &954226320
 GameObject:
   m_ObjectHideFlags: 0
@@ -7166,6 +8186,7 @@ GameObject:
   - component: {fileID: 984704531}
   - component: {fileID: 984704530}
   - component: {fileID: 984704529}
+  - component: {fileID: 984704532}
   m_Layer: 5
   m_Name: new_game
   m_TagString: Untagged
@@ -7287,6 +8308,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984704527}
   m_CullTransparentMesh: 0
+--- !u!114 &984704532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984704527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: new_game
+  LocalizedTexts:
+  - Text: "\u041D\u043E\u0432\u0430\u044F \u0438\u0433\u0440\u0430"
+    Language: 0
+  - Text: 1
+    Language: 1
 --- !u!1 &1005950950
 GameObject:
   m_ObjectHideFlags: 0
@@ -7421,6 +8460,7 @@ GameObject:
   - component: {fileID: 1021442203}
   - component: {fileID: 1021442205}
   - component: {fileID: 1021442204}
+  - component: {fileID: 1021442206}
   m_Layer: 5
   m_Name: SubTitle (1)
   m_TagString: Untagged
@@ -7547,6 +8587,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021442202}
   m_CullTransparentMesh: 1
+--- !u!114 &1021442206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021442202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: game_win_down_subtitle
+  LocalizedTexts:
+  - Text: "\u0412\u044B \u0432\u044B\u0434\u0435\u0440\u0436\u0430\u043B\u0438 \u0438
+      \u0441\u0434\u0435\u043B\u0430\u043B\u0438 \u0432\u0441\u0435, \u0447\u0442\u043E
+      \u043D\u0443\u0436\u043D\u043E \u0431\u044B\u043B\u043E \u0432 \u0442\u044F\u0436\u0435\u043B\u043E\u0439
+      \u0441\u0438\u0442\u0443\u043F\u0446\u0438\u0438"
+    Language: 0
+  - Text: 30
+    Language: 1
 --- !u!1 &1032843328
 GameObject:
   m_ObjectHideFlags: 0
@@ -7667,6 +8728,7 @@ GameObject:
   - component: {fileID: 1033674727}
   - component: {fileID: 1033674729}
   - component: {fileID: 1033674728}
+  - component: {fileID: 1033674730}
   m_Layer: 5
   m_Name: ArcadeButton
   m_TagString: Untagged
@@ -7732,6 +8794,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033674726}
   m_CullTransparentMesh: 1
+--- !u!114 &1033674730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033674726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: game_win_arcade
+  LocalizedTexts:
+  - Text: "\u0410\u0420\u041A\u0410\u0414\u0410"
+    Language: 0
+  - Text: 28
+    Language: 1
 --- !u!1 &1045126457
 GameObject:
   m_ObjectHideFlags: 0
@@ -8123,6 +9203,44 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.88, y: 1.52}
   m_EdgeRadius: 0
+--- !u!1 &1091231397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1091231398}
+  m_Layer: 5
+  m_Name: Language
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1091231398
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091231397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1521335701}
+  - {fileID: 25521829}
+  - {fileID: 722232556}
+  m_Father: {fileID: 39791600}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1108983827
 GameObject:
   m_ObjectHideFlags: 0
@@ -8332,6 +9450,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140594377}
   m_CullTransparentMesh: 1
+--- !u!1 &1155546075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1155546076}
+  - component: {fileID: 1155546077}
+  m_Layer: 5
+  m_Name: Enabled
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1155546076
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155546075}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1797857017}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 87, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1155546077
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155546075}
+  m_CullTransparentMesh: 1
 --- !u!1 &1198961072
 GameObject:
   m_ObjectHideFlags: 0
@@ -8535,6 +9697,7 @@ GameObject:
   - component: {fileID: 1285153651}
   - component: {fileID: 1285153650}
   - component: {fileID: 1285153652}
+  - component: {fileID: 1285153653}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -8656,6 +9819,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1285153653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285153648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: back
+  LocalizedTexts:
+  - Text: "\u041D\u0410\u0417\u0410\u0414"
+    Language: 0
+  - Text: 8
+    Language: 1
 --- !u!1 &1307822883
 GameObject:
   m_ObjectHideFlags: 0
@@ -8697,6 +9878,7 @@ GameObject:
   - component: {fileID: 1323916788}
   - component: {fileID: 1323916790}
   - component: {fileID: 1323916789}
+  - component: {fileID: 1323916791}
   m_Layer: 5
   m_Name: Subtitle
   m_TagString: Untagged
@@ -8822,6 +10004,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323916787}
   m_CullTransparentMesh: 1
+--- !u!114 &1323916791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323916787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: settings_subtitle
+  LocalizedTexts:
+  - Text: "\u041F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0442\u0435 \u043D\u0430\u0441,
+      \u0438 \u0440\u0435\u043A\u043B\u0430\u043C\u0430 - \u0438\u0441\u043F\u0430\u0440\u0438\u0442\u0441\u044F!
+      =)"
+    Language: 0
+  - Text: 17
+    Language: 1
 --- !u!1 &1324267215
 GameObject:
   m_ObjectHideFlags: 0
@@ -8908,6 +10110,7 @@ GameObject:
   - component: {fileID: 1341240079}
   - component: {fileID: 1341240081}
   - component: {fileID: 1341240080}
+  - component: {fileID: 1341240082}
   m_Layer: 5
   m_Name: authors
   m_TagString: Untagged
@@ -8973,6 +10176,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341240078}
   m_CullTransparentMesh: 0
+--- !u!114 &1341240082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341240078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: authors
+  LocalizedTexts:
+  - Text: "\u041E \u043D\u0430\u0441"
+    Language: 0
+  - Text: 2
+    Language: 1
 --- !u!1 &1372230262
 GameObject:
   m_ObjectHideFlags: 0
@@ -8984,6 +10205,7 @@ GameObject:
   - component: {fileID: 1372230263}
   - component: {fileID: 1372230265}
   - component: {fileID: 1372230264}
+  - component: {fileID: 1372230266}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -9107,6 +10329,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1372230262}
   m_CullTransparentMesh: 1
+--- !u!114 &1372230266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372230262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: game_win_title
+  LocalizedTexts:
+  - Text: "\u041F\u043E\u0437\u0434\u0440\u0430\u0432\u043B\u044F\u0435\u043C!"
+    Language: 0
+  - Text: 26
+    Language: 1
 --- !u!1 &1378551708
 GameObject:
   m_ObjectHideFlags: 0
@@ -9296,6 +10536,7 @@ GameObject:
   - component: {fileID: 1452623799}
   - component: {fileID: 1452623801}
   - component: {fileID: 1452623800}
+  - component: {fileID: 1452623802}
   m_Layer: 5
   m_Name: SubThanks
   m_TagString: Untagged
@@ -9422,6 +10663,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452623798}
   m_CullTransparentMesh: 1
+--- !u!114 &1452623802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452623798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: game_win_subthanks
+  LocalizedTexts:
+  - Text: "\u0415\u0441\u043B\u0438 \u0432\u0430\u043C \u043F\u043E\u043D\u0440\u0430\u0432\u0438\u043B\u0430\u0441\u044C
+      \u0438\u0433\u0440\u0430 - \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430,
+      \u043D\u0430\u043F\u0438\u0448\u0438\u0442\u0435 \u043E\u0442\u0437\u044B\u0432
+      \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435 \u0438\u0433\u0440\u044B!"
+    Language: 0
+  - Text: 32
+    Language: 1
 --- !u!1 &1454600357
 GameObject:
   m_ObjectHideFlags: 0
@@ -9433,6 +10695,7 @@ GameObject:
   - component: {fileID: 1454600358}
   - component: {fileID: 1454600360}
   - component: {fileID: 1454600359}
+  - component: {fileID: 1454600361}
   m_Layer: 5
   m_Name: Email
   m_TagString: Untagged
@@ -9556,6 +10819,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454600357}
   m_CullTransparentMesh: 1
+--- !u!114 &1454600361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454600357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: email
+  LocalizedTexts:
+  - Text: "\u041D\u0430\u0448\u0430 \u043F\u043E\u0447\u0442\u0430:\nenlight.inc.team@gmail.com"
+    Language: 0
+  - Text: 9
+    Language: 1
 --- !u!1 &1469327576
 GameObject:
   m_ObjectHideFlags: 0
@@ -9569,6 +10850,7 @@ GameObject:
   - component: {fileID: 1469327579}
   - component: {fileID: 1469327581}
   - component: {fileID: 1469327578}
+  - component: {fileID: 1469327582}
   m_Layer: 5
   m_Name: exit
   m_TagString: Untagged
@@ -9690,6 +10972,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b3b98d9fb37087479a683a4d64d68a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1469327582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469327576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: exit
+  LocalizedTexts:
+  - Text: "\u0412\u044B\u0445\u043E\u0434"
+    Language: 0
+  - Text: 3
+    Language: 1
 --- !u!1 &1476231683
 GameObject:
   m_ObjectHideFlags: 0
@@ -9701,6 +11001,7 @@ GameObject:
   - component: {fileID: 1476231684}
   - component: {fileID: 1476231685}
   - component: {fileID: 1476231686}
+  - component: {fileID: 1476231687}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -9734,6 +11035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90dffe66a9fc3b549ae7902ef077b7d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLanguage: 0
   startState: 1
   gameIntro: {fileID: 1307822883}
   gameMenu: {fileID: 1400755153}
@@ -9746,7 +11048,7 @@ MonoBehaviour:
   tipDialog: {fileID: 1718185271}
   reviewDialog: {fileID: 1611124933}
   seePreviousAnswers: 0
-  gameDialog: {fileID: 637936366}
+  gameDialog: {fileID: 637936367}
 --- !u!114 &1476231686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9761,6 +11063,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chat_id: 
   TOKEN: 
+--- !u!114 &1476231687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476231683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f97a9d1ac9614b1ba79769dada9981bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1491407417
 GameObject:
   m_ObjectHideFlags: 0
@@ -9937,11 +11251,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658877319674814259, guid: c3b8967e9ca8a0644998c9935287c9c0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -125
+      value: -33
       objectReference: {fileID: 0}
     - target: {fileID: 6658877319674814259, guid: c3b8967e9ca8a0644998c9935287c9c0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -12
+      value: 13.999996
       objectReference: {fileID: 0}
     - target: {fileID: 6741195566805284881, guid: c3b8967e9ca8a0644998c9935287c9c0, type: 3}
       propertyPath: settingsType
@@ -10183,6 +11497,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520175350}
   m_CullTransparentMesh: 0
+--- !u!1 &1521335700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1521335701}
+  - component: {fileID: 1521335703}
+  - component: {fileID: 1521335702}
+  m_Layer: 5
+  m_Name: Toggle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1521335701
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521335700}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_Children:
+  - {fileID: 1797857017}
+  m_Father: {fileID: 1091231398}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -268}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1521335702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521335700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f05cfb3222fa4262a4c7da3cdf38a2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
+  disabledPoint: {fileID: 336924999}
+  enabledPoint: {fileID: 1155546076}
+  togglePoint: {fileID: 810278354}
+--- !u!222 &1521335703
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521335700}
+  m_CullTransparentMesh: 1
 --- !u!1 &1523772087
 GameObject:
   m_ObjectHideFlags: 0
@@ -10475,6 +11851,7 @@ GameObject:
   - component: {fileID: 1544863184}
   - component: {fileID: 1544863183}
   - component: {fileID: 1544863185}
+  - component: {fileID: 1544863186}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -10596,6 +11973,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1544863186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544863181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: back
+  LocalizedTexts:
+  - Text: "\u041D\u0410\u0417\u0410\u0414"
+    Language: 0
+  - Text: 8
+    Language: 1
 --- !u!1 &1568421562
 GameObject:
   m_ObjectHideFlags: 0
@@ -10630,7 +12025,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 0}
+  m_AnchoredPosition: {x: 253, y: 46}
   m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1568421564
@@ -11168,6 +12563,7 @@ GameObject:
   - component: {fileID: 1609017874}
   - component: {fileID: 1609017873}
   - component: {fileID: 1609017872}
+  - component: {fileID: 1609017875}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -11289,6 +12685,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609017870}
   m_CullTransparentMesh: 1
+--- !u!114 &1609017875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609017870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: menu
+  LocalizedTexts:
+  - Text: "\u041C\u0415\u041D\u042E"
+    Language: 0
+  - Text: 7
+    Language: 1
 --- !u!1 &1611124933
 GameObject:
   m_ObjectHideFlags: 0
@@ -11298,6 +12712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1611124934}
+  - component: {fileID: 1611124935}
   m_Layer: 5
   m_Name: Review
   m_TagString: Untagged
@@ -11325,6 +12740,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1611124935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611124933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a79260727584a66a73abdcb30f17fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonsContainer: {fileID: 655197029}
 --- !u!1 &1615759066
 GameObject:
   m_ObjectHideFlags: 0
@@ -11373,6 +12801,7 @@ GameObject:
   - component: {fileID: 1633756027}
   - component: {fileID: 1633756029}
   - component: {fileID: 1633756028}
+  - component: {fileID: 1633756030}
   m_Layer: 5
   m_Name: BugTitle
   m_TagString: Untagged
@@ -11497,6 +12926,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633756026}
   m_CullTransparentMesh: 1
+--- !u!114 &1633756030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633756026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: review_bug_title
+  LocalizedTexts:
+  - Text: "\u041D\u0430\u0448\u043B\u0438 \u0431\u0430\u0433?\n<size=68%>\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430,
+      \u0441\u043E\u043E\u0431\u0449\u0438\u0442\u0435 \u043D\u0430\u043C!</size>"
+    Language: 0
+  - Text: 22
+    Language: 1
 --- !u!1 &1651886837
 GameObject:
   m_ObjectHideFlags: 0
@@ -11585,6 +13033,7 @@ GameObject:
   - component: {fileID: 1674545532}
   - component: {fileID: 1674545531}
   - component: {fileID: 1674545533}
+  - component: {fileID: 1674545534}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -11706,6 +13155,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+--- !u!114 &1674545534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674545529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: novell
+  LocalizedTexts:
+  - Text: "\u041D\u043E\u0432\u0435\u043B\u043B\u0430"
+    Language: 0
+  - Text: 4
+    Language: 1
 --- !u!1 &1696411688
 GameObject:
   m_ObjectHideFlags: 0
@@ -12603,6 +14070,84 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9cf662621943468af1d99606b6223c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1797857016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1797857017}
+  - component: {fileID: 1797857019}
+  - component: {fileID: 1797857018}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1797857017
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797857016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 336924999}
+  - {fileID: 1155546076}
+  - {fileID: 810278354}
+  m_Father: {fileID: 1521335701}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 274, y: 112}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1797857018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797857016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ab72a8428425c564380ea225c266464e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1797857019
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797857016}
+  m_CullTransparentMesh: 1
 --- !u!1 &1806063169
 GameObject:
   m_ObjectHideFlags: 0
@@ -12615,6 +14160,7 @@ GameObject:
   - component: {fileID: 1806063172}
   - component: {fileID: 1806063171}
   - component: {fileID: 1806063173}
+  - component: {fileID: 1806063174}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -12736,6 +14282,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1806063174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806063169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: back
+  LocalizedTexts:
+  - Text: "\u041D\u0410\u0417\u0410\u0414"
+    Language: 0
+  - Text: 8
+    Language: 1
 --- !u!1 &1808165897
 GameObject:
   m_ObjectHideFlags: 0
@@ -12748,6 +14312,7 @@ GameObject:
   - component: {fileID: 1808165900}
   - component: {fileID: 1808165899}
   - component: {fileID: 1808165901}
+  - component: {fileID: 1808165902}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -12869,6 +14434,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1808165902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808165897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: menu
+  LocalizedTexts:
+  - Text: "\u041C\u0415\u041D\u042E"
+    Language: 0
+  - Text: 7
+    Language: 1
 --- !u!1 &1811752806
 GameObject:
   m_ObjectHideFlags: 0
@@ -12880,6 +14463,7 @@ GameObject:
   - component: {fileID: 1811752807}
   - component: {fileID: 1811752809}
   - component: {fileID: 1811752808}
+  - component: {fileID: 1811752810}
   m_Layer: 5
   m_Name: NovelButton
   m_TagString: Untagged
@@ -12945,6 +14529,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811752806}
   m_CullTransparentMesh: 1
+--- !u!114 &1811752810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811752806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: game_win_novell
+  LocalizedTexts:
+  - Text: "\u041D\u041E\u0412\u0415\u041B\u041B\u0410"
+    Language: 0
+  - Text: 27
+    Language: 1
 --- !u!1 &1815498933
 GameObject:
   m_ObjectHideFlags: 0
@@ -13188,6 +14790,7 @@ GameObject:
   - component: {fileID: 1898265142}
   - component: {fileID: 1898265144}
   - component: {fileID: 1898265143}
+  - component: {fileID: 1898265145}
   m_Layer: 5
   m_Name: SupportSubtitle
   m_TagString: Untagged
@@ -13313,6 +14916,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898265141}
   m_CullTransparentMesh: 1
+--- !u!114 &1898265145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898265141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: settings_up_support
+  LocalizedTexts:
+  - Text: "\u0412\u0441\u0435 \u043F\u0440\u0438\u0432\u0435\u043B\u0435\u0433\u0438\u0438
+      \u0440\u0435\u043A\u043B\u0430\u043C\u044B\n\u043E\u0441\u0442\u0430\u043D\u0443\u0442\u0441\u044F
+      \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\u043C\u0438"
+    Language: 0
+  - Text: 14
+    Language: 1
 --- !u!1 &1962403603
 GameObject:
   m_ObjectHideFlags: 0
@@ -14063,6 +15686,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2038856784}
+  - component: {fileID: 2038856785}
   m_Layer: 5
   m_Name: Music
   m_TagString: Untagged
@@ -14079,7 +15703,7 @@ RectTransform:
   m_GameObject: {fileID: 2038856783}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.95, y: 0.95, z: 1}
   m_Children:
   - {fileID: 598333409}
   - {fileID: 5844833983565200451}
@@ -14091,6 +15715,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: 853.3333, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2038856785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038856783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: music
+  LocalizedTexts:
+  - Text: "\u041C\u0443\u0437\u044B\u043A\u0430"
+    Language: 0
+  - Text: 10
+    Language: 1
 --- !u!1001 &2041935638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14297,6 +15939,7 @@ GameObject:
   - component: {fileID: 2061376187}
   - component: {fileID: 2061376189}
   - component: {fileID: 2061376188}
+  - component: {fileID: 2061376190}
   m_Layer: 5
   m_Name: LikeTitle
   m_TagString: Untagged
@@ -14421,6 +16064,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061376186}
   m_CullTransparentMesh: 1
+--- !u!114 &2061376190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061376186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: review_like_title
+  LocalizedTexts:
+  - Text: "\u0415\u0441\u0442\u044C \u0441\u043E\u0432\u0435\u0442\u044B?\n<size=57%>\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430,
+      \u043D\u0430\u043F\u0438\u0448\u0438\u0442\u0435 \u043D\u0430\u043C!</size>"
+    Language: 0
+  - Text: 23
+    Language: 1
 --- !u!1 &2064950232
 GameObject:
   m_ObjectHideFlags: 0
@@ -14432,6 +16094,7 @@ GameObject:
   - component: {fileID: 2064950233}
   - component: {fileID: 2064950235}
   - component: {fileID: 2064950234}
+  - component: {fileID: 2064950236}
   m_Layer: 5
   m_Name: Like
   m_TagString: Untagged
@@ -14497,6 +16160,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064950232}
   m_CullTransparentMesh: 1
+--- !u!114 &2064950236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064950232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2064950234}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1476231685}
+        m_TargetAssemblyTypeName: ThinIce.GameController, Assembly-CSharp
+        m_MethodName: ReviewState
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2071474428
 GameObject:
   m_ObjectHideFlags: 0
@@ -14508,6 +16227,7 @@ GameObject:
   - component: {fileID: 2071474429}
   - component: {fileID: 2071474431}
   - component: {fileID: 2071474430}
+  - component: {fileID: 2071474432}
   m_Layer: 5
   m_Name: PromtSubtitle
   m_TagString: Untagged
@@ -14633,6 +16353,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071474428}
   m_CullTransparentMesh: 1
+--- !u!114 &2071474432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071474428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: promt_button_subtitle
+  LocalizedTexts:
+  - Text: "*\u0423\u0447\u0442\u0438 - \u043D\u0438\u043A\u0430\u043A\u0438\u0435
+      \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0438\\n\u043D\u0435 \u0434\u0430\u044E\u0442
+      100% \u043F\u043E\u0431\u0435\u0434\u044B!"
+    Language: 0
+  - Text: 21
+    Language: 1
 --- !u!1 &2080024399
 GameObject:
   m_ObjectHideFlags: 0
@@ -14836,6 +16576,7 @@ GameObject:
   - component: {fileID: 2088784604}
   - component: {fileID: 2088784606}
   - component: {fileID: 2088784605}
+  - component: {fileID: 2088784607}
   m_Layer: 5
   m_Name: SupportButton
   m_TagString: Untagged
@@ -14901,6 +16642,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088784603}
   m_CullTransparentMesh: 1
+--- !u!114 &2088784607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088784603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea08db38b9e0480fa44bc00b95ae61b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: settings_support_button
+  LocalizedTexts:
+  - Text: "\u041F\u043E\u0434\u0434\u0435\u0440\u0436\u0430\u0442\u044C"
+    Language: 0
+  - Text: 13
+    Language: 1
 --- !u!1 &2091746616
 GameObject:
   m_ObjectHideFlags: 0
@@ -14912,6 +16671,7 @@ GameObject:
   - component: {fileID: 2091746617}
   - component: {fileID: 2091746619}
   - component: {fileID: 2091746618}
+  - component: {fileID: 2091746620}
   m_Layer: 5
   m_Name: Dislike
   m_TagString: Untagged
@@ -14977,6 +16737,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091746616}
   m_CullTransparentMesh: 1
+--- !u!114 &2091746620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091746616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2091746618}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1476231685}
+        m_TargetAssemblyTypeName: ThinIce.GameController, Assembly-CSharp
+        m_MethodName: ReviewState
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1001 &2099630478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15546,7 +17362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658877319674814259, guid: c3b8967e9ca8a0644998c9935287c9c0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -125
+      value: -33
       objectReference: {fileID: 0}
     - target: {fileID: 6658877319674814259, guid: c3b8967e9ca8a0644998c9935287c9c0, type: 3}
       propertyPath: m_AnchoredPosition.y

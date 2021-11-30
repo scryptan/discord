@@ -9,10 +9,15 @@ namespace ThinIce
 
         private static GameController _instance;
         private GameState _gameState;
+        private const string LanguageKey = "language";
+        [SerializeField] private Language currentLanguage;
 
         #endregion
 
         #region public region
+
+        private Action<Language> _languageChanged;
+        private ReviewButton _reviewButton;
 
         public GameState startState = GameState.Intro;
         public GameObject gameIntro;
@@ -30,14 +35,38 @@ namespace ThinIce
 
         public static GameController Instance => _instance;
 
-        public GameDialog gameDialog;
-        
+        public GameDialogWithLanguages gameDialog;
+
+        public Language CurrentLanguage
+        {
+            get => currentLanguage;
+            private set
+            {
+                currentLanguage = value;
+                _languageChanged?.Invoke(currentLanguage);
+            }
+        }
+
+        public void SetLanguage(int language)
+        {
+            CurrentLanguage = (Language) language;
+        }
+
+        public void SetLanguage(Language language)
+        {
+            CurrentLanguage = language;
+        }
+
         #endregion
 
         // Start is called before the first frame update
         private void Awake()
         {
             _instance = this;
+            foreach (var item in FindObjectsOfType<UiLocalizedItem>(true))
+            {
+                _languageChanged += item.LanguageChanged;
+            }
         }
 
         private void Start()
@@ -45,7 +74,9 @@ namespace ThinIce
             Application.targetFrameRate = 60;
 
             Initialize();
-            gameDialog = FindObjectOfType<GameDialog>();
+            gameDialog = FindObjectOfType<GameDialogWithLanguages>();
+            _languageChanged += gameDialog.OnLanguageChanged;
+            CurrentLanguage = GetCurrentLanguage();
         }
 
         // Update is called once per frame
@@ -81,7 +112,7 @@ namespace ThinIce
                     TipDialog();
                     break;
                 case GameState.Review:
-                    ReviewState();
+                    ReviewState(false);
                     break;
                 case GameState.Win:
                     break;
@@ -98,13 +129,13 @@ namespace ThinIce
             seePreviousAnswers = true;
             RestartGame();
         }
-        
+
         public void RestartGame()
         {
             gameDialog.RestartDialog();
             GameDialog();
         }
-        
+
         #region Game States
 
         public void GameIntro()
@@ -114,12 +145,14 @@ namespace ThinIce
             SetAllWindowsFalse();
             gameIntro.SetActive(true);
         }
-        
-        public void ReviewState()
+
+        public void ReviewState(bool isBug)
         {
             _gameState = GameState.Review;
+            _reviewButton = reviewDialog.GetComponentInChildren<ReviewButton>();
 
             SetAllWindowsFalse();
+            _reviewButton.SetType(isBug);
             reviewDialog.SetActive(true);
         }
 
@@ -197,6 +230,21 @@ namespace ThinIce
         }
 
         #endregion
+
+        private Language GetCurrentLanguage()
+        {
+            if (PlayerPrefs.HasKey(LanguageKey) &&
+                Enum.TryParse<Language>(PlayerPrefs.GetString(LanguageKey), out var language))
+                return language;
+            if (Application.systemLanguage == SystemLanguage.Russian)
+            {
+                PlayerPrefs.SetString(LanguageKey, Language.Russian.ToString());
+                return Language.Russian;
+            }
+
+            PlayerPrefs.SetString(LanguageKey, Language.English.ToString());
+            return Language.English;
+        }
 
         [Serializable]
         public enum GameState
