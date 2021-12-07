@@ -8,13 +8,6 @@ namespace ThinIce
     {
         public string chat_id = "";
         public string TOKEN = "";
-        public string API_URL
-        {
-            get
-            {
-                return string.Format("https://api.telegram.org/bot{0}/", TOKEN);
-            }
-        }
         public string API_URL => $"https://api.telegram.org/bot{TOKEN}/";
 
         public void GetMe()

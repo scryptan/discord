@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
-using UnityEngine.U2D;
 using UnityEngine.UI;
 using Random = System.Random;
 
 namespace ThinIce
 {
     [ExecuteAlways]
+    [RequireComponent(typeof(DialogStateKeeper))]
     public class GameDialog : MonoBehaviour
     {
         [Header("Canvas Game Object")] public GameObject canvasDialog = null;
@@ -175,4 +176,36 @@ namespace ThinIce
             Failed = 3,
         }
     }
+#if UNITY_EDITOR
+    [CustomEditor(typeof(EmptyScript))]
+    public class GameDialogEditor : Editor
+    {
+        public override void OnInspectorGUI()
+        {
+            if (GUILayout.Button("Import"))
+            {
+                var dialogState = FindObjectOfType<DialogStateKeeper>();
+                var dialog = FindObjectOfType<GameDialog>();
+                
+                dialogState.MainDialogEmotions = new List<GirlEmotion>();
+                dialogState.DialogState = new List<DialogStateData>();
+                
+                foreach (var common in dialog.dialogCommon)
+                {
+                    dialogState.MainDialogEmotions.Add(common.girlEmotion);
+                    foreach (var textGuy in common.textGuy)
+                    {
+                        dialogState.DialogState.Add(new DialogStateData
+                        {
+                            Id = textGuy.id,
+                            Emotion = textGuy.girtAnswerEmotion,
+                            IsBadText = textGuy.badText
+                        });
+                    }
+                }
+            }
+        }
+    }
+#endif
+
 }

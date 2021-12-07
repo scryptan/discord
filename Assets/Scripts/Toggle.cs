@@ -8,7 +8,6 @@ namespace ThinIce
         public bool isEnabled;
         public SettingsType settingsType;
 
-
         public void SetEnabled(bool value)
         {
             isEnabled = value;
@@ -18,10 +17,10 @@ namespace ThinIce
                     GameSettings.MusicEnabled = isEnabled;
                     break;
                 case SettingsType.Audio:
-                    GameSettings.MusicEnabled = isEnabled;
+                    GameSettings.AudioEnabled = isEnabled;
                     break;
                 case SettingsType.Vibration:
-                    GameSettings.MusicEnabled = isEnabled;
+                    GameSettings.VibrationEnabled = isEnabled;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
