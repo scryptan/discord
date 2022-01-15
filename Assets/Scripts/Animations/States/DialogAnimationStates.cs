@@ -1,4 +1,4 @@
-﻿namespace ThinIce.Animations
+﻿namespace ThinIce.Animations.States
 {
     public enum DialogAnimationStates
     {

@@ -1,4 +1,6 @@
 ﻿using System;
+using ThinIce.Animations.Controllers;
+using ThinIce.Animations.States;
 using UnityEngine;
 
 namespace ThinIce
@@ -11,6 +13,7 @@ namespace ThinIce
         private GameState _gameState;
         private const string LanguageKey = "language";
         [SerializeField] private Language currentLanguage;
+        private MainMenuAnimationController m_MenuAnimationController;
 
         #endregion
 
@@ -74,7 +77,8 @@ namespace ThinIce
             Application.targetFrameRate = 60;
 
             Initialize();
-            gameDialog = FindObjectOfType<GameDialogWithLanguages>();
+            gameDialog = FindObjectOfType<GameDialogWithLanguages>(true);
+            m_MenuAnimationController = FindObjectOfType<MainMenuAnimationController>(true);
             _languageChanged += gameDialog.OnLanguageChanged;
             CurrentLanguage = GetCurrentLanguage();
         }
@@ -172,6 +176,7 @@ namespace ThinIce
             SetAllWindowsFalse();
             gameMenu.SetActive(true);
             startMenu.SetActive(true);
+            m_MenuAnimationController.PlayTrigger(OnlyAppearingAnimationStates.Appear);
         }
 
         public void GameDialog()
