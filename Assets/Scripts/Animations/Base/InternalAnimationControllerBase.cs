@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 using UnityEngine;
 
@@ -11,7 +9,6 @@ namespace ThinIce.Animations.Base
     public class InternalAnimationControllerBase<T> : MonoBehaviour where T : Enum
     {
         private Animator m_Animator;
-        private readonly Dictionary<T, int> m_TriggerToAnimationNumber = new Dictionary<T, int>();
 
         private void Start()
         {
@@ -33,11 +30,6 @@ namespace ThinIce.Animations.Base
             if (!animationTriggerNames.SequenceEqual(animatorParametersNames))
                 throw new ArgumentException(
                     $"Animator on object {gameObject.name} has no triggers {JsonConvert.SerializeObject(animationTriggerNames.Except(animatorParametersNames))} and argument haven't  {JsonConvert.SerializeObject(animatorParametersNames.Except(animationTriggerNames))}");
-
-            foreach (var triggerName in animationTriggerValues)
-                m_TriggerToAnimationNumber.Add(triggerName,
-                    animatorParameters.IndexOf(animatorParameters.Single(x =>
-                        string.Equals(x.name, triggerName.ToString(), StringComparison.InvariantCultureIgnoreCase))));
         }
 
         public float PlayTrigger(T triggerName)

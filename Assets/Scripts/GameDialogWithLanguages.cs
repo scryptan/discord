@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ThinIce.Animations;
+using ThinIce.Animations.Controllers;
+using ThinIce.Animations.States;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -58,7 +59,7 @@ namespace ThinIce
                 canvasDialog.SetActive(true);
 
             SetCurrentLanguageDialogCommon();
-            m_DialogAnimationController = FindObjectOfType<DialogAnimationController>();
+            m_DialogAnimationController = FindObjectOfType<DialogAnimationController>(true);
             RenderDialog(dialogState, dialogPage);
         }
 
@@ -81,8 +82,8 @@ namespace ThinIce
             dialogState = dlgState;
             dialogPage = page;
 
-            var dlg = localizedDialogCommons.FirstOrDefault(x => x.Language == GameController.Instance.CurrentLanguage)
-                ?.DialogCommons[(int) page] ?? throw new ArgumentException("No communon with thi laguage or page");
+            var dlg = localizedDialogCommons?.FirstOrDefault(x => x.Language == GameController.Instance.CurrentLanguage)
+                ?.DialogCommons[(int) page] ?? throw new ArgumentException("No common with this language or page");
             var girlImage = girl.GetComponent<Image>();
 
             var i = 0;

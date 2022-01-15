@@ -16,7 +16,7 @@ namespace ThinIce
 
         private void OnEnable()
         {
-            _telegramClient = FindObjectOfType<Telegram>();
+            _telegramClient = FindObjectOfType<Telegram>(true);
         }
 
         public void SendMessage()

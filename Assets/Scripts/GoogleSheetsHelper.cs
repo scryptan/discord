@@ -62,7 +62,7 @@ namespace ThinIce
                 HttpClientInitializer = cred,
                 ApplicationName = ApplicationName
             });
-            var dialog = FindObjectOfType<GameDialogWithLanguages>();
+            var dialog = FindObjectOfType<GameDialogWithLanguages>(true);
             dialog.localizedDialogCommons = new List<LanguageDialogCommon>();
             dialog.startGuyText = new List<LocalizedText>();
             dialog.totalFailedText = new List<LocalizedText>();
@@ -85,7 +85,7 @@ namespace ThinIce
         {
             var range = $"{sheetName}!B4:J12";
 
-            var dialogStateKeeper = FindObjectOfType<DialogStateKeeper>();
+            var dialogStateKeeper = FindObjectOfType<DialogStateKeeper>(true);
 
             var req = _service.Spreadsheets.Values.Get(SheetId, range);
 
