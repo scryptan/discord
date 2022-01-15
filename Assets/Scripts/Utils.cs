@@ -1,4 +1,6 @@
-﻿namespace ThinIce
+﻿using System;
+
+namespace ThinIce
 {
     public enum TypeButton
     {
@@ -16,5 +18,10 @@
         Angry = 3,
         Wrong = 4,
         Cute = 5,
+    }
+
+    public static class TimeExtensions
+    {
+        public static TimeSpan Seconds(this float value) => TimeSpan.FromSeconds(value);
     }
 }
