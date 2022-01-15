@@ -4309,6 +4309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 585201936}
   - component: {fileID: 585201937}
+  - component: {fileID: 585201938}
   m_Layer: 5
   m_Name: Dialog
   m_TagString: Untagged
@@ -4348,7 +4349,7 @@ Animator:
   m_GameObject: {fileID: 585201935}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d3f7b428eddb5e448162afb5fb9f28f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4357,6 +4358,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &585201938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585201935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deabaa3a3bfe4e9ca038cb4d24e0e302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &591053114
 GameObject:
   m_ObjectHideFlags: 0
@@ -8387,7 +8400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1005950951
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9568,6 +9581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1158671938}
   - component: {fileID: 1158671937}
+  - component: {fileID: 1158671939}
   m_Layer: 0
   m_Name: PlaybleDirector
   m_TagString: Untagged
@@ -9646,6 +9660,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1158671939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158671936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b630afe975697e74a9363aeafad12560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1198961072
 GameObject:
   m_ObjectHideFlags: 0
@@ -9815,7 +9841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1273052514
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11601,7 +11627,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 1059925
+    rgba: 4279250005
   m_fontColor: {r: 0.33333334, g: 0.17254902, b: 0.0627451, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -15124,6 +15150,7 @@ GameObject:
   - component: {fileID: 1962403607}
   - component: {fileID: 1962403606}
   - component: {fileID: 1962403605}
+  - component: {fileID: 1962403608}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -15221,6 +15248,25 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 50
   m_TargetDisplay: 0
+--- !u!95 &1962403608
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962403603}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe9ad491428234f4aa26c52094197844, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1969114958
 GameObject:
   m_ObjectHideFlags: 0

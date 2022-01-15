@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using ThinIce.Animations;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = System.Random;
+
+// ReSharper disable Unity.NoNullPropagation
 
 namespace ThinIce
 {
@@ -37,6 +41,7 @@ namespace ThinIce
 
         private bool _dialogFailed = false;
         private Random _random;
+        private DialogAnimationController m_DialogAnimationController;
 
 
         // Start is called before the first frame update
@@ -53,6 +58,8 @@ namespace ThinIce
                 canvasDialog.SetActive(true);
 
             SetCurrentLanguageDialogCommon();
+            m_DialogAnimationController = FindObjectOfType<DialogAnimationController>();
+            RenderDialog(dialogState, dialogPage);
         }
 
         private void OnDisable()
@@ -148,23 +155,35 @@ namespace ThinIce
             }
         }
 
-        public void PressedButtonDialog(TextGuy textGuy)
+        public async Task PressedButtonDialog(TextGuy textGuy)
         {
             switch (dialogState)
             {
                 case DialogState.StartPhrase:
+                    if (m_DialogAnimationController != null)
+                        await Task.Delay(m_DialogAnimationController
+                            .PlayTrigger(DialogAnimationStates.StartPhrasePressed).Seconds());
                     RenderDialog(DialogState.Common, 0);
                     break;
 
                 case DialogState.Common:
+                    m_DialogAnimationController?.PlayTrigger(DialogAnimationStates.PressedVariantButton);
                     RenderDialog(DialogState.GirlAnswer, dialogPage, textGuy);
                     break;
 
                 case DialogState.GirlAnswer:
                     if (_dialogFailed)
+                    {
+                        m_DialogAnimationController?.PlayTrigger(DialogAnimationStates.PressedAnswerButton);
+                        m_DialogAnimationController?.PlayTrigger(DialogAnimationStates.PressedVariantButton);
                         RenderDialog(DialogState.Failed, dialogPage);
+                    }
                     else
+                    {
+                        m_DialogAnimationController?.PlayTrigger(DialogAnimationStates.PressedAnswerButton);
                         RenderDialog(DialogState.Common, dialogPage + 1);
+                    }
+
                     break;
 
                 case DialogState.Failed:
