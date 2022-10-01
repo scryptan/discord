@@ -1,4 +1,6 @@
 ﻿using System;
+using ThinIce.Animations.Controllers;
+using ThinIce.Animations.States;
 using UnityEngine;
 
 namespace ThinIce
@@ -11,6 +13,7 @@ namespace ThinIce
         private GameState _gameState;
         private const string LanguageKey = "language";
         [SerializeField] private Language currentLanguage;
+        private MainMenuAnimationController _mainMenuAnimationController;
 
         #endregion
 
@@ -25,7 +28,6 @@ namespace ThinIce
         public GameObject startMenu;
         public GameObject settings;
         public GameObject gameDialogWindow;
-        public GameObject gamePlaying;
         public GameObject gameWin;
         public GameObject gameLose;
         public GameObject tipDialog;
@@ -74,8 +76,8 @@ namespace ThinIce
             Application.targetFrameRate = 60;
 
             Initialize();
-            gameDialog = FindObjectOfType<GameDialogWithLanguages>();
-            _languageChanged += gameDialog.OnLanguageChanged;
+            gameDialog = FindObjectOfType<GameDialogWithLanguages>(true);
+            _mainMenuAnimationController = FindObjectOfType<MainMenuAnimationController>(true);
             CurrentLanguage = GetCurrentLanguage();
         }
 
@@ -172,6 +174,7 @@ namespace ThinIce
             SetAllWindowsFalse();
             gameMenu.SetActive(true);
             startMenu.SetActive(true);
+            _mainMenuAnimationController.PlayTrigger(OnlyAppearingAnimationStates.Appear);
         }
 
         public void GameDialog()
@@ -195,9 +198,7 @@ namespace ThinIce
             _gameState = GameState.Game;
 
             SetAllWindowsFalse();
-            gamePlaying.SetActive(true);
-
-            gamePlaying.GetComponent<GamePlaying>().Initialize();
+            // todo: start arcade
         }
 
         public void GameWin()
@@ -222,7 +223,6 @@ namespace ThinIce
             gameDialogWindow.SetActive(false);
             startMenu.SetActive(false);
             settings.SetActive(false);
-            gamePlaying.SetActive(false);
             gameWin.SetActive(false);
             gameLose.SetActive(false);
             tipDialog.SetActive(false);

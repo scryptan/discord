@@ -20,10 +20,5 @@ namespace ThinIce
             if (canvasMenu != null)
                 canvasMenu.SetActive(false);
         }
-
-        public void NewGame()
-        {
-            GameController.Instance.GameDialog();
-        }
     }
 }

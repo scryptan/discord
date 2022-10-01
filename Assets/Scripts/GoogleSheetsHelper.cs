@@ -62,7 +62,7 @@ namespace ThinIce
                 HttpClientInitializer = cred,
                 ApplicationName = ApplicationName
             });
-            var dialog = FindObjectOfType<GameDialogWithLanguages>();
+            var dialog = FindObjectOfType<GameDialogWithLanguages>(true);
             dialog.localizedDialogCommons = new List<LanguageDialogCommon>();
             dialog.startGuyText = new List<LocalizedText>();
             dialog.totalFailedText = new List<LocalizedText>();
@@ -72,20 +72,20 @@ namespace ThinIce
             var uiElements = FindObjectsOfType<UiLocalizedItem>(true);
             foreach (var uiElement in uiElements)
                 uiElement.LocalizedTexts = new List<LocalizedText>();
-
+            
+            var dialogStateKeeper = FindObjectOfType<DialogStateKeeper>(true);
             foreach (var sheetName in sheetNames)
             {
-                ImportNovell(dialog, sheetName);
+                ImportNovell(dialog, sheetName, dialogStateKeeper);
                 ImportAnotherNovellTexts(dialog, sheetName);
                 ImportUiTexts(uiElements, sheetName);
             }
         }
 
-        private void ImportNovell(GameDialogWithLanguages dialog, string sheetName)
+        private void ImportNovell(GameDialogWithLanguages dialog, string sheetName, DialogStateKeeper dialogStateKeeper)
         {
             var range = $"{sheetName}!B4:J12";
 
-            var dialogStateKeeper = FindObjectOfType<DialogStateKeeper>();
 
             var req = _service.Spreadsheets.Values.Get(SheetId, range);
 
