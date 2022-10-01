@@ -1,7 +1,8 @@
-﻿using TMPro;
+﻿using ThinIce.Helpers;
+using TMPro;
 using UnityEngine;
 
-namespace ThinIce
+namespace ThinIce.Novell
 {
     public class ReviewButton : MonoBehaviour
     {

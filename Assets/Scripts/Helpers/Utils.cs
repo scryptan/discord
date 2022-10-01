@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ThinIce
+namespace ThinIce.Helpers
 {
     public enum TypeButton
     {

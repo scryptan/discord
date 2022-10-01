@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace ThinIce
+namespace ThinIce.Novell
 {
     public class LanguageToggle : MonoBehaviour, IPointerClickHandler
     {

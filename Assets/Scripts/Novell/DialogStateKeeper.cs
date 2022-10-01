@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using ThinIce.Helpers;
 using UnityEngine;
 
-namespace ThinIce
+namespace ThinIce.Novell
 {
     public class DialogStateKeeper: MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace ThinIce
+namespace ThinIce.Novell
 {
     public class ButtonExit : MonoBehaviour, IPointerClickHandler
     {

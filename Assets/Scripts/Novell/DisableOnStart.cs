@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ThinIce
+namespace ThinIce.Novell
 {
     public class DisableOnStart : MonoBehaviour
     {

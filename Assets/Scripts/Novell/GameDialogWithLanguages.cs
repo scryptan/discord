@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ThinIce.Animations.Controllers;
 using ThinIce.Animations.States;
+using ThinIce.Helpers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,7 +12,7 @@ using Random = System.Random;
 
 // ReSharper disable Unity.NoNullPropagation
 
-namespace ThinIce
+namespace ThinIce.Novell
 {
     // [ExecuteAlways]
     [RequireComponent(typeof(DialogStateKeeper))]

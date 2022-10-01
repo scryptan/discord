@@ -3,7 +3,7 @@ using ThinIce.Animations.Controllers;
 using ThinIce.Animations.States;
 using UnityEngine;
 
-namespace ThinIce
+namespace ThinIce.Novell
 {
     public class GameController : MonoBehaviour
     {

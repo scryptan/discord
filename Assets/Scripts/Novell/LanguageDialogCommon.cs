@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ThinIce
+namespace ThinIce.Novell
 {
     [Serializable]
     public class LanguageDialogCommon

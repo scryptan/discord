@@ -5,12 +5,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Google.Apis.Auth.OAuth2;
-using Google.Apis.Sheets.v4;
 using Google.Apis.Services;
+using Google.Apis.Sheets.v4;
+using ThinIce.Novell;
 using UnityEditor;
 using UnityEngine;
 
-namespace ThinIce
+namespace ThinIce.Helpers
 {
     [CustomEditor(typeof(GoogleSynchronizer))]
     public class GoogleSheetsHelper : Editor

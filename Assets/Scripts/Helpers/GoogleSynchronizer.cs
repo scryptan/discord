@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ThinIce
+namespace ThinIce.Helpers
 {
     public class GoogleSynchronizer: MonoBehaviour
     {

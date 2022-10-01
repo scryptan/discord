@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace ThinIce
+namespace ThinIce.Novell
 {
     public class Toggle : MonoBehaviour
     {

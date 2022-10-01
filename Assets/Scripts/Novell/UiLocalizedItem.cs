@@ -4,7 +4,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 
-namespace ThinIce
+namespace ThinIce.Novell
 {
     public class UiLocalizedItem : MonoBehaviour
     {

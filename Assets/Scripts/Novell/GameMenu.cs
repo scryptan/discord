@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ThinIce
+namespace ThinIce.Novell
 {
     [ExecuteAlways]
     public class GameMenu : MonoBehaviour

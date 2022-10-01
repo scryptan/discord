@@ -4,7 +4,7 @@ using System.IO;
 using Newtonsoft.Json;
 using UnityEngine;
 
-namespace ThinIce
+namespace ThinIce.Novell
 {
     public class AnsweredTextGuys
     {

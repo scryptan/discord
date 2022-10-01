@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace ThinIce
+namespace ThinIce.Novell
 
 {
     [RequireComponent(typeof(Image))]

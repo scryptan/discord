@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace ThinIce
+namespace ThinIce.Helpers
 {
     public class Telegram: MonoBehaviour
     {

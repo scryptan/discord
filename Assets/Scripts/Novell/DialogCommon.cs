@@ -1,7 +1,8 @@
 ﻿using System;
+using ThinIce.Helpers;
 using UnityEngine;
 
-namespace ThinIce
+namespace ThinIce.Novell
 {
     [Serializable]
     public struct DialogCommon

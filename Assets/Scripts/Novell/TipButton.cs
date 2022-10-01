@@ -2,7 +2,7 @@
 using UnityEngine;
 using Random = System.Random;
 
-namespace ThinIce
+namespace ThinIce.Novell
 {
     public class TipButton : MonoBehaviour
     {

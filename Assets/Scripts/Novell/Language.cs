@@ -1,4 +1,4 @@
-namespace ThinIce
+namespace ThinIce.Novell
 {
     public enum Language
     {
